@@ -14,7 +14,8 @@
       "Bash(do [ -f \"$file\" ])",
       "Bash(if grep -q 'article__footer' \"$file\")",
       "Bash(chmod:*)",
-      "Bash(node scripts/generate-sitemap.js:*)"
+      "Bash(node scripts/generate-sitemap.js:*)",
+      "Bash(node scripts/add-gtm.js:*)"
     ],
     "deny": [],
     "ask": []

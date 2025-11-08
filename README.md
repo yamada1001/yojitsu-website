@@ -126,6 +126,46 @@ await fetch('YOUR_FORM_ENDPOINT', {
 });
 ```
 
+## ビルドコマンド
+
+デプロイ前に必ず以下のコマンドを実行してください：
+
+```bash
+npm run build
+```
+
+このコマンドは以下の処理を自動実行します：
+1. **GTMコードの自動挿入**: 全HTMLファイルにGoogle Tag Manager（GTM-T7NGQDC2）を自動挿入
+2. **サイトマップの生成**: 最新のサイトマップを自動生成
+
+### その他の利用可能なコマンド
+
+```bash
+# ローカルサーバーで確認（ポート8000）
+npm run serve
+
+# GTMコードのみ挿入
+npm run add-gtm
+
+# サイトマップのみ生成
+npm run generate-sitemap
+```
+
+### 新規ページ作成時の注意
+
+新しいHTMLページを作成する場合は、`templates/`ディレクトリのテンプレートを使用してください：
+
+```bash
+# 通常ページの作成
+cp templates/page-template.html 新しいページ.html
+
+# ブログ記事の作成
+cp templates/blog-post-template.html blog/posts/新しい記事.html
+```
+
+テンプレートには既にGTMコードが含まれているため、追加作業は不要です。
+詳細は `templates/README.md` を参照してください。
+
 ## デプロイ方法
 
 ### 推奨ホスティング
@@ -205,7 +245,7 @@ await fetch('YOUR_FORM_ENDPOINT', {
 - [ ] 多言語対応（英語版等）
 - [ ] ダークモード対応
 - [ ] PWA化
-- [ ] Google Analytics設定
+- [x] Google Tag Manager設定（完了）
 - [ ] Google Search Console登録
 
 ## ライセンス
