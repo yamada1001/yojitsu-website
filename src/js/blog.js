@@ -10,10 +10,12 @@
     // Category Name Mapping
     // ==========================================
     const CATEGORY_NAMES = {
+        'ai': 'AI',
         'seo': 'SEO',
         'ads': '広告運用',
         'sns': 'SNS',
         'marketing': 'マーケティング',
+        'web-production': 'Web制作',
         'web': 'Web制作',
         'misc': '雑記'
     };
@@ -21,24 +23,24 @@
     // ==========================================
     // DOM Elements
     // ==========================================
-    const categoryCards = document.querySelectorAll('.category-card');
-    const blogCards = document.querySelectorAll('.blog-card');
     const blogListTitle = document.getElementById('blogListTitle');
     const resetFilterBtn = document.getElementById('resetFilter');
     const noResultsMessage = document.getElementById('noResultsMessage');
     const blogListSection = document.querySelector('.blog-list');
+    const categoryGrid = document.querySelector('.category-list__grid');
 
     // Current active category
     let activeCategory = null;
 
     console.log('Blog JavaScript initialized');
-    console.log('Category cards:', categoryCards.length);
-    console.log('Blog cards:', blogCards.length);
 
     // ==========================================
     // Filter Blog Cards by Category
     // ==========================================
     function filterBlogCards(category) {
+        // 動的に生成された要素を毎回取得
+        const blogCards = document.querySelectorAll('.blog-card');
+        const categoryCards = document.querySelectorAll('.category-card');
         let visibleCount = 0;
 
         blogCards.forEach(card => {
@@ -64,17 +66,21 @@
         }
 
         // Show/hide no results message
-        if (visibleCount === 0) {
-            noResultsMessage.style.display = 'block';
-        } else {
-            noResultsMessage.style.display = 'none';
+        if (noResultsMessage) {
+            if (visibleCount === 0) {
+                noResultsMessage.style.display = 'block';
+            } else {
+                noResultsMessage.style.display = 'none';
+            }
         }
 
         // Show/hide reset button
-        if (category) {
-            resetFilterBtn.style.display = 'inline-flex';
-        } else {
-            resetFilterBtn.style.display = 'none';
+        if (resetFilterBtn) {
+            if (category) {
+                resetFilterBtn.style.display = 'inline-flex';
+            } else {
+                resetFilterBtn.style.display = 'none';
+            }
         }
 
         // Update active category card
@@ -107,25 +113,30 @@
     }
 
     // ==========================================
-    // Category Card Click Event
+    // Category Card Click Event (イベント委譲を使用)
     // ==========================================
-    categoryCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const category = card.dataset.category;
-            console.log('Category card clicked:', category);
+    if (categoryGrid) {
+        categoryGrid.addEventListener('click', (e) => {
+            // クリックされた要素がカテゴリカードまたはその子要素か確認
+            const categoryCard = e.target.closest('.category-card');
 
-            // Update URL hash
-            window.location.hash = category;
+            if (categoryCard) {
+                const category = categoryCard.dataset.category;
+                console.log('Category card clicked:', category);
 
-            // Filter cards
-            filterBlogCards(category);
+                // Update URL hash
+                window.location.hash = category;
 
-            // Scroll to blog list
-            setTimeout(() => {
-                scrollToBlogList();
-            }, 100);
+                // Filter cards
+                filterBlogCards(category);
+
+                // Scroll to blog list
+                setTimeout(() => {
+                    scrollToBlogList();
+                }, 100);
+            }
         });
-    });
+    }
 
     // ==========================================
     // Reset Filter Button Click Event
