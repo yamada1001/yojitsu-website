@@ -15,7 +15,7 @@ class BlogLoader {
      */
     async loadArticles() {
         try {
-            const response = await fetch('/blog/articles.json');
+            const response = await fetch('blog/articles.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -179,7 +179,7 @@ class BlogLoader {
         const count = this.getArticleCountByCategory(category.id);
         return `
             <article class="category-card">
-                <a href="/blog/categories/${category.id}.html" class="category-card__link">
+                <a href="blog/categories/${category.id}.html" class="category-card__link">
                     <div class="category-card__icon" style="background: linear-gradient(135deg, ${category.color}, ${category.color}dd);">
                         <i class="fas fa-${category.icon}"></i>
                     </div>
