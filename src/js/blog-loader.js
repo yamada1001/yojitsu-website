@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // カテゴリーページ
         const categoryId = path.split('/').pop().replace('.html', '');
         window.blogLoader.renderCategoryPage(categoryId);
-    } else if (path === '/' || path.includes('/index.html')) {
+    } else if (path === '/' || path.endsWith('/') || path.includes('/index.html') || path === '/yojitsu-website' || path === '/yojitsu-website/') {
         // トップページ
         window.blogLoader.renderTopPageBlog(6);
     }
