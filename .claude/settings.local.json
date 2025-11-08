@@ -6,7 +6,12 @@
       "Bash({} ;)",
       "Bash(do sed -i '' '/<li class=\"\"nav__item\"\"><a href=\"\"[^\"\"]*#about\"\" class=\"\"nav__link\"\">プロフィール<\\/a><\\/li>/d' \"$file\")",
       "WebFetch(domain:localhost)",
-      "Bash(do sed -i '' 's/<time class=\"\"article__date\"\" datetime=\"\"\\([^\"\"]*\\)\"\">[^<]*<\\/time>/<time class=\"\"article__date\"\" datetime=\"\"\\1\"\"><\\/time>/g' \"$file\")"
+      "Bash(do sed -i '' 's/<time class=\"\"article__date\"\" datetime=\"\"\\([^\"\"]*\\)\"\">[^<]*<\\/time>/<time class=\"\"article__date\"\" datetime=\"\"\\1\"\"><\\/time>/g' \"$file\")",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(while read link)",
+      "Bash(do file=\"$link#blog/posts/\" if [ ! -f \"blog/posts/$file\" ])",
+      "Bash(then echo \"MISSING: $link\" fi done)",
+      "Bash(do [ -f \"$file\" ])"
     ],
     "deny": [],
     "ask": []
