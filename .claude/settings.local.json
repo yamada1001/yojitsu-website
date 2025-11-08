@@ -11,7 +11,10 @@
       "Bash(while read link)",
       "Bash(do file=\"$link#blog/posts/\" if [ ! -f \"blog/posts/$file\" ])",
       "Bash(then echo \"MISSING: $link\" fi done)",
-      "Bash(do [ -f \"$file\" ])"
+      "Bash(do [ -f \"$file\" ])",
+      "Bash(if grep -q 'article__footer' \"$file\")",
+      "Bash(chmod:*)",
+      "Bash(node scripts/generate-sitemap.js:*)"
     ],
     "deny": [],
     "ask": []
