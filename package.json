@@ -4,6 +4,7 @@
   "description": "余日（ヨジツ）- Webマーケティング会社のコーポレートサイト",
   "scripts": {
     "build": "node scripts/build.js",
+    "sync-articles": "node scripts/sync-articles.js",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "add-gtm": "node scripts/add-gtm.js",
     "serve": "python3 -m http.server 8000"
