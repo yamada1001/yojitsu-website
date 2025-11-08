@@ -106,93 +106,83 @@ html, body {
    Category Cards Section
    ========================================== */
 .category-cards {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border-light);
 }
 
 .category-cards__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.75rem;
-    max-width: 900px;
-    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
+    padding: 0.5rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.category-cards__grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.category-cards__grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.category-cards__grid::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
 }
 
 /* Category Card */
 .category-card {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     background: var(--color-bg);
-    border: 1px solid var(--color-border-light);
-    border-radius: 8px;
-    padding: 0.875rem 0.625rem;
-    text-align: center;
+    border: 1.5px solid currentColor;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-}
-
-.category-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, currentColor, transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.category-card:hover::before {
-    opacity: 0.6;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    opacity: 0.7;
 }
 
 .category-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border-color: currentColor;
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .category-card.active {
-    border-color: currentColor;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    background: currentColor;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.category-card.active::before {
-    opacity: 1;
+.category-card.active .category-card__title,
+.category-card.active .category-card__count {
+    color: white;
 }
 
 /* Category Icon */
 .category-card__icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
-    border: 2px solid currentColor;
-    transition: all 0.3s ease;
-}
-
-.category-card:hover .category-card__icon {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
-}
-
-.category-card__icon svg {
-    width: 28px;
-    height: 28px;
+    font-size: 1rem;
     color: currentColor;
+    flex-shrink: 0;
+}
+
+.category-card.active .category-card__icon {
+    color: white;
 }
 
 /* Category Title */
 .category-card__title {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 0;
-    color: var(--color-text);
+    color: currentColor;
     letter-spacing: -0.01em;
 }
 
@@ -204,34 +194,38 @@ html, body {
 /* Category Count */
 .category-card__count {
     font-size: 0.75rem;
-    color: var(--color-text-muted);
+    color: currentColor;
     font-weight: 500;
-    margin-top: 0.375rem;
+    opacity: 0.8;
 }
 
 /* Category Colors */
+.category-card[data-category="ai"] {
+    color: #8B5CF6;
+}
+
 .category-card[data-category="seo"] {
-    color: #5B8DEE;
+    color: #10B981;
 }
 
 .category-card[data-category="ads"] {
-    color: #6BBF59;
-}
-
-.category-card[data-category="sns"] {
-    color: #A855F7;
-}
-
-.category-card[data-category="marketing"] {
     color: #F59E0B;
 }
 
-.category-card[data-category="web"] {
-    color: #8B7355;
+.category-card[data-category="sns"] {
+    color: #06B6D4;
+}
+
+.category-card[data-category="marketing"] {
+    color: #EC4899;
+}
+
+.category-card[data-category="web-production"] {
+    color: #6366F1;
 }
 
 .category-card[data-category="misc"] {
-    color: #9CA3AF;
+    color: #8B7355;
 }
 
 /* ==========================================

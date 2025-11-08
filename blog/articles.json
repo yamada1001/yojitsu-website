@@ -1,6 +1,55 @@
 {
   "articles": [
     {
+      "id": "claude-code-terminal-guide",
+      "title": "次のステップへ！Claude Code・ターミナル活用ガイド",
+      "category": "ai",
+      "categoryLabel": "AI",
+      "date": "2025-11-08",
+      "excerpt": "Claude/ChatGPTを使っている人におすすめ！次のステップとしてClaude Codeとターミナル（コマンドライン）の活用方法を、初心者でも分かりやすく解説します。",
+      "path": "blog/posts/claude-code-terminal-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "ai-gradient-3",
+        "colors": ["#A78BFA", "#8B5CF6"]
+      },
+      "svgIcon": {
+        "type": "terminal",
+        "elements": [
+          {"type": "rect", "x": 80, "y": 80, "width": 240, "height": 140, "rx": 8, "fill": "white", "opacity": 0.3},
+          {"type": "path", "d": "M100 110 L120 120 L100 130", "stroke": "white", "strokeWidth": 3, "fill": "none", "opacity": 0.7},
+          {"type": "rect", "x": 140, "y": 115, "width": 60, "height": 10, "rx": 2, "fill": "white", "opacity": 0.6},
+          {"type": "rect", "x": 100, "y": 145, "width": 180, "height": 6, "rx": 1, "fill": "white", "opacity": 0.4},
+          {"type": "rect", "x": 100, "y": 160, "width": 140, "height": 6, "rx": 1, "fill": "white", "opacity": 0.4}
+        ]
+      }
+    },
+    {
+      "id": "media-mix-seven-hits",
+      "title": "メディアミックス×エンティティ×セブンヒッツ理論で実現する統合マーケティング戦略",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-08",
+      "excerpt": "メディアミックス、エンティティ、セブンヒッツ理論の基本から、これらを統合した効果的なマーケティング戦略まで、初心者にもわかりやすく解説します。",
+      "path": "blog/posts/media-mix-seven-hits.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "marketing-gradient-5",
+        "colors": ["#F472B6", "#BE185D"]
+      },
+      "svgIcon": {
+        "type": "network-nodes",
+        "elements": [
+          {"type": "circle", "cx": 120, "cy": 100, "r": 20, "fill": "white", "opacity": 0.5},
+          {"type": "circle", "cx": 200, "cy": 100, "r": 20, "fill": "white", "opacity": 0.5},
+          {"type": "circle", "cx": 280, "cy": 100, "r": 20, "fill": "white", "opacity": 0.5},
+          {"type": "circle", "cx": 160, "cy": 160, "r": 20, "fill": "white", "opacity": 0.5},
+          {"type": "circle", "cx": 240, "cy": 160, "r": 20, "fill": "white", "opacity": 0.5},
+          {"type": "path", "d": "M140 100 L180 100 M220 100 L260 100 M140 110 L150 150 M210 110 L230 150 M180 150 L220 150", "stroke": "white", "strokeWidth": 2, "opacity": 0.4}
+        ]
+      }
+    },
+    {
       "id": "what-is-pm",
       "title": "PMって何してくれるの？プロジェクト管理の役割",
       "category": "marketing",

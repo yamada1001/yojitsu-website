@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <base href="/yojitsu-website/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claude/ChatGPTを使っている人におすすめ！次のステップとしてClaude Codeとターミナル（コマンドライン）の活用方法を、初心者でも分かりやすく解説します。">
+    <meta name="keywords" content="Claude Code,ターミナル,コマンドライン,CLI,ChatGPT,Claude,AI活用">
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="次のステップへ！Claude Code・ターミナル活用ガイド | 余日（ヨジツ）">
+    <meta property="og:description" content="Claude/ChatGPTを使っている人におすすめ！次のステップとしてClaude Codeとターミナル（コマンドライン）の活用方法を解説します。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yamada1001.github.io/yojitsu-website/blog/posts/claude-code-terminal-guide.html">
+    <meta property="og:image" content="https://yamada1001.github.io/yojitsu-website/assets/images/blog/claude-code-terminal.jpg">
+    <meta property="og:site_name" content="余日（ヨジツ）">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="次のステップへ！Claude Code・ターミナル活用ガイド">
+    <meta name="twitter:description" content="Claude/ChatGPTを使っている人におすすめ！次のステップとしてClaude Codeとターミナル（コマンドライン）の活用方法を解説します。">
+    <meta name="twitter:image" content="https://yamada1001.github.io/yojitsu-website/assets/images/blog/claude-code-terminal.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yamada1001.github.io/yojitsu-website/blog/posts/claude-code-terminal-guide.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/blog.css">
+
+    <title>次のステップへ！Claude Code・ターミナル活用ガイド | 余日（ヨジツ）</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "次のステップへ！Claude Code・ターミナル活用ガイド",
+      "description": "Claude/ChatGPTを使っている人におすすめ！次のステップとしてClaude Codeとターミナル（コマンドライン）の活用方法を解説します。",
+      "image": "https://yamada1001.github.io/yojitsu-website/assets/images/blog/claude-code-terminal.jpg",
+      "datePublished": "2025-11-08T09:00:00+09:00",
+      "dateModified": "2025-11-08T09:00:00+09:00",
+      "author": {
+        "@type": "Person",
+        "name": "余日"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "余日",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yamada1001.github.io/yojitsu-website/assets/images/logo.png"
+        }
+      },
+      "articleSection": "AI",
+      "keywords": ["Claude Code", "ターミナル", "コマンドライン", "CLI", "ChatGPT", "Claude", "AI活用"]
+    }
+    </script>
+</head>
+<body>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">ホーム</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="blog/index.html" class="breadcrumb__link">ブログ</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="blog/categories/ai.html" class="breadcrumb__link">AI</a>
+            </li>
+            <li class="breadcrumb__item">
+                <span class="breadcrumb__current">Claude Code・ターミナル活用ガイド</span>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Article -->
+    <article class="article">
+        <div class="article__container">
+            <div class="article__main">
+                <!-- Article Header -->
+                <header class="article__header">
+                <div class="article__meta">
+                    <span class="article__category article__category--ai">AI</span>
+                    <time class="article__date" datetime="2025-11-08">2025.11.08</time>
+                </div>
+                <h1 class="article__title">次のステップへ！Claude Code・ターミナル活用ガイド</h1>
+                <p class="article__excerpt">
+                    ChatGPTやClaudeを使ってブログ記事を書いたり、アイデア出しをしたりしている人、多いですよね！でも「なんか物足りない」「もっと効率的に作業したい」と感じていませんか？そんなあなたにおすすめなのが、Claude Codeとターミナル（コマンドライン）の活用です。難しそう？いえいえ、実は意外と簡単なんですよ！この記事では、初心者でも分かりやすく、次のステップに進むための方法を解説します！
+                </p>
+            </header>
+
+            <!-- Featured Image -->
+            <div class="article__featured-image">
+                <svg viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="800" height="450" fill="#F5F5F5"/>
+                    <!-- Terminal window -->
+                    <rect x="150" y="100" width="500" height="250" rx="8" fill="#1E1E1E" stroke="#8B7355" stroke-width="3"/>
+                    <!-- Terminal header -->
+                    <rect x="150" y="100" width="500" height="35" rx="8" fill="#2D2D2D"/>
+                    <circle cx="170" cy="117.5" r="6" fill="#FF5F56"/>
+                    <circle cx="190" cy="117.5" r="6" fill="#FFBD2E"/>
+                    <circle cx="210" cy="117.5" r="6" fill="#27C93F"/>
+                    <!-- Terminal content -->
+                    <text x="170" y="165" fill="#4EC9B0" font-family="monospace" font-size="16">$ claude-code --help</text>
+                    <text x="170" y="195" fill="#D4D4D4" font-family="monospace" font-size="14">&gt; AI-powered coding assistant</text>
+                    <text x="170" y="220" fill="#D4D4D4" font-family="monospace" font-size="14">&gt; Ready to help you code!</text>
+                    <rect x="170" y="235" width="10" height="16" fill="#4EC9B0" opacity="0.8"/>
+                    <!-- Decorative elements -->
+                    <path d="M250 380 L300 360 L350 380 L400 350" stroke="#8B7355" stroke-width="2" fill="none" opacity="0.5"/>
+                    <circle cx="250" cy="380" r="4" fill="#8B7355" opacity="0.5"/>
+                    <circle cx="300" cy="360" r="4" fill="#8B7355" opacity="0.5"/>
+                    <circle cx="350" cy="380" r="4" fill="#8B7355" opacity="0.5"/>
+                    <circle cx="400" cy="350" r="4" fill="#8B7355" opacity="0.5"/>
+                </svg>
+            </div>
+
+            <!-- Table of Contents -->
+            <nav class="article__toc">
+                <h2 class="article__toc-title">目次</h2>
+                <ul class="article__toc-list">
+                    <li><a href="#why-next-step">1. なぜ次のステップが必要なの？</a></li>
+                    <li><a href="#what-is-claude-code">2. Claude Codeって何？どう便利なの？</a></li>
+                    <li><a href="#what-is-terminal">3. ターミナル（コマンドライン）って何？</a></li>
+                    <li><a href="#benefits">4. Claude Codeとターミナルを使うメリット</a></li>
+                    <li><a href="#getting-started">5. 実際に始めてみよう！</a></li>
+                    <li><a href="#basic-commands">6. 覚えておきたい基本コマンド</a></li>
+                    <li><a href="#practical-examples">7. 実際の活用例</a></li>
+                    <li><a href="#tips">8. 初心者向けのコツとヒント</a></li>
+                    <li><a href="#conclusion">まとめ</a></li>
+                </ul>
+            </nav>
+
+            <!-- Article Content -->
+            <div class="article__content">
+                <h2 id="why-next-step"><i class="fas fa-question-circle" style="color: #8B7355; margin-right: 0.5rem;"></i>なぜ次のステップが必要なの？</h2>
+
+                <p>
+                    ChatGPTやClaudeのWebブラウザ版を使っている人は多いと思います。文章を書いてもらったり、質問に答えてもらったり、便利ですよね！
+                </p>
+
+                <p>
+                    でも、こんな経験ありませんか？
+                </p>
+
+                <div style="background: #FFF3CD; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FFC107; margin: 1.5rem 0;">
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.75rem;"><i class="fas fa-exclamation-circle" style="color: #FF9800; margin-right: 0.5rem;"></i>AIに作ってもらった文章を、コピペして、別のツールに貼り付けて...って面倒</li>
+                        <li style="margin-bottom: 0.75rem;"><i class="fas fa-exclamation-circle" style="color: #FF9800; margin-right: 0.5rem;"></i>複数のファイルを一度に編集したいけど、一つずつやるしかない</li>
+                        <li style="margin-bottom: 0.75rem;"><i class="fas fa-exclamation-circle" style="color: #FF9800; margin-right: 0.5rem;"></i>会話の履歴が長くなりすぎて、前の内容を見失う</li>
+                        <li><i class="fas fa-exclamation-circle" style="color: #FF9800; margin-right: 0.5rem;"></i>もっと本格的な作業をAIにやってもらいたい！</li>
+                    </ul>
+                </div>
+
+                <p>
+                    そんな「もう一歩先に進みたい！」という人にぴったりなのが、<strong>Claude Code</strong>と<strong>ターミナル</strong>なんです！
+                </p>
+
+                <blockquote>
+                    <i class="fas fa-quote-left" style="color: #8B7355; margin-right: 0.5rem;"></i>
+                    Webブラウザ版のAIは「会話」が中心ですが、Claude Codeは「作業」が中心。ファイルの作成・編集、コードの実行、複数タスクの自動化など、AIがあなたの「作業パートナー」になってくれますよ！
+                    <i class="fas fa-quote-right" style="color: #8B7355; margin-left: 0.5rem;"></i>
+                </blockquote>
+
+                <h2 id="what-is-claude-code"><i class="fas fa-code" style="color: #8B7355; margin-right: 0.5rem;"></i>Claude Codeって何？どう便利なの？</h2>
+
+                <p>
+                    <strong>Claude Code</strong>は、Anthropic社が提供する、ターミナル（コマンドライン）で動くAIアシスタントです。ブラウザ版のClaudeと同じAI技術を使っていますが、「会話」だけでなく「実際の作業」ができるのが大きな違いです！
+                </p>
+
+                <h3><i class="fas fa-star" style="color: #8B7355; margin-right: 0.5rem;"></i>Claude Codeの特徴</h3>
+
+                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <ul style="margin: 0; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 1rem;"><strong><i class="fas fa-file-code" style="color: #8B7355; margin-right: 0.5rem;"></i>ファイルの直接操作：</strong>AIが直接ファイルを作成・編集・削除できます。コピペの手間がゼロに！</li>
+                        <li style="margin-bottom: 1rem;"><strong><i class="fas fa-terminal" style="color: #8B7355; margin-right: 0.5rem;"></i>コマンド実行：</strong>AIがコマンドを実行して、結果を確認しながら作業を進めてくれます</li>
+                        <li style="margin-bottom: 1rem;"><strong><i class="fas fa-folder-open" style="color: #8B7355; margin-right: 0.5rem;"></i>プロジェクト全体を理解：</strong>複数のファイルを横断的に理解して、整合性のある編集ができます</li>
+                        <li style="margin-bottom: 1rem;"><strong><i class="fas fa-sync-alt" style="color: #8B7355; margin-right: 0.5rem;"></i>自動化：</strong>繰り返し作業を自動化して、時間を大幅に節約できます</li>
+                        <li><strong><i class="fas fa-shield-alt" style="color: #8B7355; margin-right: 0.5rem;"></i>セキュリティ：</strong>すべての操作は確認を求めてくるので、安心して使えます</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-balance-scale" style="color: #8B7355; margin-right: 0.5rem;"></i>ブラウザ版Claudeとの違い</h3>
+
+                <div style="margin: 2rem 0;">
+                    <svg viewBox="0 0 700 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="350" y="30" text-anchor="middle" fill="#8B7355" font-size="20" font-weight="bold">ブラウザ版 vs Claude Code</text>
+                        <!-- Browser Claude Column -->
+                        <rect x="50" y="60" width="280" height="320" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                        <text x="190" y="90" text-anchor="middle" fill="#2196F3" font-size="18" font-weight="bold">ブラウザ版Claude</text>
+                        <text x="70" y="120" fill="#333" font-size="14" font-weight="bold">良い点:</text>
+                        <text x="70" y="145" fill="#333" font-size="13">• すぐ使える</text>
+                        <text x="70" y="165" fill="#333" font-size="13">• 会話がしやすい</text>
+                        <text x="70" y="185" fill="#333" font-size="13">• 初心者に優しい</text>
+                        <text x="70" y="215" fill="#666" font-size="14" font-weight="bold">イマイチな点:</text>
+                        <text x="70" y="240" fill="#666" font-size="13">• コピペが必要</text>
+                        <text x="70" y="260" fill="#666" font-size="13">• 1ファイルずつ</text>
+                        <text x="70" y="280" fill="#666" font-size="13">• 自動化できない</text>
+                        <text x="70" y="300" fill="#666" font-size="13">• 履歴が長くなる</text>
+                        <!-- Claude Code Column -->
+                        <rect x="370" y="60" width="280" height="320" rx="8" fill="#F3E8FF" stroke="#8B5CF6" stroke-width="2"/>
+                        <text x="510" y="90" text-anchor="middle" fill="#8B5CF6" font-size="18" font-weight="bold">Claude Code</text>
+                        <text x="390" y="120" fill="#333" font-size="14" font-weight="bold">良い点:</text>
+                        <text x="390" y="145" fill="#333" font-size="13">• ファイル直接編集</text>
+                        <text x="390" y="165" fill="#333" font-size="13">• 複数ファイル対応</text>
+                        <text x="390" y="185" fill="#333" font-size="13">• 自動化可能</text>
+                        <text x="390" y="205" fill="#333" font-size="13">• 作業が早い</text>
+                        <text x="390" y="235" fill="#666" font-size="14" font-weight="bold">イマイチな点:</text>
+                        <text x="390" y="260" fill="#666" font-size="13">• 最初の設定必要</text>
+                        <text x="390" y="280" fill="#666" font-size="13">• コマンド慣れ要</text>
+                        <text x="390" y="300" fill="#666" font-size="13">• 英語が多い</text>
+                    </svg>
+                </div>
+
+                <p>
+                    つまり、<strong>ブラウザ版は「気軽に相談」、Claude Codeは「本格的に作業」</strong>という感じですね！
+                </p>
+
+                <h2 id="what-is-terminal"><i class="fas fa-terminal" style="color: #8B7355; margin-right: 0.5rem;"></i>ターミナル（コマンドライン）って何？</h2>
+
+                <p>
+                    「ターミナル」とか「コマンドライン」って聞くと、「黒い画面に文字だけ...難しそう！」って思いますよね。でも実は、マウスでポチポチやるよりも、慣れると<strong>めちゃくちゃ速くて便利</strong>なんです！
+                </p>
+
+                <h3><i class="fas fa-laptop-code" style="color: #8B7355; margin-right: 0.5rem;"></i>ターミナルって何？</h3>
+
+                <p>
+                    ターミナルは、<strong>文字（テキスト）でコンピュータに指示を出すツール</strong>です。マウスでアイコンをクリックする代わりに、「こうして！」と文字で命令する感じですね。
+                </p>
+
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #2E7D32;"><i class="fas fa-lightbulb" style="color: #4CAF50; margin-right: 0.5rem;"></i>たとえば...</h4>
+                    <p style="margin-bottom: 0.5rem;"><strong>マウスでやる場合：</strong></p>
+                    <ol style="margin-top: 0.5rem;">
+                        <li>フォルダを開く</li>
+                        <li>「新規作成」をクリック</li>
+                        <li>「フォルダ」を選択</li>
+                        <li>名前を入力</li>
+                        <li>Enterキー</li>
+                    </ol>
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;"><strong>ターミナルでやる場合：</strong></p>
+                    <pre style="background: #1E1E1E; color: #4EC9B0; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace;">mkdir 新しいフォルダ</pre>
+                    <p style="margin-top: 0.5rem; color: #2E7D32;">これだけ！一瞬で完了です！</p>
+                </div>
+
+                <h3><i class="fas fa-desktop" style="color: #8B7355; margin-right: 0.5rem;"></i>どこにあるの？</h3>
+
+                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #8B7355; margin: 1.5rem 0;">
+                    <p><strong><i class="fab fa-windows" style="color: #0078D4; margin-right: 0.5rem;"></i>Windowsの場合：</strong></p>
+                    <ul>
+                        <li>「コマンドプロンプト」または「PowerShell」</li>
+                        <li>スタートメニューで「cmd」や「powershell」と検索すればOK！</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem;"><strong><i class="fab fa-apple" style="color: #555; margin-right: 0.5rem;"></i>Macの場合：</strong></p>
+                    <ul>
+                        <li>「ターミナル」</li>
+                        <li>Spotlightで「ターミナル」と検索すればOK！</li>
+                    </ul>
+                </div>
+
+                <h2 id="benefits"><i class="fas fa-trophy" style="color: #8B7355; margin-right: 0.5rem;"></i>Claude Codeとターミナルを使うメリット</h2>
+
+                <p>
+                    実際に使うと、こんなに便利なんですよ！
+                </p>
+
+                <h3>1. 作業スピードが爆上がり！</h3>
+                <p>
+                    コピペの手間がなくなるので、作業時間が<strong>1/3〜1/5</strong>に短縮できます。10個のファイルを編集する作業も、一度に指示すればAIがサクサク進めてくれます！
+                </p>
+
+                <h3>2. ミスが減る</h3>
+                <p>
+                    人間がコピペすると、どうしてもミスが起きますよね。でもClaude Codeなら、AIが正確にファイルを編集してくれるので、<strong>コピペミスがゼロ</strong>になります！
+                </p>
+
+                <h3>3. 複雑な作業もお任せ</h3>
+                <p>
+                    「このフォルダの中の全てのファイルから、特定の文字列を探して置き換えて！」みたいな、手作業だと大変な作業も、AIに頼めば一瞬です！
+                </p>
+
+                <h3>4. 学習しながら成長できる</h3>
+                <p>
+                    Claude Codeが実行するコマンドを見ることで、<strong>自然とコマンドやプログラミングの知識</strong>が身につきます。「あ、こういう時はこのコマンドを使うんだ！」と学びながら作業できますよ！
+                </p>
+
+                <div style="margin: 2rem 0;">
+                    <svg viewBox="0 0 700 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="350" y="30" text-anchor="middle" fill="#8B7355" font-size="20" font-weight="bold">作業時間の比較</text>
+                        <!-- Before (Manual) -->
+                        <rect x="80" y="80" width="180" height="200" rx="8" fill="#FFEBEE" stroke="#F44336" stroke-width="2"/>
+                        <text x="170" y="110" text-anchor="middle" fill="#C62828" font-size="16" font-weight="bold">手作業の場合</text>
+                        <rect x="100" y="130" width="140" height="40" fill="#EF5350"/>
+                        <text x="170" y="155" text-anchor="middle" fill="white" font-size="14">ファイル作成: 5分</text>
+                        <rect x="100" y="180" width="140" height="40" fill="#EF5350"/>
+                        <text x="170" y="205" text-anchor="middle" fill="white" font-size="14">コピペ: 10分</text>
+                        <rect x="100" y="230" width="140" height="40" fill="#EF5350"/>
+                        <text x="170" y="255" text-anchor="middle" fill="white" font-size="14">確認・修正: 5分</text>
+                        <text x="170" y="300" text-anchor="middle" fill="#C62828" font-size="18" font-weight="bold">合計: 20分</text>
+                        <!-- Arrow -->
+                        <path d="M280 180 L340 180" stroke="#8B7355" stroke-width="3"/>
+                        <polygon points="340,180 330,175 330,185" fill="#8B7355"/>
+                        <text x="310" y="165" text-anchor="middle" fill="#8B7355" font-size="14" font-weight="bold">VS</text>
+                        <!-- After (Claude Code) -->
+                        <rect x="360" y="80" width="260" height="200" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+                        <text x="490" y="110" text-anchor="middle" fill="#2E7D32" font-size="16" font-weight="bold">Claude Code の場合</text>
+                        <rect x="380" y="130" width="220" height="40" fill="#66BB6A"/>
+                        <text x="490" y="155" text-anchor="middle" fill="white" font-size="14">指示を出す: 1分</text>
+                        <rect x="380" y="180" width="220" height="40" fill="#66BB6A"/>
+                        <text x="490" y="205" text-anchor="middle" fill="white" font-size="14">AIが自動処理: 2分</text>
+                        <rect x="380" y="230" width="220" height="40" fill="#66BB6A"/>
+                        <text x="490" y="255" text-anchor="middle" fill="white" font-size="14">最終確認: 1分</text>
+                        <text x="490" y="300" text-anchor="middle" fill="#2E7D32" font-size="18" font-weight="bold">合計: 4分</text>
+                        <!-- Time saved -->
+                        <rect x="250" y="310" width="200" height="35" rx="8" fill="#FF9800"/>
+                        <text x="350" y="333" text-anchor="middle" fill="white" font-size="16" font-weight="bold">16分の時短！</text>
+                    </svg>
+                </div>
+
+                <h2 id="getting-started"><i class="fas fa-play-circle" style="color: #8B7355; margin-right: 0.5rem;"></i>実際に始めてみよう！</h2>
+
+                <p>
+                    それでは、実際にClaude Codeを使い始める手順を見ていきましょう！
+                </p>
+
+                <h3><i class="fas fa-download" style="color: #8B7355; margin-right: 0.5rem;"></i>ステップ1：Claude Codeをインストール</h3>
+
+                <p>
+                    まずは、Claude Codeをパソコンにインストールします。<a href="https://claude.ai/download" target="_blank" rel="noopener noreferrer">公式サイト</a>からダウンロードできますよ！
+                </p>
+
+                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0;"><i class="fas fa-info-circle" style="color: #2196F3; margin-right: 0.5rem;"></i>インストール方法（簡単版）</h4>
+                    <ol>
+                        <li>公式サイトにアクセス</li>
+                        <li>自分のOS（WindowsまたはMac）に合ったバージョンをダウンロード</li>
+                        <li>ダウンロードしたファイルを実行してインストール</li>
+                        <li>指示に従ってセットアップを完了</li>
+                    </ol>
+                    <p style="margin-bottom: 0; color: #666; font-size: 0.9rem;"><i class="fas fa-clock" style="color: #FF9800; margin-right: 0.5rem;"></i>所要時間：約5〜10分</p>
+                </div>
+
+                <h3><i class="fas fa-rocket" style="color: #8B7355; margin-right: 0.5rem;"></i>ステップ2：初めての起動</h3>
+
+                <p>
+                    インストールが完了したら、ターミナルを開いて以下のコマンドを入力してみましょう！
+                </p>
+
+                <pre style="background: #1E1E1E; color: #4EC9B0; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace;">claude-code</pre>
+
+                <p>
+                    これで、Claude Codeが起動します！最初は簡単なログイン手続きがあるので、指示に従って進めてくださいね。
+                </p>
+
+                <h3><i class="fas fa-comment-dots" style="color: #8B7355; margin-right: 0.5rem;"></i>ステップ3：最初の会話</h3>
+
+                <p>
+                    起動したら、まずは簡単な指示を出してみましょう！
+                </p>
+
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #2E7D32;"><i class="fas fa-comment" style="color: #4CAF50; margin-right: 0.5rem;"></i>最初の指示の例</h4>
+                    <pre style="background: #1E1E1E; color: #4EC9B0; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; margin: 0.5rem 0;">「hello.txt」というファイルを作成して、「Hello, Claude Code!」と書いてください</pre>
+                    <p style="margin-top: 1rem; margin-bottom: 0;">これだけで、AIがファイルを作成してくれます！簡単でしょ？</p>
+                </div>
+
+                <h2 id="basic-commands"><i class="fas fa-list-check" style="color: #8B7355; margin-right: 0.5rem;"></i>覚えておきたい基本コマンド</h2>
+
+                <p>
+                    ターミナルを使う上で、これだけは覚えておくと便利なコマンドを紹介します！中学生でも分かるように、日本語で説明しますね！
+                </p>
+
+                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #8B7355; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0;"><i class="fas fa-star" style="color: #FFD700; margin-right: 0.5rem;"></i>これだけは覚えよう！超基本5コマンド</h4>
+
+                    <p><strong>1. <code style="background: #1E1E1E; color: #4EC9B0; padding: 0.2rem 0.5rem; border-radius: 3px;">pwd</code></strong> - 今いる場所を確認</p>
+                    <p style="margin-left: 1.5rem; color: #666;">「今どのフォルダにいるの？」を確認するコマンドです</p>
+
+                    <p style="margin-top: 1rem;"><strong>2. <code style="background: #1E1E1E; color: #4EC9B0; padding: 0.2rem 0.5rem; border-radius: 3px;">ls</code></strong> - ファイル一覧を表示</p>
+                    <p style="margin-left: 1.5rem; color: #666;">今いるフォルダの中身を見るコマンドです</p>
+
+                    <p style="margin-top: 1rem;"><strong>3. <code style="background: #1E1E1E; color: #4EC9B0; padding: 0.2rem 0.5rem; border-radius: 3px;">cd フォルダ名</code></strong> - フォルダを移動</p>
+                    <p style="margin-left: 1.5rem; color: #666;">別のフォルダに移動するコマンドです</p>
+
+                    <p style="margin-top: 1rem;"><strong>4. <code style="background: #1E1E1E; color: #4EC9B0; padding: 0.2rem 0.5rem; border-radius: 3px;">mkdir フォルダ名</code></strong> - 新しいフォルダを作成</p>
+                    <p style="margin-left: 1.5rem; color: #666;">新しいフォルダを作るコマンドです</p>
+
+                    <p style="margin-top: 1rem;"><strong>5. <code style="background: #1E1E1E; color: #4EC9B0; padding: 0.2rem 0.5rem; border-radius: 3px;">claude-code</code></strong> - Claude Codeを起動</p>
+                    <p style="margin-left: 1.5rem; color: #666; margin-bottom: 0;">Claude Codeを起動するコマンドです</p>
+                </div>
+
+                <blockquote>
+                    <i class="fas fa-quote-left" style="color: #8B7355; margin-right: 0.5rem;"></i>
+                    <strong>覚えられない？大丈夫！</strong>Claude Codeに「〇〇するコマンドを教えて」って聞けば、AIが教えてくれますよ！最初は全部覚えなくてもOKです！
+                    <i class="fas fa-quote-right" style="color: #8B7355; margin-left: 0.5rem;"></i>
+                </blockquote>
+
+                <h2 id="practical-examples"><i class="fas fa-lightbulb" style="color: #8B7355; margin-right: 0.5rem;"></i>実際の活用例</h2>
+
+                <p>
+                    「理論は分かったけど、実際どう使うの？」という人のために、具体的な活用例を紹介します！
+                </p>
+
+                <h3>活用例1：ブログ記事を一気に作成</h3>
+
+                <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #1976D2;"><i class="fas fa-pen" style="color: #2196F3; margin-right: 0.5rem;"></i>こんな指示でOK！</h4>
+                    <pre style="background: #1E1E1E; color: #D4D4D4; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; margin: 0.5rem 0;">「夏のおすすめスポット」について3つの記事を作成してください。
+各記事は別々のファイルに保存して、
+ファイル名は「spot1.md」「spot2.md」「spot3.md」にしてください。
+各記事は1000文字程度で、見出しと本文を含めてください。</pre>
+                    <p style="margin-top: 1rem; margin-bottom: 0;">これだけで、AIが3つのファイルを作って、それぞれに記事を書いてくれます！</p>
+                </div>
+
+                <h3>活用例2：複数のファイルを一括編集</h3>
+
+                <div style="background: #F3E5F5; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #7B1FA2;"><i class="fas fa-edit" style="color: #9C27B0; margin-right: 0.5rem;"></i>こんな指示でOK！</h4>
+                    <pre style="background: #1E1E1E; color: #D4D4D4; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; margin: 0.5rem 0;">このフォルダ内のすべての.txtファイルから、
+「旧バージョン」という文字列を「新バージョン」に置き換えてください。
+変更したファイル名も教えてください。</pre>
+                    <p style="margin-top: 1rem; margin-bottom: 0;">手作業だと30分かかる作業が、わずか数秒で完了！</p>
+                </div>
+
+                <h3>活用例3：Webサイトのページを自動生成</h3>
+
+                <div style="background: #FFF3E0; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #E65100;"><i class="fas fa-globe" style="color: #FF9800; margin-right: 0.5rem;"></i>こんな指示でOK！</h4>
+                    <pre style="background: #1E1E1E; color: #D4D4D4; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; margin: 0.5rem 0;">シンプルな自己紹介ページを作成してください。
+HTMLとCSSファイルを作成して、
+以下の内容を含めてください：
+- 名前：山田太郎
+- 職業：Webマーケター
+- 趣味：旅行、カメラ
+- 自己紹介文を考えて追加してください</pre>
+                    <p style="margin-top: 1rem; margin-bottom: 0;">HTMLとCSSの知識がなくても、きれいなページが完成します！</p>
+                </div>
+
+                <h3>活用例4：データ分析レポートの生成</h3>
+
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #2E7D32;"><i class="fas fa-chart-bar" style="color: #4CAF50; margin-right: 0.5rem;"></i>こんな指示でOK！</h4>
+                    <pre style="background: #1E1E1E; color: #D4D4D4; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; margin: 0.5rem 0;">data.csvファイルを読み込んで、
+月別の売上集計と簡単な分析レポートを
+「report.md」というファイルに作成してください。
+グラフは不要で、表形式で見やすくまとめてください。</pre>
+                    <p style="margin-top: 1rem; margin-bottom: 0;">ExcelやGoogleスプレッドシートを使わなくても、分析レポートが完成！</p>
+                </div>
+
+                <div style="margin: 2rem 0;">
+                    <svg viewBox="0 0 700 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="350" y="30" text-anchor="middle" fill="#8B7355" font-size="20" font-weight="bold">Claude Code 活用シーン</text>
+                        <!-- 4 use cases in a grid -->
+                        <rect x="50" y="60" width="140" height="100" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                        <text x="120" y="85" text-anchor="middle" fill="#1976D2" font-size="14" font-weight="bold">ブログ作成</text>
+                        <text x="60" y="105" fill="#666" font-size="11">• 記事の自動生成</text>
+                        <text x="60" y="125" fill="#666" font-size="11">• 複数記事対応</text>
+                        <text x="60" y="145" fill="#666" font-size="11">• SEO最適化</text>
+
+                        <rect x="230" y="60" width="140" height="100" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+                        <text x="300" y="85" text-anchor="middle" fill="#7B1FA2" font-size="14" font-weight="bold">一括編集</text>
+                        <text x="240" y="105" fill="#666" font-size="11">• 置換作業</text>
+                        <text x="240" y="125" fill="#666" font-size="11">• フォーマット統一</text>
+                        <text x="240" y="145" fill="#666" font-size="11">• 時短効果大</text>
+
+                        <rect x="410" y="60" width="140" height="100" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+                        <text x="480" y="85" text-anchor="middle" fill="#E65100" font-size="14" font-weight="bold">Web制作</text>
+                        <text x="420" y="105" fill="#666" font-size="11">• HTML/CSS生成</text>
+                        <text x="420" y="125" fill="#666" font-size="11">• レスポンシブ対応</text>
+                        <text x="420" y="145" fill="#666" font-size="11">• 初心者でも安心</text>
+
+                        <rect x="50" y="180" width="140" height="100" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+                        <text x="120" y="205" text-anchor="middle" fill="#2E7D32" font-size="14" font-weight="bold">データ分析</text>
+                        <text x="60" y="225" fill="#666" font-size="11">• CSV処理</text>
+                        <text x="60" y="245" fill="#666" font-size="11">• レポート自動生成</text>
+                        <text x="60" y="265" fill="#666" font-size="11">• 統計処理</text>
+
+                        <rect x="230" y="180" width="140" height="100" rx="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="2"/>
+                        <text x="300" y="205" text-anchor="middle" fill="#C2185B" font-size="14" font-weight="bold">自動化</text>
+                        <text x="240" y="225" fill="#666" font-size="11">• 繰り返し作業</text>
+                        <text x="240" y="245" fill="#666" font-size="11">• バックアップ</text>
+                        <text x="240" y="265" fill="#666" font-size="11">• 定期実行</text>
+
+                        <rect x="410" y="180" width="140" height="100" rx="8" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+                        <text x="480" y="205" text-anchor="middle" fill="#F57F17" font-size="14" font-weight="bold">学習</text>
+                        <text x="420" y="225" fill="#666" font-size="11">• コード解説</text>
+                        <text x="420" y="245" fill="#666" font-size="11">• エラー対処</text>
+                        <text x="420" y="265" fill="#666" font-size="11">• ベストプラクティス</text>
+                    </svg>
+                </div>
+
+                <h2 id="tips"><i class="fas fa-magic" style="color: #8B7355; margin-right: 0.5rem;"></i>初心者向けのコツとヒント</h2>
+
+                <p>
+                    Claude Codeをもっと使いこなすための、初心者向けのコツを紹介します！
+                </p>
+
+                <h3><i class="fas fa-comment-medical" style="color: #8B7355; margin-right: 0.5rem;"></i>1. 具体的に指示を出そう</h3>
+
+                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                    <p><strong style="color: #F44336;"><i class="fas fa-times-circle" style="margin-right: 0.5rem;"></i>NG例：</strong></p>
+                    <pre style="background: #FFEBEE; color: #C62828; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">ブログ記事を書いて</pre>
+
+                    <p style="margin-top: 1rem;"><strong style="color: #4CAF50;"><i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>OK例：</strong></p>
+                    <pre style="background: #E8F5E9; color: #2E7D32; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">「夏のおすすめカフェ」というテーマで、
+1500文字程度のブログ記事を「cafe.md」というファイルに作成してください。
+見出しを3つ含めて、カジュアルなトーンで書いてください。</pre>
+
+                    <p style="margin-top: 1rem; margin-bottom: 0; color: #666;"><i class="fas fa-lightbulb" style="color: #FFC107; margin-right: 0.5rem;"></i>具体的に指示すればするほど、望んだ結果が得られます！</p>
+                </div>
+
+                <h3><i class="fas fa-shield-check" style="color: #8B7355; margin-right: 0.5rem;"></i>2. 確認を怠らない</h3>
+
+                <p>
+                    Claude Codeは優秀ですが、AIなのでたまに間違えることもあります。<strong>必ず最終確認</strong>をしましょう！
+                </p>
+
+                <ul>
+                    <li>生成されたファイルの内容を確認</li>
+                    <li>意図しない変更がないかチェック</li>
+                    <li>重要なファイルは事前にバックアップ</li>
+                </ul>
+
+                <h3><i class="fas fa-graduation-cap" style="color: #8B7355; margin-right: 0.5rem;"></i>3. 少しずつ学んでいこう</h3>
+
+                <p>
+                    最初から全部を理解する必要はありません！<strong>使いながら少しずつ</strong>覚えていきましょう。
+                </p>
+
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #4CAF50; margin: 1.5rem 0;">
+                    <h4 style="margin-top: 0; color: #2E7D32;"><i class="fas fa-route" style="color: #4CAF50; margin-right: 0.5rem;"></i>おすすめの学習順序</h4>
+                    <ol>
+                        <li><strong>第1週：</strong>簡単なファイル作成・編集を試す</li>
+                        <li><strong>第2週：</strong>複数ファイルの操作に挑戦</li>
+                        <li><strong>第3週：</strong>基本的なコマンドを覚える</li>
+                        <li><strong>第4週：</strong>自動化に挑戦</li>
+                    </ol>
+                    <p style="margin-bottom: 0; color: #2E7D32;"><i class="fas fa-star" style="color: #FFD700; margin-right: 0.5rem;"></i>1ヶ月後には、かなり使いこなせるようになってますよ！</p>
+                </div>
+
+                <h3><i class="fas fa-question-circle" style="color: #8B7355; margin-right: 0.5rem;"></i>4. 困ったらClaude Codeに聞こう</h3>
+
+                <p>
+                    「このエラーどういう意味？」「もっと良い方法ない？」など、<strong>分からないことはClaude Codeに直接聞く</strong>のが一番です！
+                </p>
+
+                <blockquote>
+                    <i class="fas fa-quote-left" style="color: #8B7355; margin-right: 0.5rem;"></i>
+                    Claude Codeは「作業パートナー」であり「先生」でもあります。遠慮なく質問しましょう！「初心者なので分かりやすく教えてください」と伝えれば、丁寧に説明してくれますよ！
+                    <i class="fas fa-quote-right" style="color: #8B7355; margin-left: 0.5rem;"></i>
+                </blockquote>
+
+                <h3><i class="fas fa-users" style="color: #8B7355; margin-right: 0.5rem;"></i>5. コミュニティを活用しよう</h3>
+
+                <p>
+                    Claude CodeやAIツールに関する情報は、TwitterやYouTube、ブログなどで日々共有されています。他のユーザーの活用事例を見ることで、新しい発見がありますよ！
+                </p>
+
+                <h2 id="conclusion"><i class="fas fa-flag-checkered" style="color: #8B7355; margin-right: 0.5rem;"></i>まとめ：次のステップへ踏み出そう！</h2>
+
+                <p>
+                    ChatGPTやClaudeのブラウザ版で満足していた人も、Claude Codeとターミナルを使えば、<strong>作業効率が飛躍的にアップ</strong>します！
+                </p>
+
+                <div style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); padding: 2rem; border-radius: 8px; border-left: 4px solid #4CAF50; margin: 1.5rem 0;">
+                    <h3 style="margin-top: 0; color: #2E7D32;"><i class="fas fa-lightbulb" style="color: #FFC107; margin-right: 0.5rem;"></i>この記事のポイント</h3>
+                    <ol style="margin: 0; padding-left: 1.5rem; font-weight: 500;">
+                        <li style="margin-bottom: 0.75rem;"><strong>Claude Code</strong>は、ブラウザ版より「作業」に特化したAIツール</li>
+                        <li style="margin-bottom: 0.75rem;"><strong>ターミナル</strong>は難しそうに見えて、実は便利で速い</li>
+                        <li style="margin-bottom: 0.75rem;"><strong>作業時間が1/3〜1/5</strong>に短縮できる</li>
+                        <li style="margin-bottom: 0.75rem;"><strong>ファイルの直接編集・複数ファイル対応・自動化</strong>が可能</li>
+                        <li style="margin-bottom: 0.75rem;"><strong>初心者でも少しずつ学べば</strong>1ヶ月で使いこなせる</li>
+                        <li>困ったら<strong>Claude Codeに聞けば</strong>教えてくれる</li>
+                    </ol>
+                </div>
+
+                <p>
+                    最初は「難しそう...」と感じるかもしれませんが、一度使い始めれば<strong>その便利さに驚くはず</strong>です！ブラウザ版では実現できなかった、本格的な作業効率化を体験してみてください！
+                </p>
+
+                <p>
+                    「百聞は一見に如かず」とはよく言ったもので、まずは<strong>実際に触ってみること</strong>が大切です。簡単なファイル作成から始めて、徐々にステップアップしていきましょう！
+                </p>
+
+                <div style="background: #8B7355; color: white; padding: 2rem; border-radius: 8px; margin: 2rem 0; text-align: center;">
+                    <h3 style="color: white; margin-top: 0;"><i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>さあ、次のステップへ！</h3>
+                    <p style="margin-bottom: 1.5rem;">
+                        Claude Codeとターミナルで、あなたの作業効率を次のレベルに引き上げましょう！<br>
+                        今日から始められる、新しいAI活用の世界が待っていますよ！
+                    </p>
+                    <a href="https://claude.ai/download" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #8B7355; padding: 1rem 2rem; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
+                        <i class="fas fa-download" style="margin-right: 0.5rem;"></i>Claude Codeをダウンロード
+                    </a>
+                </div>
+
+                <p>
+                    この記事が、あなたの「次のステップ」を踏み出すきっかけになれば嬉しいです！もっと詳しいAI活用方法については、<a href="blog/posts/ai-marketing-chatgpt-claude.html">ChatGPT・Claude活用術の記事</a>もチェックしてみてくださいね！
+                </p>
+
+                <div style="padding: 1.5rem; background: #f0f7ff; border-radius: 8px; border-left: 4px solid #2196F3; margin-top: 2rem;">
+                    <h4 style="margin-top: 0; color: #1976D2;"><i class="fas fa-book-open" style="color: #2196F3; margin-right: 0.5rem;"></i>参考リンク</h4>
+                    <ul style="margin-bottom: 0; font-size: 0.9rem; line-height: 1.8;">
+                        <li><a href="https://claude.ai/download" target="_blank" rel="noopener noreferrer">Claude Code 公式サイト</a></li>
+                        <li><a href="https://docs.anthropic.com/claude/docs" target="_blank" rel="noopener noreferrer">Claude 公式ドキュメント</a></li>
+                        <li><a href="blog/posts/ai-marketing-chatgpt-claude.html">ChatGPT・Claude活用術：Webマーケターのための生成AI実践ガイド</a></li>
+                        <li><a href="blog/posts/seo-basics.html">SEO対策の基本：検索順位を上げるための5つのポイント</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="article__share">
+                <h3 class="article__share-title">この記事をシェア</h3>
+                <div class="article__share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=https://yamada1001.github.io/yojitsu-website/blog/posts/claude-code-terminal-guide.html&text=次のステップへ！Claude Code・ターミナル活用ガイド" class="share-btn" target="_blank" rel="noopener" aria-label="Twitterでシェア">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://yamada1001.github.io/yojitsu-website/blog/posts/claude-code-terminal-guide.html" class="share-btn" target="_blank" rel="noopener" aria-label="Facebookでシェア">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                        </svg>
+                        Facebook
+                    </a>
+                    <a href="https://social-plugins.line.me/lineit/share?url=https://yamada1001.github.io/yojitsu-website/blog/posts/claude-code-terminal-guide.html" class="share-btn" target="_blank" rel="noopener" aria-label="LINEでシェア">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                        LINE
+                    </a>
+                    <button class="share-btn" onclick="navigator.clipboard.writeText('https://yamada1001.github.io/yojitsu-website/blog/posts/claude-code-terminal-guide.html')" aria-label="URLをコピー">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+                            <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+                        </svg>
+                        URLをコピー
+                    </button>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <aside class="related-posts">
+                <h2 class="related-posts__title">関連記事</h2>
+                <div class="related-posts__grid">
+                    <!-- Related Post 1 -->
+                    <article class="blog-card">
+                        <a href="blog/posts/ai-marketing-chatgpt-claude.html" class="blog-card__link">
+                            <div class="blog-card__image">
+                                <svg class="blog-card__placeholder" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="400" height="250" fill="#F3E8FF"/>
+                                    <circle cx="120" cy="125" r="40" fill="#8B5CF6"/>
+                                    <rect x="180" y="90" width="150" height="70" rx="8" fill="#8B5CF6" opacity="0.6"/>
+                                    <path d="M120 125 L180 100 M120 125 L180 150" stroke="#8B5CF6" stroke-width="3"/>
+                                </svg>
+                            </div>
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span class="blog-card__category blog-card__category--ai">AI</span>
+                                    <time class="blog-card__date" datetime="2025-01-20">2025.01.20</time>
+                                </div>
+                                <h3 class="blog-card__title">ChatGPT・Claude活用術：Webマーケターのための生成AI実践ガイド</h3>
+                                <p class="blog-card__excerpt">
+                                    WebマーケターがChatGPTやClaudeを実務で効果的に活用するための具体的な方法を解説します。
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Related Post 2 -->
+                    <article class="blog-card">
+                        <a href="blog/posts/seo-basics.html" class="blog-card__link">
+                            <div class="blog-card__image">
+                                <svg class="blog-card__placeholder" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="400" height="250" fill="#F5F5F5"/>
+                                    <circle cx="200" cy="125" r="50" stroke="#8B7355" stroke-width="2" fill="none"/>
+                                    <path d="M200 85v80M160 125h80" stroke="#8B7355" stroke-width="2"/>
+                                    <circle cx="200" cy="125" r="10" fill="#8B7355"/>
+                                </svg>
+                            </div>
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span class="blog-card__category">SEO</span>
+                                    <time class="blog-card__date" datetime="2025-01-15">2025.01.15</time>
+                                </div>
+                                <h3 class="blog-card__title">SEO対策の基本：検索順位を上げるための5つのポイント</h3>
+                                <p class="blog-card__excerpt">
+                                    SEO対策の基本的な考え方から、検索順位を上げるための具体的な施策まで解説します。
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Related Post 3 -->
+                    <article class="blog-card">
+                        <a href="blog/posts/content-marketing.html" class="blog-card__link">
+                            <div class="blog-card__image">
+                                <svg class="blog-card__placeholder" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="400" height="250" fill="#F5F5F5"/>
+                                    <rect x="120" y="70" width="160" height="110" rx="4" stroke="#8B7355" stroke-width="2" fill="none"/>
+                                    <path d="M140 100h120M140 120h100M140 140h110M140 160h90" stroke="#8B7355" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span class="blog-card__category">マーケティング</span>
+                                    <time class="blog-card__date" datetime="2025-01-01">2025.01.01</time>
+                                </div>
+                                <h3 class="blog-card__title">2025年版：効果的なコンテンツマーケティング戦略の立て方</h3>
+                                <p class="blog-card__excerpt">
+                                    コンテンツマーケティングで成果を出すための戦略設計から実行まで解説します。
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </aside>
+            </div><!-- /.article__main -->
+
+            <!-- Sidebar TOC -->
+            <aside class="article__sidebar">
+                <nav class="sidebar-toc" id="sidebarToc">
+                    <!-- JavaScriptで自動生成 -->
+                </nav>
+            </aside>
+        </div><!-- /.article__container -->
+    </article>
+
+    <!-- Floating TOC Button (Mobile) -->
+    <button class="floating-toc-btn" id="floatingTocBtn" aria-label="目次を開く">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+
+    <!-- Mobile TOC Modal -->
+    <div class="mobile-toc-modal" id="mobileTocModal">
+        <div class="mobile-toc-modal__content">
+            <div class="mobile-toc-modal__header">
+                <h3 class="mobile-toc-modal__title">目次</h3>
+                <button class="mobile-toc-modal__close" id="closeMobileToc" aria-label="閉じる">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <ul class="mobile-toc-modal__list" id="mobileTocList">
+                <!-- JavaScriptで自動生成 -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">余日</a>
+                    <p class="footer__tagline">本質に向き合い、成長を加速させる</p>
+                </div>
+                <nav class="footer__nav">
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">サービス</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html#services">SEO対策</a></li>
+                            <li><a href="index.html#services">広告運用代行</a></li>
+                            <li><a href="index.html#services">プランニング</a></li>
+                            <li><a href="index.html#services">SNS運用代行</a></li>
+                            <li><a href="index.html#services">CRM導入支援</a></li>
+                            <li><a href="index.html#services">サイト制作/PM・ディレクション</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">ブログ</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="blog/categories/seo.html">SEO</a></li>
+                            <li><a href="blog/categories/ads.html">広告運用</a></li>
+                            <li><a href="blog/categories/sns.html">SNS</a></li>
+                            <li><a href="blog/categories/marketing.html">マーケティング</a></li>
+                            <li><a href="blog/categories/ai.html">AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">企業情報</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html#about">プロフィール</a></li>
+                            <li><a href="index.html#contact">お問い合わせ</a></li>
+                            <li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+                            <li><a href="/tokushoho.html">特定商取引法に基づく表記</a></li>
+                            <li><a href="/disclaimer.html">免責事項</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 余日（ヨジツ）All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/js/main.js"></script>
+    <script src="src/js/blog.js"></script>
+</body>
+</html>

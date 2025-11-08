@@ -173,22 +173,16 @@ class BlogLoader {
     }
 
     /**
-     * カテゴリーカードHTMLを生成
+     * カテゴリーカードHTMLを生成（横並びピルスタイル）
      */
     generateCategoryCard(category) {
         const count = this.getArticleCountByCategory(category.id);
         return `
-            <article class="category-card">
-                <a href="blog/categories/${category.id}.html" class="category-card__link">
-                    <div class="category-card__icon" style="background: linear-gradient(135deg, ${category.color}, ${category.color}dd);">
-                        <i class="fas fa-${category.icon}"></i>
-                    </div>
-                    <div class="category-card__content">
-                        <h3 class="category-card__title">${category.label}</h3>
-                        <div class="category-card__count">${count}件の記事</div>
-                    </div>
-                </a>
-            </article>
+            <button class="category-card" data-category="${category.id}">
+                <i class="fas fa-${category.icon} category-card__icon"></i>
+                <span class="category-card__title">${category.label}</span>
+                <span class="category-card__count">${count}</span>
+            </button>
         `;
     }
 
