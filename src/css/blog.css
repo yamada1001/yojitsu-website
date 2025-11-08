@@ -1144,6 +1144,99 @@ html, body {
 }
 
 /* ==========================================
+   Related Articles (Note-style)
+   ========================================== */
+.article__related {
+    margin: 4rem 0 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border-light);
+}
+
+.article__related-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.article__related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Note風のコンパクトなカードデザイン */
+.article__related-grid .blog-card {
+    border: 1px solid var(--color-border-light);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: var(--color-bg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.article__related-grid .blog-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--color-border);
+}
+
+.article__related-grid .blog-card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.article__related-grid .blog-card__header {
+    display: none; /* 画像を非表示にしてコンパクトに */
+}
+
+.article__related-grid .blog-card__content {
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__related-grid .blog-card__category {
+    font-size: 0.6875rem;
+    margin-bottom: 0.5rem;
+}
+
+.article__related-grid .blog-card__title {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.article__related-grid .blog-card__excerpt {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.article__related-grid .blog-card__meta {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border-light);
+}
+
+.article__related-grid .blog-card__date {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+/* ==========================================
    Responsive Design
    ========================================== */
 @media (max-width: 968px) {
@@ -1209,26 +1302,30 @@ html, body {
     }
 
     .category-cards {
-        padding: 3rem 0;
+        padding: 1.5rem 0;
     }
 
     .category-cards__grid {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
+        /* 横スクロールデザインを維持 */
+        gap: 0.5rem;
     }
 
     .category-card {
-        padding: 2rem 1.5rem;
+        /* コンパクトなデザインに */
+        padding: 0.5rem 0.875rem;
+        font-size: 0.8125rem;
     }
 
     .category-card__icon {
-        width: 60px;
-        height: 60px;
+        font-size: 0.875rem;
     }
 
-    .category-card__icon svg {
-        width: 36px;
-        height: 36px;
+    .category-card__title {
+        font-size: 0.8125rem;
+    }
+
+    .category-card__count {
+        font-size: 0.6875rem;
     }
 
     .blog-list {
@@ -1298,6 +1395,35 @@ html, body {
 
     .breadcrumb__list {
         padding: 0 1.5rem;
+    }
+
+    /* 関連記事のSP版スタイル */
+    .article__related {
+        margin: 2.5rem 0 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    .article__related-title {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
+    .article__related-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .article__related-grid .blog-card__content {
+        padding: 1rem;
+    }
+
+    .article__related-grid .blog-card__title {
+        font-size: 0.875rem;
+    }
+
+    .article__related-grid .blog-card__excerpt {
+        font-size: 0.75rem;
+        -webkit-line-clamp: 1;
     }
 }
 

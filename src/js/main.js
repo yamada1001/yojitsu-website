@@ -90,11 +90,11 @@
         // スクロール停止検知（デバウンス）
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(() => {
-            // スクロール停止後3秒でヘッダーを表示
+            // スクロール停止後2秒でヘッダーを表示
             if (currentScroll > 50) {
                 header.classList.add('visible');
             }
-        }, 3000);
+        }, 2000);
 
         lastScroll = currentScroll;
     });
