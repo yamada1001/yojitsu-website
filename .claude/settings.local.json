@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(blog/articles.json)"
+      "Bash(blog/articles.json)",
+      "Bash(xargs kill:*)",
+      "Bash({} ;)"
     ],
     "deny": [],
     "ask": []
