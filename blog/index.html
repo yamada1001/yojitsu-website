@@ -75,6 +75,31 @@
                 <h1 class="page-header__title">Blog</h1>
                 <p class="page-header__subtitle">Webマーケティングの実践的なノウハウを発信</p>
                 <p class="page-header__count"><!-- 自動生成されます --></p>
+
+                <!-- Search Box -->
+                <div class="blog-search">
+                    <div class="blog-search__wrapper">
+                        <i class="fas fa-search blog-search__icon"></i>
+                        <input
+                            type="text"
+                            id="blogSearchInput"
+                            class="blog-search__input"
+                            placeholder="記事を検索..."
+                            aria-label="記事を検索"
+                        />
+                        <button
+                            id="blogSearchClear"
+                            class="blog-search__clear"
+                            aria-label="検索をクリア"
+                            style="display: none;"
+                        >
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="blogSearchResults" class="blog-search__results" style="display: none;">
+                        <!-- 検索結果がここに表示されます -->
+                    </div>
+                </div>
             </div>
         </section>
 

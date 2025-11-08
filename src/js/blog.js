@@ -576,6 +576,136 @@
         }
     }
 
+    // ==========================================
+    // ブログ記事検索機能
+    // ==========================================
+    const searchInput = document.getElementById('blogSearchInput');
+    const searchClear = document.getElementById('blogSearchClear');
+    const searchResults = document.getElementById('blogSearchResults');
+
+    if (searchInput && window.blogLoader) {
+        let searchTimeout;
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim();
+
+            // クリアボタンの表示/非表示
+            if (query.length > 0) {
+                searchClear.style.display = 'flex';
+            } else {
+                searchClear.style.display = 'none';
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            // デバウンス処理
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                performSearch(query);
+            }, 300);
+        });
+
+        // クリアボタン
+        if (searchClear) {
+            searchClear.addEventListener('click', () => {
+                searchInput.value = '';
+                searchClear.style.display = 'none';
+                searchResults.style.display = 'none';
+                searchInput.focus();
+            });
+        }
+
+        // 検索実行
+        function performSearch(query) {
+            if (!query || query.length < 2) {
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            window.blogLoader.loadArticles().then(() => {
+                const articles = window.blogLoader.articlesData;
+                const queryLower = query.toLowerCase();
+
+                // タイトル、抜粋、カテゴリで検索
+                const results = articles.filter(article => {
+                    return (
+                        article.title.toLowerCase().includes(queryLower) ||
+                        article.excerpt.toLowerCase().includes(queryLower) ||
+                        article.categoryLabel.toLowerCase().includes(queryLower)
+                    );
+                });
+
+                displaySearchResults(results, query);
+            });
+        }
+
+        // 検索結果表示
+        function displaySearchResults(results, query) {
+            if (results.length === 0) {
+                searchResults.innerHTML = `
+                    <div class="blog-search__no-results">
+                        <i class="fas fa-search" style="font-size: 2rem; margin-bottom: 0.5rem; opacity: 0.3;"></i>
+                        <p>「${query}」に一致する記事が見つかりませんでした</p>
+                    </div>
+                `;
+                searchResults.style.display = 'block';
+                return;
+            }
+
+            const categoryColors = {
+                'ai': '#8B5CF6',
+                'seo': '#10B981',
+                'ads': '#F59E0B',
+                'sns': '#06B6D4',
+                'marketing': '#EC4899',
+                'web-production': '#6366F1',
+                'misc': '#8B7355'
+            };
+
+            const resultsHTML = `
+                <div class="blog-search__results-count">
+                    ${results.length}件の記事が見つかりました
+                </div>
+                ${results.map(article => {
+                    const categoryColor = categoryColors[article.category] || '#8B7355';
+                    return `
+                        <div class="blog-search__result-item">
+                            <a href="${article.path}" class="blog-search__result-link">
+                                <div class="blog-search__result-title">${article.title}</div>
+                                <div class="blog-search__result-excerpt">${article.excerpt}</div>
+                                <div class="blog-search__result-meta">
+                                    <span class="blog-search__result-category" style="background: ${categoryColor}20; color: ${categoryColor};">
+                                        ${article.categoryLabel}
+                                    </span>
+                                    <span class="blog-search__result-date">${article.date}</span>
+                                </div>
+                            </a>
+                        </div>
+                    `;
+                }).join('')}
+            `;
+
+            searchResults.innerHTML = resultsHTML;
+            searchResults.style.display = 'block';
+        }
+
+        // ESCキーで検索結果を閉じる
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && searchResults.style.display === 'block') {
+                searchInput.value = '';
+                searchClear.style.display = 'none';
+                searchResults.style.display = 'none';
+            }
+        });
+
+        // 検索結果外をクリックで閉じる
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.style.display = 'none';
+            }
+        });
+    }
+
     console.log('Blog JavaScript setup complete');
 
 })();
