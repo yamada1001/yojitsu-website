@@ -1,0 +1,14 @@
+# robots.txt for yojitsu.com
+
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /docs/
+
+# Legal pages - allow crawling but set to noindex in meta tags
+Allow: /privacy-policy.html
+Allow: /tokushoho.html
+Allow: /disclaimer.html
+
+# Sitemap
+Sitemap: https://yojitsu.com/sitemap.xml
