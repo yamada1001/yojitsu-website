@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(blog/articles.json)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
