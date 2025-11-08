@@ -452,7 +452,11 @@
                 '施策ロードマップ作成',
                 '予算配分の最適化提案'
             ],
-            note: 'データに基づいた戦略で、確実に成果を出すための道筋を描きます。'
+            note: 'データに基づいた戦略で、確実に成果を出すための道筋を描きます。',
+            relatedArticles: [
+                { title: 'プランナーとは？提案活動の全貌', url: 'blog/posts/what-is-planner.html' },
+                { title: 'Webマーケターとは？仕事内容をわかりやすく解説', url: 'blog/posts/what-is-web-marketer.html' }
+            ]
         },
         sns: {
             title: 'SNS運用代行',
@@ -500,7 +504,10 @@
                 'ステークホルダー調整',
                 'リスク管理・課題解決'
             ],
-            note: '複数のプロジェクトや大規模案件において、円滑な進行と高品質な成果物を保証します。'
+            note: '複数のプロジェクトや大規模案件において、円滑な進行と高品質な成果物を保証します。',
+            relatedArticles: [
+                { title: 'PMって何してくれるの？プロジェクト管理の役割', url: 'blog/posts/what-is-pm.html' }
+            ]
         }
     };
 
@@ -510,6 +517,22 @@
 
         const servicesHTML = service.services.map(s => `<li>${s}</li>`).join('');
 
+        let relatedArticlesHTML = '';
+        if (service.relatedArticles && service.relatedArticles.length > 0) {
+            const articlesListHTML = service.relatedArticles.map(article =>
+                `<li><a href="${article.url}" style="color: var(--color-primary); text-decoration: underline;">→ ${article.title}</a></li>`
+            ).join('');
+
+            relatedArticlesHTML = `
+                <div style="background: var(--color-bg-alt); padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                    <h3 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.125rem;">関連記事</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        ${articlesListHTML}
+                    </ul>
+                </div>
+            `;
+        }
+
         serviceModalBody.innerHTML = `
             <h2>${service.title}</h2>
             <p>${service.description}</p>
@@ -517,6 +540,7 @@
                 ${servicesHTML}
             </ul>
             <p class="service-note">${service.note}</p>
+            ${relatedArticlesHTML}
         `;
 
         serviceModal.classList.add('active');
