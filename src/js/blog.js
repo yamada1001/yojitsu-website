@@ -503,6 +503,68 @@
         lazyImages.forEach(img => imageObserver.observe(img));
     }
 
+    // ==========================================
+    // 日付の自動フォーマット
+    // ==========================================
+    const articleDates = document.querySelectorAll('.article__date');
+
+    articleDates.forEach(dateElement => {
+        const datetime = dateElement.getAttribute('datetime');
+
+        if (datetime) {
+            // datetime属性から日付を取得してフォーマット
+            const date = new Date(datetime);
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+
+            // YYYY.MM.DD形式で表示
+            dateElement.textContent = `${year}.${month}.${day}`;
+
+            console.log('Date formatted:', datetime, '->', dateElement.textContent);
+        }
+    });
+
+    // ==========================================
+    // 更新日の自動表示
+    // ==========================================
+    const articleMeta = document.querySelector('.article__meta');
+
+    if (articleMeta) {
+        // Structured Dataから更新日を取得
+        const structuredData = document.querySelector('script[type="application/ld+json"]');
+
+        if (structuredData) {
+            try {
+                const data = JSON.parse(structuredData.textContent);
+                const publishedDate = data.datePublished;
+                const modifiedDate = data.dateModified;
+
+                // 投稿日と更新日が異なる場合のみ更新日を表示
+                if (publishedDate && modifiedDate && publishedDate !== modifiedDate) {
+                    const modDate = new Date(modifiedDate);
+                    const year = modDate.getFullYear();
+                    const month = String(modDate.getMonth() + 1).padStart(2, '0');
+                    const day = String(modDate.getDate()).padStart(2, '0');
+
+                    // 更新日を追加
+                    const updateInfo = document.createElement('span');
+                    updateInfo.className = 'article__updated';
+                    updateInfo.innerHTML = `<i class="fas fa-sync-alt" style="margin-right: 0.3rem;"></i>更新: ${year}.${month}.${day}`;
+                    updateInfo.style.marginLeft = '1rem';
+                    updateInfo.style.fontSize = '0.875rem';
+                    updateInfo.style.color = 'var(--color-text-light)';
+
+                    articleMeta.appendChild(updateInfo);
+
+                    console.log('Update date displayed:', modifiedDate);
+                }
+            } catch (error) {
+                console.error('Failed to parse structured data:', error);
+            }
+        }
+    }
+
     console.log('Blog JavaScript setup complete');
 
 })();
