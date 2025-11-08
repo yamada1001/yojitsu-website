@@ -4,7 +4,8 @@
       "Bash(blog/articles.json)",
       "Bash(xargs kill:*)",
       "Bash({} ;)",
-      "Bash(do sed -i '' '/<li class=\"\"nav__item\"\"><a href=\"\"[^\"\"]*#about\"\" class=\"\"nav__link\"\">プロフィール<\\/a><\\/li>/d' \"$file\")"
+      "Bash(do sed -i '' '/<li class=\"\"nav__item\"\"><a href=\"\"[^\"\"]*#about\"\" class=\"\"nav__link\"\">プロフィール<\\/a><\\/li>/d' \"$file\")",
+      "WebFetch(domain:localhost)"
     ],
     "deny": [],
     "ask": []
