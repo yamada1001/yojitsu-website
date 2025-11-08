@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "id": "hubspot-crm-guide",
+      "title": "HubSpot CRM導入ガイド：効果的な顧客管理で営業を10倍効率化",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-01-09",
+      "excerpt": "HubSpot CRMの導入を検討している企業向けに、必要性の判断基準から導入効果、具体的な導入手順まで徹底解説。営業効率化とマーケティング自動化を実現します。",
+      "path": "blog/posts/hubspot-crm-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "marketing-gradient-6",
+        "colors": ["#EC4899", "#DB2777"]
+      },
+      "svgIcon": {
+        "type": "crm",
+        "elements": [
+          {"type": "circle", "cx": 200, "cy": 100, "r": 25, "fill": "white", "opacity": 0.6},
+          {"type": "circle", "cx": 150, "cy": 150, "r": 20, "fill": "white", "opacity": 0.5},
+          {"type": "circle", "cx": 250, "cy": 150, "r": 20, "fill": "white", "opacity": 0.5},
+          {"type": "path", "d": "M200 125 L150 130 M200 125 L250 130", "stroke": "white", "strokeWidth": 3, "opacity": 0.6}
+        ]
+      }
+    },
+    {
+      "id": "ahrefs-seo-guide",
+      "title": "Ahrefs完全ガイド：SEO分析ツールの使い方を徹底解説",
+      "category": "seo",
+      "categoryLabel": "SEO",
+      "date": "2025-01-09",
+      "excerpt": "キーワード調査から競合分析、被リンクチェックまで、AhrefsのSEO分析機能を実践的に活用する方法を解説します。初心者でも使える具体的な手順を紹介。",
+      "path": "blog/posts/ahrefs-seo-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "seo-gradient-4",
+        "colors": ["#10B981", "#059669"]
+      },
+      "svgIcon": {
+        "type": "analytics",
+        "elements": [
+          {"type": "rect", "x": 120, "y": 160, "width": 30, "height": 50, "fill": "white", "opacity": 0.6},
+          {"type": "rect", "x": 160, "y": 130, "width": 30, "height": 80, "fill": "white", "opacity": 0.7},
+          {"type": "rect", "x": 200, "y": 100, "width": 30, "height": 110, "fill": "white", "opacity": 0.8},
+          {"type": "circle", "cx": 260, "cy": 120, "r": 15, "fill": "white", "opacity": 0.5}
+        ]
+      }
+    },
+    {
+      "id": "instagram-algorithm-meta-ads",
+      "title": "Instagram最新アルゴリズム攻略法＆Meta広告の効果的な使い方",
+      "category": "sns",
+      "categoryLabel": "SNS",
+      "date": "2025-01-09",
+      "excerpt": "2025年最新のInstagramアルゴリズムの傾向と対策、Meta広告（Facebook/Instagram広告）で高いROIを実現する運用テクニックを解説します。",
+      "path": "blog/posts/instagram-algorithm-meta-ads.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "sns-gradient-2",
+        "colors": ["#06B6D4", "#0891B2"]
+      },
+      "svgIcon": {
+        "type": "instagram",
+        "elements": [
+          {"type": "rect", "x": 140, "y": 90, "width": 120, "height": 120, "rx": 25, "fill": "white", "opacity": 0.4},
+          {"type": "circle", "cx": 200, "cy": 150, "r": 40, "stroke": "white", "strokeWidth": 4, "fill": "none", "opacity": 0.6},
+          {"type": "circle", "cx": 240, "cy": 110, "r": 8, "fill": "white", "opacity": 0.7}
+        ]
+      }
+    },
+    {
+      "id": "web-director-role",
+      "title": "Webディレクターとは？仕事内容・必要なスキル・キャリアパスを徹底解説",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
+      "date": "2025-01-09",
+      "excerpt": "Webサイト制作におけるWebディレクターの役割、PMとの違い、求められるスキル、キャリアパスまで詳しく解説。これから目指す方必見の実践ガイドです。",
+      "path": "blog/posts/web-director-role.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "web-production-gradient-1",
+        "colors": ["#6366F1", "#4F46E5"]
+      },
+      "svgIcon": {
+        "type": "director",
+        "elements": [
+          {"type": "rect", "x": 120, "y": 100, "width": 160, "height": 100, "rx": 8, "fill": "white", "opacity": 0.4},
+          {"type": "circle", "cx": 200, "cy": 130, "r": 15, "fill": "white", "opacity": 0.7},
+          {"type": "rect", "x": 140, "y": 160, "width": 50, "height": 8, "rx": 2, "fill": "white", "opacity": 0.6},
+          {"type": "rect", "x": 140, "y": 175, "width": 80, "height": 8, "rx": 2, "fill": "white", "opacity": 0.5}
+        ]
+      }
+    },
+    {
       "id": "seo-future-2025",
       "title": "SEOは終わった？AI時代の検索市場の真実とメディアミックス戦略",
       "category": "seo",

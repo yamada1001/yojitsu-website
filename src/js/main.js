@@ -430,6 +430,7 @@
             ],
             note: '中長期的な視点で、持続可能な集客基盤を構築します。',
             relatedArticles: [
+                { title: 'Ahrefs完全ガイド：SEO分析ツールの使い方を徹底解説', url: 'blog/posts/ahrefs-seo-guide.html' },
                 { title: 'SEOは終わった？AI時代の検索市場の真実', url: 'blog/posts/seo-future-2025.html' },
                 { title: 'SEO対策の基本：検索順位を上げるための5つのポイント', url: 'blog/posts/seo-basics.html' },
                 { title: 'メディアミックス×エンティティ×セブンヒッツ理論で実現する統合マーケティング戦略', url: 'blog/posts/media-mix-seven-hits.html' }
@@ -473,7 +474,11 @@
                 'インフルエンサーマーケティング',
                 '分析レポート・改善提案'
             ],
-            note: 'ブランドの世界観を大切にしながら、フォロワーとの関係性を深めます。'
+            note: 'ブランドの世界観を大切にしながら、フォロワーとの関係性を深めます。',
+            relatedArticles: [
+                { title: 'Instagram最新アルゴリズム攻略法＆Meta広告の効果的な使い方', url: 'blog/posts/instagram-algorithm-meta-ads.html' },
+                { title: 'SNS運用で成果を出すための戦略設計と実践ガイド', url: 'blog/posts/sns-strategy.html' }
+            ]
         },
         crm: {
             title: 'CRM導入支援',
@@ -485,7 +490,11 @@
                 '運用トレーニング',
                 '活用方法のコンサルティング'
             ],
-            note: 'HubSpot、Salesforceなど、各種CRMツールに対応しています。'
+            note: 'HubSpot、Salesforceなど、各種CRMツールに対応しています。',
+            relatedArticles: [
+                { title: 'HubSpot CRM導入ガイド：効果的な顧客管理で営業を10倍効率化', url: 'blog/posts/hubspot-crm-guide.html' },
+                { title: 'Webマーケターとは？仕事内容をわかりやすく解説', url: 'blog/posts/what-is-web-marketer.html' }
+            ]
         },
         website: {
             title: 'サイト制作/ディレクション',
@@ -497,7 +506,11 @@
                 'CMS導入（WordPress等）',
                 '公開後の運用・保守サポート'
             ],
-            note: 'マーケティング視点を取り入れた、成果の出るWebサイトを制作します。'
+            note: 'マーケティング視点を取り入れた、成果の出るWebサイトを制作します。',
+            relatedArticles: [
+                { title: 'Webディレクターとは？仕事内容・必要なスキル・キャリアパスを徹底解説', url: 'blog/posts/web-director-role.html' },
+                { title: 'PMって何してくれるの？プロジェクト管理の役割', url: 'blog/posts/what-is-pm.html' }
+            ]
         },
         pm: {
             title: 'PM/ディレクション',
@@ -511,6 +524,7 @@
             ],
             note: '複数のプロジェクトや大規模案件において、円滑な進行と高品質な成果物を保証します。',
             relatedArticles: [
+                { title: 'Webディレクターとは？仕事内容・必要なスキル・キャリアパスを徹底解説', url: 'blog/posts/web-director-role.html' },
                 { title: 'PMって何してくれるの？プロジェクト管理の役割', url: 'blog/posts/what-is-pm.html' }
             ]
         }

@@ -236,21 +236,6 @@ class BlogLoader {
             gridContainer.innerHTML = articles.map(article =>
                 this.generateBlogCard(article, true)
             ).join('');
-
-            // スマホの場合は「すべての記事を見る」ボタンを追加
-            if (isMobile) {
-                const viewAllButton = document.createElement('div');
-                viewAllButton.style.cssText = 'text-align: center; margin-top: 2rem;';
-                viewAllButton.innerHTML = `
-                    <a href="blog/index.html" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                        <span class="btn__text">すべての記事を見る</span>
-                        <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20">
-                            <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" fill="none"/>
-                        </svg>
-                    </a>
-                `;
-                gridContainer.parentElement.appendChild(viewAllButton);
-            }
         }
 
         // カテゴリータブを生成
