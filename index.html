@@ -32,7 +32,12 @@
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="preload" href="src/js/main.js" as="script">
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/styles.css">
@@ -47,8 +52,8 @@
         "name": "余日",
         "alternateName": "ヨジツ",
         "url": "https://yojitsu.com",
-        "description": "Webマーケティングの総合支援サービス。SEO対策、広告運用代行、SNS運用代行、CRM導入支援、サイト制作・ディレクションを提供。",
-        "serviceType": ["SEO対策", "広告運用代行", "SNS運用代行", "CRM導入支援", "サイト制作"],
+        "description": "Webマーケティングの総合支援サービス。SEO対策、広告運用代行、プランニング、SNS運用代行、CRM導入支援、サイト制作・ディレクション、PM/ディレクションを提供。",
+        "serviceType": ["SEO対策", "広告運用代行", "プランニング", "SNS運用代行", "CRM導入支援", "サイト制作", "PM/ディレクション"],
         "priceRange": "応相談"
     }
     </script>
@@ -190,7 +195,7 @@
                             <div class="ai-banner__price-value">100,000円〜</div>
                         </div>
                     </div>
-                    <a href="/ai-services.html" class="ai-banner__btn">
+                    <a href="ai-services.html" class="ai-banner__btn">
                         <span>詳しく見る</span>
                         <svg width="20" height="20" viewBox="0 0 20 20">
                             <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -346,6 +351,21 @@
             <h3 class="service-item__title">サイト制作/ディレクション</h3>
             <p class="service-item__desc">戦略設計から制作、運用まで一貫してサポート</p>
         </div>
+
+        <!-- PM/ディレクション -->
+        <div class="service-item" data-scroll-reveal data-service="pm">
+            <div class="service-item__icon">
+                <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="25" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M 40 25 L 40 40 L 50 50" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="30" cy="55" r="4" fill="currentColor"/>
+                    <circle cx="50" cy="55" r="4" fill="currentColor"/>
+                    <circle cx="40" cy="65" r="4" fill="currentColor"/>
+                </svg>
+            </div>
+            <h3 class="service-item__title">PM/ディレクション</h3>
+            <p class="service-item__desc">プロジェクト全体の統括管理と品質担保を実現</p>
+        </div>
     </div>
 
     <!-- 実績について -->
@@ -437,93 +457,39 @@
 
         <!-- Contact Section -->
         <section class="contact" id="contact">
-            <div class="contact__grid">
-                <div class="contact__info" data-scroll-reveal>
-                    <span class="section-label">Contact</span>
-                    <h2 class="section-title">お問い合わせ</h2>
-                    <p class="contact__desc">
-                        ご相談・お見積もりなど、<br>
-                        お気軽にお問い合わせください。
-                    </p>
-                    <div class="contact__details">
-                        <div class="contact-detail">
-                            <div class="contact-detail__icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <div class="contact-detail__text">
-                                <div class="contact-detail__label">Email</div>
-                                <div class="contact-detail__value">yamada1881r@gmail.com</div>
-                            </div>
+            <div class="contact__center" data-scroll-reveal>
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="contact__desc">
+                    ご相談・お見積もりなど、<br>
+                    お気軽にメールにてお問い合わせください。
+                </p>
+                <div class="contact__details">
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
                         </div>
-                        <div class="contact-detail">
-                            <div class="contact-detail__icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12 6 12 12 16 14"/>
-                                </svg>
-                            </div>
-                            <div class="contact-detail__text">
-                                <div class="contact-detail__label">Response Time</div>
-                                <div class="contact-detail__value">1-2営業日以内</div>
-                            </div>
+                        <div class="contact-detail__text">
+                            <div class="contact-detail__label">Email</div>
+                            <a href="mailto:yamada1881r@gmail.com" class="contact-detail__value contact-detail__email">yamada1881r@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="contact-detail__text">
+                            <div class="contact-detail__label">Response Time</div>
+                            <div class="contact-detail__value">1-2営業日以内</div>
                         </div>
                     </div>
                 </div>
-
-                <form class="contact__form" id="contactForm" data-scroll-reveal>
-                    <div class="form-field">
-                        <label for="name" class="form-label">お名前 *</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
-                        <span class="form-error" id="nameError"></span>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="email" class="form-label">メールアドレス *</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                        <span class="form-error" id="emailError"></span>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="service" class="form-label">ご相談内容 *</label>
-                        <select id="service" name="service" class="form-input" required>
-                            <option value="">選択してください</option>
-                            <option value="seo">SEO対策</option>
-                            <option value="ads">広告運用代行</option>
-                            <option value="planning">プランニング</option>
-                            <option value="sns">SNS運用代行</option>
-                            <option value="crm">CRM導入支援</option>
-                            <option value="website">サイト制作</option>
-                            <option value="other">その他</option>
-                        </select>
-                        <span class="form-error" id="serviceError"></span>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="message" class="form-label">メッセージ *</label>
-                        <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
-                        <span class="form-error" id="messageError"></span>
-                    </div>
-
-                    <div class="form-field">
-                        <label class="form-checkbox">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            <span class="form-checkbox-text">
-                                <a href="/privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意する
-                            </span>
-                        </label>
-                        <span class="form-error" id="privacyError"></span>
-                    </div>
-
-                    <button type="submit" class="btn btn--primary btn--full">
-                        <span class="btn__text">送信する</span>
-                        <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20">
-                            <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" fill="none"/>
-                        </svg>
-                    </button>
-                </form>
             </div>
         </section>
     </main>
@@ -532,7 +498,7 @@
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__brand">
-                <div class="footer__logo">余日</div>
+                <a href="index.html" class="footer__logo">余日</a>
                 <p class="footer__tagline">Webマーケティング総合支援</p>
             </div>
 
@@ -542,7 +508,11 @@
                     <ul class="footer__nav-list">
                         <li><a href="#services">SEO対策</a></li>
                         <li><a href="#services">広告運用代行</a></li>
+                        <li><a href="#services">プランニング</a></li>
                         <li><a href="#services">SNS運用代行</a></li>
+                        <li><a href="#services">CRM導入支援</a></li>
+                        <li><a href="#services">サイト制作/ディレクション</a></li>
+                        <li><a href="#services">PM/ディレクション</a></li>
                     </ul>
                 </div>
 
@@ -572,7 +542,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="src/js/blog-loader.js"></script>
-    <script src="src/js/main.js"></script>
+    <script src="src/js/blog-loader.js" defer></script>
+    <script src="src/js/main.js" defer></script>
 </body>
 </html>
