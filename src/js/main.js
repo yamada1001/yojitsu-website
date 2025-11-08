@@ -90,11 +90,11 @@
         // スクロール停止検知（デバウンス）
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(() => {
-            // スクロール停止後0.3秒でヘッダーを表示
+            // スクロール停止後3秒でヘッダーを表示
             if (currentScroll > 50) {
                 header.classList.add('visible');
             }
-        }, 300);
+        }, 3000);
 
         lastScroll = currentScroll;
     });
@@ -428,7 +428,12 @@
                 '内部リンク設計',
                 '競合分析・改善提案'
             ],
-            note: '中長期的な視点で、持続可能な集客基盤を構築します。'
+            note: '中長期的な視点で、持続可能な集客基盤を構築します。',
+            relatedArticles: [
+                { title: 'SEOは終わった？AI時代の検索市場の真実', url: 'blog/posts/seo-future-2025.html' },
+                { title: 'SEO対策の基本：検索順位を上げるための5つのポイント', url: 'blog/posts/seo-basics.html' },
+                { title: 'メディアミックス×エンティティ×セブンヒッツ理論で実現する統合マーケティング戦略', url: 'blog/posts/media-mix-seven-hits.html' }
+            ]
         },
         ads: {
             title: '広告運用代行',
