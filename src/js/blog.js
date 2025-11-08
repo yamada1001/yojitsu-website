@@ -354,7 +354,7 @@
                 // タイムアウトをクリア
                 clearTimeout(scrollTimeout);
 
-                // スクロール停止後0.5秒でボタンを表示
+                // スクロール停止後2秒でボタンを表示
                 scrollTimeout = setTimeout(() => {
                     const currentScrollPosition = window.pageYOffset;
                     // 100px以上スクロールしている場合のみ表示
@@ -362,7 +362,7 @@
                         floatingTocBtn.classList.add('visible');
                     }
                     lastScrollPosition = currentScrollPosition;
-                }, 500);
+                }, 2000);
             });
 
             // ボタンクリックでモーダルを開く
