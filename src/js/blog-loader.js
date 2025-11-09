@@ -207,6 +207,9 @@ class BlogLoader {
             categoryGrid.innerHTML = this.categories.map(category =>
                 this.generateCategoryCard(category)
             ).join('');
+
+            // カテゴリーカードのクリックイベントを設定
+            this.setupCategoryCardFiltering();
         }
 
         // 記事数を更新
@@ -241,12 +244,14 @@ class BlogLoader {
         // カテゴリータブを生成
         const categoryTabs = document.querySelector('.blog-categories');
         if (categoryTabs && this.categories) {
-            const allButton = '<button class="blog-category-tab active" data-category="all">すべて</button>';
+            const totalCount = this.articlesData.length;
+            const allButton = `<button class="blog-category-tab active" data-category="all">すべて <span class="category-count">${totalCount}</span></button>`;
             const categoryButtons = this.categories
                 .filter(cat => this.getArticleCountByCategory(cat.id) > 0)
-                .map(cat =>
-                    `<button class="blog-category-tab" data-category="${cat.id}">${cat.label}</button>`
-                ).join('');
+                .map(cat => {
+                    const count = this.getArticleCountByCategory(cat.id);
+                    return `<button class="blog-category-tab" data-category="${cat.id}">${cat.label} <span class="category-count">${count}</span></button>`;
+                }).join('');
             categoryTabs.innerHTML = allButton + categoryButtons;
         }
 
@@ -295,7 +300,7 @@ class BlogLoader {
     }
 
     /**
-     * カテゴリーフィルタリング機能を設定
+     * カテゴリーフィルタリング機能を設定（タブ用）
      */
     setupCategoryFiltering() {
         const categoryTabs = document.querySelectorAll('.blog-category-tab');
@@ -303,11 +308,15 @@ class BlogLoader {
 
         categoryTabs.forEach(tab => {
             tab.addEventListener('click', (e) => {
-                const category = e.target.dataset.category;
+                // クリックされた要素がspanの場合、親のbuttonを取得
+                const targetButton = e.target.closest('.blog-category-tab');
+                if (!targetButton) return;
+
+                const category = targetButton.dataset.category;
 
                 // アクティブタブを更新
                 categoryTabs.forEach(t => t.classList.remove('active'));
-                e.target.classList.add('active');
+                targetButton.classList.add('active');
 
                 // 記事をフィルタリング
                 blogCards.forEach(card => {
@@ -317,6 +326,48 @@ class BlogLoader {
                         card.style.display = 'none';
                     }
                 });
+            });
+        });
+    }
+
+    /**
+     * カテゴリーカードのフィルタリング機能を設定
+     */
+    setupCategoryCardFiltering() {
+        const categoryCards = document.querySelectorAll('.category-card');
+        const blogCards = document.querySelectorAll('.blog-card');
+        const categoryTabs = document.querySelectorAll('.blog-category-tab');
+
+        categoryCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                const category = card.dataset.category;
+
+                // カテゴリーカードのアクティブ状態を更新
+                categoryCards.forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+
+                // カテゴリータブも同期
+                categoryTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                    if (tab.dataset.category === category) {
+                        tab.classList.add('active');
+                    }
+                });
+
+                // 記事をフィルタリング
+                blogCards.forEach(blogCard => {
+                    if (category === 'all' || blogCard.dataset.category === category) {
+                        blogCard.style.display = '';
+                    } else {
+                        blogCard.style.display = 'none';
+                    }
+                });
+
+                // 記事一覧までスクロール
+                const blogListSection = document.querySelector('.blog-list');
+                if (blogListSection) {
+                    blogListSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             });
         });
     }
