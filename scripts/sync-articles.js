@@ -51,17 +51,19 @@ function extractMetadata(htmlContent, filename) {
 // キーワードからカテゴリーを検出
 function detectCategory(keywords, title, content) {
     const categories = {
-        seo: { id: 'seo', label: 'SEO', keywords: ['seo', '検索エンジン', '検索順位', 'google', 'ahrefs'] },
-        ads: { id: 'ads', label: '広告運用', keywords: ['広告', 'google ads', 'meta広告', 'リスティング', 'ppc'] },
-        sns: { id: 'sns', label: 'SNS', keywords: ['sns', 'instagram', 'facebook', 'twitter', 'x', 'ソーシャル'] },
-        marketing: { id: 'marketing', label: 'マーケティング', keywords: ['マーケティング', 'webマーケ', 'crm', 'hubspot', 'コンテンツマーケ', 'プランナー', 'pm'] },
-        'web-production': { id: 'web-production', label: 'Web制作', keywords: ['web制作', 'ディレクター', 'デザイン', 'ui', 'ux', 'vitals'] },
-        ai: { id: 'ai', label: 'AI', keywords: ['ai', 'chatgpt', 'claude', '生成ai', '人工知能', 'ターミナル'] },
+        ai: { id: 'ai', label: 'AI', keywords: ['chatgpt', 'claude', '生成ai', '人工知能', 'ターミナル'] },
+        ads: { id: 'ads', label: '広告運用', keywords: ['google ads', 'google広告', 'meta広告', 'リスティング', 'ppc', '広告運用'] },
+        sns: { id: 'sns', label: 'SNS', keywords: ['instagram', 'インスタグラム', 'facebook', 'twitter', 'tiktok', 'sns戦略', 'sns運用'] },
+        marketing: { id: 'marketing', label: 'マーケティング', keywords: ['btobマーケティング', 'btob マーケティング', 'マーケティング戦略', 'コンテンツマーケティング', 'crm', 'hubspot', 'プランナー', 'webマーケター'] },
+        'web-production': { id: 'web-production', label: 'Web制作', keywords: ['ランディングページ', 'lp制作', 'ディレクター', 'web制作', 'ui/ux', 'core web vitals', 'vitals', 'pm'] },
+        seo: { id: 'seo', label: 'SEO', keywords: ['seo対策', 'seo ', '検索エンジン最適化', '検索順位', 'ahrefs', '構造化データ', 'meo'] },
         misc: { id: 'misc', label: '雑記', keywords: [] }
     };
 
-    const searchText = (keywords + ' ' + title + ' ' + content).toLowerCase();
+    // keywordsとtitleのみを使用（contentはGTMコードなど余計なものを含むため除外）
+    const searchText = (keywords + ' ' + title).toLowerCase();
 
+    // 優先順位順にチェック（より具体的なカテゴリを先に）
     for (const [key, category] of Object.entries(categories)) {
         if (key === 'misc') continue; // 雑記は最後
         for (const keyword of category.keywords) {

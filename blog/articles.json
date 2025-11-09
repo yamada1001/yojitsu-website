@@ -3,38 +3,53 @@
     {
       "id": "claude-code-terminal-guide",
       "title": "次のステップへ！Claude Code・ターミナル活用ガイド",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ai",
+      "categoryLabel": "AI",
       "date": "2025-11-08",
       "excerpt": "Claude/ChatGPTを使っている人におすすめ！次のステップとしてClaude Codeとターミナル（コマンドライン）の活用方法を、初心者でも分かりやすく解説します。",
       "path": "blog/posts/claude-code-terminal-guide.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ai-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B5CF6",
+          "#7C3AED"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ai",
         "elements": [
           {
             "type": "circle",
-            "cx": 150,
+            "cx": 140,
             "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
+          },
+          {
+            "type": "circle",
+            "cx": 140,
+            "cy": 125,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 260,
+            "cy": 125,
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M175 125h50",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 2,
+            "strokeDasharray": "8 4",
+            "opacity": 0.6
           }
         ]
       }
@@ -42,38 +57,52 @@
     {
       "id": "media-mix-seven-hits",
       "title": "メディアミックス×エンティティ×セブンヒッツ理論で実現する統合マーケティング戦略",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-11-08",
       "excerpt": "メディアミックス、エンティティ、セブンヒッツ理論の基本から、これらを統合した効果的なマーケティング戦略まで、初心者にもわかりやすく解説します。",
       "path": "blog/posts/media-mix-seven-hits.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -81,38 +110,53 @@
     {
       "id": "seo-future-2025",
       "title": "SEOは終わった？AI時代の検索市場の真実とメディアミックス戦略",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ai",
+      "categoryLabel": "AI",
       "date": "2025-11-08",
       "excerpt": "「SEOはオワコン？」そんな疑問にデータで答えます。AI検索時代でも検索市場はシュリンクしていない理由と、これからのメディアミックス戦略を解説します。",
       "path": "blog/posts/seo-future-2025.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ai-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B5CF6",
+          "#7C3AED"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ai",
         "elements": [
           {
             "type": "circle",
-            "cx": 150,
+            "cx": 140,
             "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
+          },
+          {
+            "type": "circle",
+            "cx": 140,
+            "cy": 125,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 260,
+            "cy": 125,
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M175 125h50",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 2,
+            "strokeDasharray": "8 4",
+            "opacity": 0.6
           }
         ]
       }
@@ -120,38 +164,52 @@
     {
       "id": "what-is-planner",
       "title": "プランナーとは？提案活動の全貌をわかりやすく解説",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-11-08",
       "excerpt": "プランナーって何をする人？提案活動の内容や、代理店との関わり方まで、わかりやすく解説します。",
       "path": "blog/posts/what-is-planner.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -159,38 +217,49 @@
     {
       "id": "what-is-pm",
       "title": "PMって何してくれるの？プロジェクト管理の役割",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
       "date": "2025-11-08",
       "excerpt": "PM（プロジェクトマネージャー）って何をする人？プロジェクトの進行管理や品質管理など、中学生でもわかるように解説します。",
       "path": "blog/posts/what-is-pm.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "web-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#6366F1",
+          "#4F46E5"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "web-production",
         "elements": [
           {
+            "type": "rect",
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
             "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
+            "cx": 200,
+            "cy": 130,
+            "r": 15,
+            "fill": "white",
             "opacity": 0.7
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "type": "rect",
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
@@ -198,38 +267,52 @@
     {
       "id": "what-is-web-marketer",
       "title": "Webマーケターとは？仕事内容をわかりやすく解説",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-11-08",
       "excerpt": "Webマーケターって何をする人？仕事内容や必要なスキル、キャリアパスまで、中学生でもわかるように解説します。",
       "path": "blog/posts/what-is-web-marketer.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -237,38 +320,52 @@
     {
       "id": "btob-marketing-strategy",
       "title": "BtoBマーケティング施策の完全ガイド：リード獲得から商談化まで",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-01-27",
       "excerpt": "BtoBマーケティングの成功施策を徹底解説。リード獲得からナーチャリング、商談化まで、実践的な手法と成功事例を紹介します。",
       "path": "blog/posts/btob-marketing-strategy.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -276,38 +373,52 @@
     {
       "id": "owned-media-operation-service",
       "title": "オウンドメディア運用代行の完全ガイド：費用対効果を最大化する選び方",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-01-26",
       "excerpt": "オウンドメディア運用代行サービスの選び方から費用相場、成功事例まで徹底解説。社内リソース不足でお悩みの企業様に最適な運用代行の活用方法をご紹介します。",
       "path": "blog/posts/owned-media-operation-service.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -315,38 +426,39 @@
     {
       "id": "website-lead-generation-methods",
       "title": "Webサイト集客の完全ガイド：今すぐ実践できる10の効果的な方法",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "misc",
+      "categoryLabel": "雑記",
       "date": "2025-01-25",
       "excerpt": "Webサイトで効果的に集客する方法を完全解説。SEO、広告、SNS、コンテンツマーケティングなど、具体的な施策と成功事例を交えて、今すぐ実践できる集客方法を紹介します。",
       "path": "blog/posts/website-lead-generation-methods.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "misc",
         "elements": [
           {
             "type": "circle",
-            "cx": 150,
+            "cx": 200,
             "cy": 125,
             "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "fill": "white",
+            "opacity": 0.4
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
@@ -354,38 +466,53 @@
     {
       "id": "ai-content-marketing-efficiency",
       "title": "AIで変わるコンテンツマーケティング：生産性を10倍にする実践ガイド",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ai",
+      "categoryLabel": "AI",
       "date": "2025-01-22",
       "excerpt": "AIツールを活用してコンテンツマーケティングの生産性を劇的に向上させる方法を解説。画像生成AI、動画作成ツール、データ分析まで、実務で使える具体的なテクニックを紹介します。",
       "path": "blog/posts/ai-content-marketing-efficiency.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ai-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B5CF6",
+          "#7C3AED"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ai",
         "elements": [
           {
             "type": "circle",
-            "cx": 150,
+            "cx": 140,
             "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
+          },
+          {
+            "type": "circle",
+            "cx": 140,
+            "cy": 125,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 260,
+            "cy": 125,
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M175 125h50",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 2,
+            "strokeDasharray": "8 4",
+            "opacity": 0.6
           }
         ]
       }
@@ -393,38 +520,49 @@
     {
       "id": "landing-page-cost-guide",
       "title": "ランディングページ制作費用の相場と選び方：失敗しない制作会社の見極め方",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
       "date": "2025-01-21",
       "excerpt": "ランディングページ制作の費用相場を徹底解説。格安から高品質まで、価格帯別の特徴と選び方、失敗しない制作会社の見極め方を詳しく紹介します。",
       "path": "blog/posts/landing-page-cost-guide.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "web-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#6366F1",
+          "#4F46E5"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "web-production",
         "elements": [
           {
+            "type": "rect",
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
             "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
+            "cx": 200,
+            "cy": 130,
+            "r": 15,
+            "fill": "white",
             "opacity": 0.7
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "type": "rect",
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
@@ -432,38 +570,53 @@
     {
       "id": "ai-marketing-chatgpt-claude",
       "title": "ChatGPT・Claude活用術：Webマーケターのための生成AI実践ガイド",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ai",
+      "categoryLabel": "AI",
       "date": "2025-01-20",
       "excerpt": "WebマーケターがChatGPTやClaudeなどの生成AIを実務で活用するための具体的な方法を解説。プロンプトの書き方からSEO対策、広告コピー作成まで実践的なテクニックを紹介します。",
       "path": "blog/posts/ai-marketing-chatgpt-claude.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ai-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B5CF6",
+          "#7C3AED"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ai",
         "elements": [
           {
             "type": "circle",
-            "cx": 150,
+            "cx": 140,
             "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
+          },
+          {
+            "type": "circle",
+            "cx": 140,
+            "cy": 125,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 260,
+            "cy": 125,
+            "r": 35,
+            "fill": "white",
+            "opacity": 0.3
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M175 125h50",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 2,
+            "strokeDasharray": "8 4",
+            "opacity": 0.6
           }
         ]
       }
@@ -471,38 +624,52 @@
     {
       "id": "btob-marketing-guide",
       "title": "BtoBマーケティング施策完全ガイド：リード獲得から商談化まで",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-01-20",
       "excerpt": "BtoBマーケティングの全施策を網羅的に解説。リード獲得からナーチャリング、商談化まで、成果を出すための具体的な手法と実践ノウハウを体系的に紹介します。",
       "path": "blog/posts/btob-marketing-guide.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -510,37 +677,47 @@
     {
       "id": "how-to-choose-advertising-agency",
       "title": "Web広告代理店の選び方｜失敗しない見極めポイントと依頼時の注意点",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ads",
+      "categoryLabel": "広告運用",
       "date": "2025-01-20",
       "excerpt": "Web広告代理店の選び方を徹底解説。代理店の種類、選定基準、費用相場、契約前のチェックポイント、よくある失敗例まで、実践的なノウハウを紹介します。",
       "path": "blog/posts/how-to-choose-advertising-agency.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ads-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#F59E0B",
+          "#D97706"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ads",
         "elements": [
           {
-            "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
             "opacity": 0.7
           }
         ]
@@ -588,38 +765,52 @@
     {
       "id": "whitepaper-creation-guide",
       "title": "ホワイトペーパーの作り方完全ガイド｜BtoBリード獲得に効果的な企画・制作・活用法",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-01-19",
       "excerpt": "BtoBマーケティングで効果的なホワイトペーパーの作り方を完全解説。企画立案から制作、デザイン、配布、効果測定まで、リード獲得につながる実践的なノウハウを紹介します。",
       "path": "blog/posts/whitepaper-creation-guide.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -666,37 +857,47 @@
     {
       "id": "web-marketing-cost",
       "title": "Webマーケティング費用の相場は？施策別の料金体系と予算配分を徹底解説",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ads",
+      "categoryLabel": "広告運用",
       "date": "2025-01-18",
       "excerpt": "Webマーケティングにかかる費用を施策別に詳しく解説。SEO、リスティング広告、SNS広告、コンテンツマーケティングなど、各施策の相場と効果的な予算配分をプロが徹底解説します。",
       "path": "blog/posts/web-marketing-cost.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ads-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#F59E0B",
+          "#D97706"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ads",
         "elements": [
           {
-            "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
             "opacity": 0.7
           }
         ]
@@ -705,38 +906,39 @@
     {
       "id": "ga4-setup-guide",
       "title": "GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "misc",
+      "categoryLabel": "雑記",
       "date": "2025-01-17",
       "excerpt": "GA4の初期設定から高度なイベント計測まで、実務で使える設定方法を完全網羅。UAとの違い、コンバージョン設定、カスタムディメンション、GTMとの連携など、マーケターが知るべき全てを解説します。",
       "path": "blog/posts/ga4-setup-guide.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "misc",
         "elements": [
           {
             "type": "circle",
-            "cx": 150,
+            "cx": 200,
             "cy": 125,
             "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "fill": "white",
+            "opacity": 0.4
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
@@ -744,38 +946,49 @@
     {
       "id": "landing-page-cost",
       "title": "LP（ランディングページ）制作費用の相場は？価格帯別の特徴と選び方を徹底解説",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
       "date": "2025-01-17",
       "excerpt": "LP制作の費用相場を価格帯別に詳しく解説。10万円以下から100万円以上まで、それぞれの特徴や含まれる作業内容、依頼先の選び方をプロが徹底解説します。失敗しないLP制作のポイントも紹介。",
       "path": "blog/posts/landing-page-cost.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "web-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#6366F1",
+          "#4F46E5"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "web-production",
         "elements": [
           {
+            "type": "rect",
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
             "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
+            "cx": 200,
+            "cy": 130,
+            "r": 15,
+            "fill": "white",
             "opacity": 0.7
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "type": "rect",
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
@@ -822,37 +1035,47 @@
     {
       "id": "google-ads-tips",
       "title": "Google広告の費用対効果を最大化する運用テクニック",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ads",
+      "categoryLabel": "広告運用",
       "date": "2025-01-10",
       "excerpt": "限られた予算で最大の効果を出すために、Google広告の運用で押さえるべきポイントを実践的に解説します。",
       "path": "blog/posts/google-ads-tips.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ads-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#F59E0B",
+          "#D97706"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ads",
         "elements": [
           {
-            "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
             "opacity": 0.7
           }
         ]
@@ -900,38 +1123,52 @@
     {
       "id": "hubspot-crm-guide",
       "title": "HubSpot CRM導入ガイド：効果的な顧客管理で営業を10倍効率化",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-01-09",
       "excerpt": "HubSpot CRMの導入を検討している企業向けに、必要性の判断基準から導入効果、具体的な導入手順まで徹底解説。営業効率化とマーケティング自動化を実現します。",
       "path": "blog/posts/hubspot-crm-guide.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -939,37 +1176,47 @@
     {
       "id": "instagram-algorithm-meta-ads",
       "title": "Instagram最新アルゴリズム攻略＆Meta広告活用ガイド",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "ads",
+      "categoryLabel": "広告運用",
       "date": "2025-01-09",
       "excerpt": "Instagram最新アルゴリズムの攻略法とMeta広告の優位性を解説。エンゲージメント向上テクニック、情報収集方法、広告運用のコツを実践的に紹介します。",
       "path": "blog/posts/instagram-algorithm-meta-ads.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "ads-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#F59E0B",
+          "#D97706"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "ads",
         "elements": [
           {
-            "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
             "opacity": 0.7
           }
         ]
@@ -978,38 +1225,49 @@
     {
       "id": "web-director-role",
       "title": "Webディレクターの仕事内容とは？PMとの違いも解説",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
       "date": "2025-01-09",
       "excerpt": "Webディレクターの仕事内容を徹底解説。PMとの違い、必要なスキル、キャリアパス、1日のスケジュールまで、これからWebディレクターを目指す人に向けて詳しく説明します。",
       "path": "blog/posts/web-director-role.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "web-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#6366F1",
+          "#4F46E5"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "web-production",
         "elements": [
           {
+            "type": "rect",
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
             "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
+            "cx": 200,
+            "cy": 130,
+            "r": 15,
+            "fill": "white",
             "opacity": 0.7
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "type": "rect",
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
@@ -1017,38 +1275,52 @@
     {
       "id": "sns-strategy",
       "title": "SNSマーケティング成功の秘訣：エンゲージメントを高める投稿戦略",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "sns",
+      "categoryLabel": "SNS",
       "date": "2025-01-05",
       "excerpt": "SNSでのエンゲージメント向上は、ブランド認知とファン獲得に直結します。効果的な投稿戦略のポイントをご紹介します。",
       "path": "blog/posts/sns-strategy.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "sns-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#06B6D4",
+          "#0891B2"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "sns",
         "elements": [
           {
             "type": "circle",
-            "cx": 150,
+            "cx": 120,
             "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 280,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M140 125 L180 125 M220 125 L260 125",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.5
           }
         ]
       }
@@ -1056,38 +1328,52 @@
     {
       "id": "content-marketing",
       "title": "2025年版：効果的なコンテンツマーケティング戦略の立て方",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
       "date": "2025-01-01",
       "excerpt": "コンテンツマーケティングで成果を出すための戦略設計から実行まで、実践的なアプローチをステップバイステップで解説します。",
       "path": "blog/posts/content-marketing.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "marketing-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#EC4899",
+          "#DB2777"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "marketing",
         "elements": [
           {
             "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
             "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
           },
           {
             "type": "path",
-            "d": "M180 150 L220 190",
+            "d": "M200 125 L150 130 M200 125 L250 130",
             "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "strokeWidth": 3,
+            "opacity": 0.6
           }
         ]
       }
@@ -1095,38 +1381,49 @@
     {
       "id": "web-vitals-guide",
       "title": "Core Web Vitals完全ガイド：Webサイトのパフォーマンスを最適化する方法",
-      "category": "seo",
-      "categoryLabel": "SEO",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
       "date": "2024-12-28",
       "excerpt": "GoogleのランキングシグナルとなったCore Web Vitals。各指標の意味と改善方法を具体的に解説します。",
       "path": "blog/posts/web-vitals-guide.html",
       "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "web-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#6366F1",
+          "#4F46E5"
         ]
       },
       "svgIcon": {
-        "type": "seo",
+        "type": "web-production",
         "elements": [
           {
+            "type": "rect",
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
             "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
+            "cx": 200,
+            "cy": 130,
+            "r": 15,
+            "fill": "white",
             "opacity": 0.7
           },
           {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
+            "type": "rect",
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
