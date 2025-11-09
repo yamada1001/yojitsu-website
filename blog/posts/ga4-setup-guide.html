@@ -2,12 +2,13 @@
 <html lang="ja">
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T7NGQDC2');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T7NGQDC2');</script>
+    <!-- End Google Tag Manager -->
+    <base href="/yojitsu-website/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説 | 株式会社Yojitsu</title>
@@ -29,17 +30,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Canonical URL -->
     <link rel="canonical" href="https://yojitsu.co.jp/blog/posts/ga4-setup-guide.html">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../src/css/common.css">
-    <link rel="stylesheet" href="../../src/css/article.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/blog.css">
 
     <!-- 構造化データ -->
     <script type="application/ld+json">
@@ -68,115 +67,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7NGQDC2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <!-- ヘッダー -->
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <a href="../../index.html">
-                    <img src="../../assets/images/logo.png" alt="株式会社Yojitsu">
-                </a>
-            </div>
-            <button class="header__hamburger" id="hamburger" aria-label="メニュー">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="header__nav" id="nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="../../index.html" class="header__nav-link">ホーム</a></li>
-                    <li class="header__nav-item"><a href="../../index.html#services" class="header__nav-link">サービス</a></li>
-                    <li class="header__nav-item"><a href="../../index.html#about" class="header__nav-link">会社概要</a></li>
-                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">ブログ</a></li>
-                    <li class="header__nav-item"><a href="../../index.html#contact" class="header__nav-link header__nav-link--cta">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7NGQDC2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <!-- パンくずリスト -->
+    <!-- Breadcrumb -->
     <nav class="breadcrumb" aria-label="パンくずリスト">
-        <div class="breadcrumb__container">
-            <ol class="breadcrumb__list">
-                <li class="breadcrumb__item"><a href="../../index.html">ホーム</a></li>
-                <li class="breadcrumb__item"><a href="../index.html">ブログ</a></li>
-                <li class="breadcrumb__item">GA4設定マニュアル</li>
-            </ol>
-        </div>
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">ホーム</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="blog/index.html" class="breadcrumb__link">ブログ</a>
+            </li>
+            <li class="breadcrumb__item">
+                <span class="breadcrumb__current">GA4設定マニュアル</span>
+            </li>
+        </ul>
     </nav>
 
-    <!-- メインコンテンツ -->
-    <main class="article">
+    <!-- Article -->
+    <article class="article">
         <div class="article__container">
-            <!-- サイドバー -->
-            <aside class="article__sidebar">
-                <div class="article__toc">
-                    <h2 class="article__toc-title">目次</h2>
-                    <nav class="article__toc-nav">
-                        <ul class="article__toc-list">
-                            <li class="article__toc-item">
-                                <a href="#section1" class="article__toc-link">GA4とは？UAとの違い</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section2" class="article__toc-link">GA4の初期設定手順</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section3" class="article__toc-link">データストリームの設定</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section4" class="article__toc-link">イベント計測の設定</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section5" class="article__toc-link">コンバージョン設定</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section6" class="article__toc-link">カスタムディメンション・指標</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section7" class="article__toc-link">GTMとの連携設定</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section8" class="article__toc-link">BigQueryエクスポート設定</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section9" class="article__toc-link">よくあるトラブルと解決方法</a>
-                            </li>
-                            <li class="article__toc-item">
-                                <a href="#section10" class="article__toc-link">まとめ</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- CTA -->
-                <div class="article__sidebar-cta">
-                    <h3 class="article__sidebar-cta-title">GA4設定サポート</h3>
-                    <p class="article__sidebar-cta-text">
-                        GA4の設定でお困りですか？プロが最適な設定をサポートします。
-                    </p>
-                    <a href="../../index.html#contact" class="article__sidebar-cta-button">
-                        無料相談はこちら
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </aside>
-
-            <!-- 記事本文 -->
-            <article class="article__content">
+            <div class="article__main">
+                <!-- Article Header -->
                 <header class="article__header">
                     <div class="article__meta">
-                        <span class="article__category article__category--technical">テクニカル</span>
-                        <time class="article__date" datetime="2025-01-17">2025.01.17</time>
+                        <span class="article__category">テクニカル</span>
+                        <time class="article__date" datetime="2025-01-17"></time>
                     </div>
                     <h1 class="article__title">GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説</h1>
+                    <p class="article__excerpt">
+                        2023年7月にユニバーサルアナリティクス（UA）が計測終了し、GA4（Googleアナリティクス4）への移行が必須となりました。本記事では、GA4の初期設定から高度なイベント計測、GTMとの連携まで、実務で必要な全ての設定を完全網羅して解説します。
+                    </p>
                 </header>
 
-                <div class="article__body">
-                    <p class="article__lead">
-                        2023年7月にユニバーサルアナリティクス（UA）が計測終了し、GA4（Googleアナリティクス4）への移行が必須となりました。しかし、「GA4の設定方法が分からない」「UAと何が違うの？」「どこから手をつければいいの？」という声を多く聞きます。本記事では、GA4の初期設定から高度なイベント計測、GTMとの連携まで、実務で必要な全ての設定を完全網羅して解説します。
-                    </p>
+                <!-- Featured Image -->
+                <div class="article__featured-image">
+                    <svg viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="450" fill="#F5F5F5"/>
+                        <circle cx="400" cy="225" r="80" stroke="#EC4899" stroke-width="4" fill="none"/>
+                        <path d="M340 225 L460 225 M400 165 L400 285" stroke="#EC4899" stroke-width="4"/>
+                        <circle cx="280" cy="225" r="40" fill="#EC4899" opacity="0.3"/>
+                        <circle cx="520" cy="225" r="40" fill="#EC4899" opacity="0.3"/>
+                        <text x="400" y="350" text-anchor="middle" fill="#EC4899" font-size="32" font-weight="bold">GA4</text>
+                    </svg>
+                </div>
+
+                <!-- Table of Contents -->
+                <nav class="article__toc">
+                    <h2 class="article__toc-title">目次</h2>
+                    <ul class="article__toc-list">
+                        <li><a href="#section1">1. GA4とは？UAとの違い</a></li>
+                        <li><a href="#section2">2. GA4の初期設定手順</a></li>
+                        <li><a href="#section3">3. データストリームの設定</a></li>
+                        <li><a href="#section4">4. イベント計測の設定</a></li>
+                        <li><a href="#section5">5. コンバージョン設定</a></li>
+                        <li><a href="#section6">6. カスタムディメンション・指標</a></li>
+                        <li><a href="#section7">7. GTMとの連携設定</a></li>
+                        <li><a href="#section8">8. BigQueryエクスポート設定</a></li>
+                        <li><a href="#section9">9. よくあるトラブルと解決方法</a></li>
+                        <li><a href="#section10">まとめ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Article Content -->
+                <div class="article__content">
 
                     <section id="section1" class="article__section">
                         <h2 class="article__heading">GA4とは？UAとの違い</h2>
@@ -1149,81 +1105,138 @@ WHERE
                         </div>
                     </section>
 
-                    <!-- シェアボタン -->
-                    <div class="article__share">
-                        <h3 class="article__share-title">この記事をシェア</h3>
-                        <div class="article__share-buttons">
-                            <a href="https://twitter.com/intent/tweet?url=https://yojitsu.co.jp/blog/posts/ga4-setup-guide.html&text=GA4完全設定マニュアル" target="_blank" rel="noopener" class="article__share-button article__share-button--twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://yojitsu.co.jp/blog/posts/ga4-setup-guide.html" target="_blank" rel="noopener" class="article__share-button article__share-button--facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://social-plugins.line.me/lineit/share?url=https://yojitsu.co.jp/blog/posts/ga4-setup-guide.html" target="_blank" rel="noopener" class="article__share-button article__share-button--line">
-                                <i class="fab fa-line"></i>
-                            </a>
-                        </div>
+                </div>
+
+                <!-- Share Buttons -->
+                <div class="article__share">
+                    <h3 class="article__share-title">この記事をシェア</h3>
+                    <div class="article__share-buttons">
+                        <a href="https://twitter.com/intent/tweet?url=https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html&text=GA4完全設定マニュアル" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="https://social-plugins.line.me/lineit/share?url=https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                            LINE
+                        </a>
+                        <button class="share-btn" onclick="navigator.clipboard.writeText('https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+                            </svg>
+                            URLをコピー
+                        </button>
                     </div>
                 </div>
-            </article>
-        </div>
-    </main>
 
-    <!-- 関連記事 -->
-    <section class="related-articles">
-        <div class="related-articles__container">
-            <h2 class="related-articles__title">関連記事</h2>
-            <div class="related-articles__grid">
-                <!-- JavaScriptで動的に生成 -->
+                <!-- Related Posts -->
+                <aside class="related-posts">
+                    <h2 class="related-posts__title">関連記事</h2>
+                    <div class="related-posts__grid" id="relatedArticles">
+                        <!-- JavaScriptで自動生成 -->
+                    </div>
+                </aside>
+            </div><!-- /.article__main -->
+
+            <!-- Sidebar TOC -->
+            <aside class="article__sidebar">
+                <nav class="sidebar-toc" id="sidebarToc">
+                    <!-- JavaScriptで自動生成 -->
+                </nav>
+            </aside>
+        </div><!-- /.article__container -->
+    </article>
+
+    <!-- Floating TOC Button (Mobile) -->
+    <button class="floating-toc-btn" id="floatingTocBtn" aria-label="目次を開く">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+
+    <!-- Mobile TOC Modal -->
+    <div class="mobile-toc-modal" id="mobileTocModal">
+        <div class="mobile-toc-modal__content">
+            <div class="mobile-toc-modal__header">
+                <h3 class="mobile-toc-modal__title">目次</h3>
+                <button class="mobile-toc-modal__close" id="closeMobileToc" aria-label="閉じる">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
             </div>
+            <ul class="mobile-toc-modal__list" id="mobileTocList">
+                <!-- JavaScriptで自動生成 -->
+            </ul>
         </div>
-    </section>
+    </div>
 
-    <!-- フッター -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer__container">
+        <div class="container">
             <div class="footer__content">
-                <div class="footer__company">
-                    <img src="../../assets/images/logo.png" alt="株式会社Yojitsu" class="footer__logo">
-                    <p class="footer__description">
-                        BtoBマーケティングとWeb制作で<br>企業の成長を支援します
-                    </p>
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">余日</a>
+                    <p class="footer__tagline">本質に向き合い、成長を加速させる</p>
                 </div>
                 <nav class="footer__nav">
                     <div class="footer__nav-column">
-                        <h3 class="footer__nav-title">サービス</h3>
+                        <h4 class="footer__nav-title">サービス</h4>
                         <ul class="footer__nav-list">
-                            <li class="footer__nav-item"><a href="../../index.html#services">Web制作</a></li>
-                            <li class="footer__nav-item"><a href="../../index.html#services">SEO対策</a></li>
-                            <li class="footer__nav-item"><a href="../../index.html#services">マーケティング支援</a></li>
+                            <li><a href="index.html#services">SEO対策</a></li>
+                            <li><a href="index.html#services">広告運用代行</a></li>
+                            <li><a href="index.html#services">プランニング</a></li>
+                            <li><a href="index.html#services">SNS運用代行</a></li>
+                            <li><a href="index.html#services">CRM導入支援</a></li>
+                            <li><a href="index.html#services">サイト制作/PM・ディレクション</a></li>
                         </ul>
                     </div>
                     <div class="footer__nav-column">
-                        <h3 class="footer__nav-title">会社情報</h3>
+                        <h4 class="footer__nav-title">ブログ</h4>
                         <ul class="footer__nav-list">
-                            <li class="footer__nav-item"><a href="../../index.html#about">会社概要</a></li>
-                            <li class="footer__nav-item"><a href="../index.html">ブログ</a></li>
-                            <li class="footer__nav-item"><a href="../../index.html#contact">お問い合わせ</a></li>
+                            <li><a href="blog/categories/seo.html">SEO</a></li>
+                            <li><a href="blog/categories/ads.html">広告運用</a></li>
+                            <li><a href="blog/categories/sns.html">SNS</a></li>
+                            <li><a href="blog/categories/marketing.html">マーケティング</a></li>
+                            <li><a href="blog/categories/web-production.html">Web制作</a></li>
+                            <li><a href="blog/categories/misc.html">雑記</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">企業情報</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html#about">プロフィール</a></li>
+                            <li><a href="index.html#contact">お問い合わせ</a></li>
+                            <li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+                            <li><a href="/tokushoho.html">特定商取引法に基づく表記</a></li>
+                            <li><a href="/disclaimer.html">免責事項</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2025 株式会社Yojitsu. All rights reserved.</p>
+                <p class="footer__copyright">&copy; 2025 余日（ヨジツ）All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="../../src/js/main.js"></script>
-    <script src="../../src/js/blog-loader.js"></script>
-    <script>
-        // 関連記事の読み込み
-        document.addEventListener('DOMContentLoaded', () => {
-            if (window.blogLoader) {
-                window.blogLoader.renderRelatedArticles('ga4-setup-guide', 'technical');
-            }
-        });
-    </script>
+    <script src="src/js/blog-loader.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/blog.js"></script>
+    <script src="src/js/article-template.js"></script>
 </body>
 </html>

@@ -18,7 +18,16 @@
       "Bash(node scripts/add-gtm.js:*)",
       "Bash(node scripts/add-footer.js:*)",
       "Bash(awk:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(node scripts/check-article-structure.js:*)",
+      "Bash(node scripts/fix-all-articles.js:*)",
+      "Bash(node scripts/fix-article-structure-v2.js:*)",
+      "Bash(node scripts/fix-minor-issues.js:*)",
+      "Bash(node scripts/fix-toc-structure.js:*)",
+      "Bash(for file in what-is-planner.html what-is-pm.html)",
+      "Bash(do)",
+      "Bash(echo:*)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

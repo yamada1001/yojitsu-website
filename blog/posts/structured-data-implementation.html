@@ -30,8 +30,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="canonical" href="https://yojitsu.co.jp/blog/posts/structured-data-implementation.html">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../src/css/common.css">
-    <link rel="stylesheet" href="../../src/css/article.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/blog.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -65,6 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "dateModified": "2025-01-19"
     }
     </script>
+    <base href="/yojitsu-website/">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -72,49 +73,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <!-- ヘッダー -->
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <a href="../../index.html">
-                    <img src="../../assets/images/logo.png" alt="株式会社Yojitsu">
-                </a>
-            </div>
-            <button class="header__hamburger" id="hamburger" aria-label="メニュー">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="header__nav" id="nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="../../index.html" class="header__nav-link">ホーム</a></li>
-                    <li class="header__nav-item"><a href="../../index.html#services" class="header__nav-link">サービス</a></li>
-                    <li class="header__nav-item"><a href="../../index.html#about" class="header__nav-link">会社概要</a></li>
-                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">ブログ</a></li>
-                    <li class="header__nav-item"><a href="../../index.html#contact" class="header__nav-link header__nav-link--cta">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- パンくずリスト -->
     <nav class="breadcrumb" aria-label="パンくずリスト">
-        <div class="breadcrumb__container">
-            <ol class="breadcrumb__list">
-                <li class="breadcrumb__item"><a href="../../index.html">ホーム</a></li>
-                <li class="breadcrumb__item"><a href="../index.html">ブログ</a></li>
-                <li class="breadcrumb__item">構造化データ実装ガイド</li>
-            </ol>
-        </div>
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">ホーム</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="blog/index.html" class="breadcrumb__link">ブログ</a>
+            </li>
+            <li class="breadcrumb__item">
+                <span class="breadcrumb__current">構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説</span>
+            </li>
+        </ul>
     </nav>
 
-    <!-- メインコンテンツ -->
-    <main class="article">
+    <!-- Article -->
+    <article class="article">
         <div class="article__container">
-            <!-- サイドバー -->
-            <aside class="article__sidebar">
-                <div class="article__toc">
+            <div class="article__main">
+                <!-- Article Header -->
+                <header class="article__header">
+                    <div class="article__meta">
+                        <span class="article__category">テクニカル</span>
+                        <time class="article__date" datetime="2025-01-19"></time>
+                    </div>
+                    <h1 class="article__title">構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説</h1>
+                    <p class="article__excerpt">
+                        構造化データの実装方法を完全解説。Schema.org、JSON-LD、パンくずリスト、FAQ、記事、商品など、SEOに効く構造化データの種類と実装コードを実例付きで紹介します。
+                    </p>
+                </header>
+
+                <!-- Featured Image -->
+                <div class="article__featured-image">
+                    <svg viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="450" fill="#F5F5F5"/>
+                        <circle cx="400" cy="225" r="80" stroke="#EC4899" stroke-width="4" fill="none"/>
+                        <path d="M340 225 L460 225 M400 165 L400 285" stroke="#EC4899" stroke-width="4"/>
+                        <text x="400" y="350" text-anchor="middle" fill="#EC4899" font-size="24" font-weight="bold">Article</text>
+                    </svg>
+                </div>
+
+                <!-- Table of Contents -->
+                <nav class="article__toc">
                     <h2 class="article__toc-title">目次</h2>
-                    <nav class="article__toc-nav">
+                    
+                        <ul class="article__toc-list">
+                            <li class="article__toc-item">
+                                <a href="#section1" class="article__toc-link">構造化データとは</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section2" class="article__toc-link">実装方法の選択</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section3" class="article__toc-link">Article（記事）</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section4" class="article__toc-link">Breadcrumb（パンくずリスト）</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section5" class="article__toc-link">FAQPage</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section6" class="article__toc-link">その他の構造化データ</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section7" class="article__toc-link">テスト・検証</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section8" class="article__toc-link">まとめ</a>
+                            </li>
+                        </ul>
+                    
+                </nav>
+
+
+                <!-- Table of Contents -->
+                <nav class="article__toc-nav">
                         <ul class="article__toc-list">
                             <li class="article__toc-item">
                                 <a href="#section1" class="article__toc-link">構造化データとは</a>
@@ -142,32 +176,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </li>
                         </ul>
                     </nav>
-                </div>
 
-                <!-- CTA -->
-                <div class="article__sidebar-cta">
-                    <h3 class="article__sidebar-cta-title">構造化データ実装支援</h3>
-                    <p class="article__sidebar-cta-text">
-                        技術的なSEO対策をプロがサポートします。
-                    </p>
-                    <a href="../../index.html#contact" class="article__sidebar-cta-button">
-                        無料相談はこちら
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </aside>
-
-            <!-- 記事本文 -->
-            <article class="article__content">
-                <header class="article__header">
-                    <div class="article__meta">
-                        <span class="article__category article__category--technical">テクニカル</span>
-                        <time class="article__date" datetime="2025-01-19">2025.01.19</time>
-                    </div>
-                    <h1 class="article__title">構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説</h1>
-                </header>
-
-                <div class="article__body">
+                <!-- Article Content -->
+                <div class="article__content">
+                    
                     <p class="article__lead">
                         構造化データは、Googleにページの内容を正確に伝え、検索結果でリッチリザルトとして表示されるための重要な技術です。しかし、「構造化データって何？」「どうやって実装するの？」と悩む方も多いはず。本記事では、構造化データの基礎から、Schema.org、JSON-LDを使った実装方法、実際のコード例まで、実務で使える知識を完全網羅して解説します。
                     </p>
@@ -892,22 +904,86 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </a>
                         </div>
                     </div>
+                
                 </div>
-            </article>
-        </div>
-    </main>
 
-    <!-- 関連記事 -->
-    <section class="related-articles">
-        <div class="related-articles__container">
-            <h2 class="related-articles__title">関連記事</h2>
-            <div class="related-articles__grid">
-                <!-- JavaScriptで動的に生成 -->
+                <!-- Share Buttons -->
+                <div class="article__share">
+                    <h3 class="article__share-title">この記事をシェア</h3>
+                    <div class="article__share-buttons">
+                        <a href="https://twitter.com/intent/tweet?url=https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html&text=%E6%A7%8B%E9%80%A0%E5%8C%96%E3%83%87%E3%83%BC%E3%82%BF%E5%AE%9F%E8%A3%85%E3%82%AC%E3%82%A4%E3%83%89%EF%BD%9CSEO%E3%81%AB%E5%8A%B9%E3%81%8FSchema.org%E3%81%A8JSON-LD%E3%81%AE%E5%AE%8C%E5%85%A8%E8%A7%A3%E8%AA%AC" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="https://social-plugins.line.me/lineit/share?url=https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                            LINE
+                        </a>
+                        <button class="share-btn" onclick="navigator.clipboard.writeText('https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+                            </svg>
+                            URLをコピー
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Related Posts -->
+                <aside class="related-posts">
+                    <h2 class="related-posts__title">関連記事</h2>
+                    <div class="related-posts__grid" id="relatedArticles">
+                        <!-- JavaScriptで自動生成 -->
+                    </div>
+                </aside>
+            </div><!-- /.article__main -->
+
+            <!-- Sidebar TOC -->
+            <aside class="article__sidebar">
+                <nav class="sidebar-toc" id="sidebarToc">
+                    <!-- JavaScriptで自動生成 -->
+                </nav>
+            </aside>
+        </div><!-- /.article__container -->
+    </article>
+
+    <!-- Floating TOC Button (Mobile) -->
+    <button class="floating-toc-btn" id="floatingTocBtn" aria-label="目次を開く">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+
+    <!-- Mobile TOC Modal -->
+    <div class="mobile-toc-modal" id="mobileTocModal">
+        <div class="mobile-toc-modal__content">
+            <div class="mobile-toc-modal__header">
+                <h3 class="mobile-toc-modal__title">目次</h3>
+                <button class="mobile-toc-modal__close" id="closeMobileToc" aria-label="閉じる">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
             </div>
+            <ul class="mobile-toc-modal__list" id="mobileTocList">
+                <!-- JavaScriptで自動生成 -->
+            </ul>
         </div>
-    </section>
+    </div>
 
-    <!-- フッター -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__content">
@@ -953,5 +1029,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
         });
     </script>
+
+    <!-- Scripts -->
+    <script src="src/js/blog-loader.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/blog.js"></script>
+    <script src="src/js/article-template.js"></script>
 </body>
 </html>

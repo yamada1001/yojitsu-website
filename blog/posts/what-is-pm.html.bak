@@ -436,16 +436,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- JavaScriptで自動生成 -->
                     </div>
                 </aside>
-            </div><!-- /.article__main -->
-
-            <!-- Sidebar TOC -->
-            <aside class="article__sidebar">
-                <nav class="sidebar-toc" id="sidebarToc">
-                    <!-- JavaScriptで自動生成 -->
-                </nav>
-            </aside>
-        </div><!-- /.article__container -->
-    </article>
+</article>
 
     <!-- Floating TOC Button (Mobile) -->
     <button class="floating-toc-btn" id="floatingTocBtn" aria-label="目次を開く">
