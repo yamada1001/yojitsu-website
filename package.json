@@ -7,6 +7,8 @@
     "sync-articles": "node scripts/sync-articles.js",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "add-gtm": "node scripts/add-gtm.js",
+    "check-articles": "node scripts/check-article-structure.js",
+    "check-quality": "node scripts/comprehensive-article-check.js",
     "serve": "python3 -m http.server 8000"
   },
   "repository": {

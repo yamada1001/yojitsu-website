@@ -1,33 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(blog/articles.json)",
-      "Bash(xargs kill:*)",
-      "Bash({} ;)",
-      "Bash(do sed -i '' '/<li class=\"\"nav__item\"\"><a href=\"\"[^\"\"]*#about\"\" class=\"\"nav__link\"\">プロフィール<\\/a><\\/li>/d' \"$file\")",
-      "WebFetch(domain:localhost)",
-      "Bash(do sed -i '' 's/<time class=\"\"article__date\"\" datetime=\"\"\\([^\"\"]*\\)\"\">[^<]*<\\/time>/<time class=\"\"article__date\"\" datetime=\"\"\\1\"\"><\\/time>/g' \"$file\")",
-      "Bash(do echo \"=== $file ===\")",
-      "Bash(while read link)",
-      "Bash(do file=\"$link#blog/posts/\" if [ ! -f \"blog/posts/$file\" ])",
-      "Bash(then echo \"MISSING: $link\" fi done)",
-      "Bash(do [ -f \"$file\" ])",
-      "Bash(if grep -q 'article__footer' \"$file\")",
-      "Bash(chmod:*)",
-      "Bash(node scripts/generate-sitemap.js:*)",
-      "Bash(node scripts/add-gtm.js:*)",
-      "Bash(node scripts/add-footer.js:*)",
-      "Bash(awk:*)",
-      "Bash(npm run build:*)",
-      "Bash(node scripts/check-article-structure.js:*)",
-      "Bash(node scripts/fix-all-articles.js:*)",
-      "Bash(node scripts/fix-article-structure-v2.js:*)",
-      "Bash(node scripts/fix-minor-issues.js:*)",
-      "Bash(node scripts/fix-toc-structure.js:*)",
-      "Bash(for file in what-is-planner.html what-is-pm.html)",
-      "Bash(do)",
-      "Bash(echo:*)",
-      "Bash(done)"
+      "Bash(for file in /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/blog/posts/*.html)",
+      "Bash(basename:*)",
+      "Bash(node scripts/comprehensive-article-check.js:*)",
+      "Bash(node /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/scripts/comprehensive-article-check.js:*)",
+      "Bash(node /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/scripts/remove-static-related-posts.js:*)"
     ],
     "deny": [],
     "ask": []

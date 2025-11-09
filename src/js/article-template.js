@@ -246,6 +246,100 @@
     }
 
     // ==========================================
+    // サイドバーTOCのスクロール連動機能
+    // ==========================================
+    function initTOCScrollSync() {
+        const sidebarToc = document.getElementById('sidebarToc');
+        if (!sidebarToc) return;
+
+        // 記事内のh2要素を取得
+        const headings = document.querySelectorAll('.article__content h2[id]');
+        if (headings.length === 0) return;
+
+        // サイドバーTOCを生成
+        const tocList = document.createElement('ul');
+        tocList.className = 'sidebar-toc__list';
+
+        headings.forEach(heading => {
+            const li = document.createElement('li');
+            li.className = 'sidebar-toc__item';
+
+            const a = document.createElement('a');
+            a.href = `#${heading.id}`;
+            a.className = 'sidebar-toc__link';
+            a.textContent = heading.textContent.replace(/^[0-9]+\.\s*/, ''); // 番号を削除
+            a.dataset.target = heading.id;
+
+            li.appendChild(a);
+            tocList.appendChild(li);
+        });
+
+        sidebarToc.appendChild(tocList);
+
+        // スクロール時にアクティブなセクションをハイライト
+        let ticking = false;
+
+        function updateActiveTOC() {
+            const scrollPosition = window.scrollY + 100; // ヘッダーオフセット
+
+            let activeHeading = null;
+            headings.forEach(heading => {
+                const headingTop = heading.offsetTop;
+                if (scrollPosition >= headingTop) {
+                    activeHeading = heading;
+                }
+            });
+
+            // すべてのリンクからactiveクラスを削除
+            const tocLinks = sidebarToc.querySelectorAll('.sidebar-toc__link');
+            tocLinks.forEach(link => link.classList.remove('active'));
+
+            // 現在のセクションのリンクにactiveクラスを追加
+            if (activeHeading) {
+                const activeLink = sidebarToc.querySelector(`[data-target="${activeHeading.id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateActiveTOC);
+                ticking = true;
+            }
+        }
+
+        // スクロールイベントリスナー
+        window.addEventListener('scroll', requestTick);
+
+        // 初期状態を設定
+        updateActiveTOC();
+
+        // TOCリンククリック時のスムーズスクロール
+        sidebarToc.addEventListener('click', (e) => {
+            if (e.target.classList.contains('sidebar-toc__link')) {
+                e.preventDefault();
+                const targetId = e.target.dataset.target;
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const headerOffset = 80;
+                    const elementPosition = targetElement.offsetTop;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    }
+
+    // ==========================================
     // 初期化
     // ==========================================
     function init() {
@@ -257,6 +351,9 @@
                 insertRelatedArticles();
                 insertFooter();
                 loadRelatedArticles();
+
+                // TOCスクロール連動を初期化（少し遅延させる）
+                setTimeout(initTOCScrollSync, 500);
             });
         } else {
             insertSidebarTOC();
@@ -264,6 +361,9 @@
             insertRelatedArticles();
             insertFooter();
             loadRelatedArticles();
+
+            // TOCスクロール連動を初期化（少し遅延させる）
+            setTimeout(initTOCScrollSync, 500);
         }
     }
 
