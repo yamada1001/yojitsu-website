@@ -16,14 +16,14 @@ console.log(`📝 総記事数: ${articlesData.articles.length}\n`);
 const incorrectDateArticles = articlesData.articles.filter(a => a.date === '2025-11-10');
 console.log(`❌ 2025-11-10の記事: ${incorrectDateArticles.length}件\n`);
 
-// 日付を割り当て（2025-01-19から逆順で1日ずつ減らす）
-let currentDate = new Date('2025-01-19');
+// 日付を割り当て（2024-12-20から逆順で1日ずつ減らす）
+let currentDate = new Date('2024-12-20');
 let articlesUpdated = 0;
 
 articlesData.articles.forEach(article => {
-    if (article.date === '2025-11-10') {
+    if (article.date.startsWith('2025-') || article.date === '2025-11-10') {
         const newDate = currentDate.toISOString().split('T')[0];
-        console.log(`📅 ${article.id}: 2025-11-10 → ${newDate}`);
+        console.log(`📅 ${article.id}: ${article.date} → ${newDate}`);
         article.date = newDate;
 
         // 次の記事は1日前に

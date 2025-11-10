@@ -41,7 +41,8 @@
       "Bash(cat:*)",
       "Bash(node scripts/test-blog-integration.js:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(node scripts/generate-40-articles.js:*)"
     ],
     "deny": [],
     "ask": []
