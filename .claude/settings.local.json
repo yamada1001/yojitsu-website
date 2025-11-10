@@ -21,7 +21,10 @@
       "Bash(for file in blog/posts/what-is-pm.html blog/posts/what-is-web-marketer.html)",
       "Bash(do echo \"Processing $file\")",
       "WebFetch(domain:yamada1001.github.io)",
-      "Bash(node scripts/fix-base-tag-position.js:*)"
+      "Bash(node scripts/fix-base-tag-position.js:*)",
+      "Bash(node scripts/remove-kabushiki.js:*)",
+      "Bash(node scripts/add-missing-head-elements.js:*)",
+      "Bash(node scripts/final-comprehensive-check.js:*)"
     ],
     "deny": [],
     "ask": []
