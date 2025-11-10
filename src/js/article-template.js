@@ -32,10 +32,13 @@
             </div>
         `;
 
-        // articleタグの後に挿入
-        const article = document.querySelector('.article');
-        if (article) {
-            article.insertAdjacentHTML('afterend', tocHTML);
+        // bodyタグの最後に挿入（フッターの前）
+        const footer = document.querySelector('.footer');
+        if (footer) {
+            footer.insertAdjacentHTML('beforebegin', tocHTML);
+        } else {
+            // フッターがまだない場合はbodyの最後に
+            document.body.insertAdjacentHTML('beforeend', tocHTML);
         }
     }
 
@@ -96,8 +99,14 @@
             oldFooter.remove();
         }
 
-        // bodyの最後に挿入
-        document.body.insertAdjacentHTML('beforeend', footerHTML);
+        // scriptタグの前に挿入
+        const scripts = document.querySelector('body > script');
+        if (scripts) {
+            scripts.insertAdjacentHTML('beforebegin', footerHTML);
+        } else {
+            // scriptタグがない場合はbodyの最後に
+            document.body.insertAdjacentHTML('beforeend', footerHTML);
+        }
     }
 
     // ==========================================
