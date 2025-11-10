@@ -38,7 +38,10 @@
       "Bash(if ! grep -q \"favicon.svg\" \"$file\")",
       "Bash(then)",
       "Bash(else)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(node scripts/test-blog-integration.js:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
