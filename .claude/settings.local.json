@@ -24,7 +24,10 @@
       "Bash(node scripts/fix-base-tag-position.js:*)",
       "Bash(node scripts/remove-kabushiki.js:*)",
       "Bash(node scripts/add-missing-head-elements.js:*)",
-      "Bash(node scripts/final-comprehensive-check.js:*)"
+      "Bash(node scripts/final-comprehensive-check.js:*)",
+      "Bash(do if grep -q 'article__toc-link' \"$file\")",
+      "Bash(node -e:*)",
+      "Bash(xargs:*)"
     ],
     "deny": [],
     "ask": []

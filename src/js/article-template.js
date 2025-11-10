@@ -78,7 +78,6 @@
                             <div class="footer__nav-column">
                                 <h4 class="footer__nav-title">企業情報</h4>
                                 <ul class="footer__nav-list">
-                                    <li><a href="index.html#about">プロフィール</a></li>
                                     <li><a href="index.html#contact">お問い合わせ</a></li>
                                 </ul>
                             </div>
@@ -155,11 +154,11 @@
                 <h3 class="article__share-title">この記事をシェア</h3>
                 <div class="article__share-buttons">
                     <a href="https://twitter.com/intent/tweet?url=${url}&text=${title}"
-                       class="share-btn" target="_blank" rel="noopener" aria-label="Twitterでシェア">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                       class="share-btn" target="_blank" rel="noopener" aria-label="Xでシェア">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                         </svg>
-                        Twitter
+                        X
                     </a>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=${url}"
                        class="share-btn" target="_blank" rel="noopener" aria-label="Facebookでシェア">
@@ -253,10 +252,17 @@
                         ).join('');
                     } else {
                         // 関連記事がない場合は非表示
-                        const relatedSection = document.querySelector('.article__related');
+                        const relatedSection = document.querySelector('.related-posts');
                         if (relatedSection) {
                             relatedSection.style.display = 'none';
                         }
+                    }
+                }).catch(error => {
+                    console.error('Failed to load related articles:', error);
+                    // エラー時も関連記事セクションを非表示
+                    const relatedSection = document.querySelector('.related-posts');
+                    if (relatedSection) {
+                        relatedSection.style.display = 'none';
                     }
                 });
             }
@@ -265,6 +271,13 @@
         // 10秒後にタイムアウト
         setTimeout(() => {
             clearInterval(checkBlogLoader);
+            // タイムアウト時、まだ読み込めていない場合は関連記事セクションを非表示
+            if (!relatedContainer.innerHTML.trim() || relatedContainer.innerHTML.includes('JavaScriptで自動生成')) {
+                const relatedSection = document.querySelector('.related-posts');
+                if (relatedSection) {
+                    relatedSection.style.display = 'none';
+                }
+            }
         }, 10000);
     }
 
