@@ -11,7 +11,15 @@
       "Bash(node scripts/refactor-blog-posts.js:*)",
       "Bash(for file in blog/posts-backup/*.html)",
       "Bash(done)",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(echo:*)",
+      "Bash(for file in blog/posts/*.html)",
+      "Bash(do if ! grep -q '<base href' \"$file\")",
+      "Bash(then basename \"$file\")",
+      "Bash(fi)",
+      "Bash(node scripts/comprehensive-fix.js:*)",
+      "Bash(for file in blog/posts/what-is-pm.html blog/posts/what-is-web-marketer.html)",
+      "Bash(do echo \"Processing $file\")"
     ],
     "deny": [],
     "ask": []

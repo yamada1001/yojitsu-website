@@ -27,7 +27,7 @@
     const resetFilterBtn = document.getElementById('resetFilter');
     const noResultsMessage = document.getElementById('noResultsMessage');
     const blogListSection = document.querySelector('.blog-list');
-    const categoryGrid = document.querySelector('.category-list__grid');
+    const categoryGrid = document.querySelector('.category-cards__grid');
 
     // Current active category
     let activeCategory = null;

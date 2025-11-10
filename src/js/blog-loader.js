@@ -39,12 +39,20 @@ class BlogLoader {
     }
 
     /**
-     * カテゴリー別に記事を取得
+     * カテゴリー別に記事を取得（日付順にソート）
      */
     getArticlesByCategory(categoryId) {
         if (!this.articlesData) return [];
-        if (categoryId === 'all') return this.articlesData;
-        return this.articlesData.filter(article => article.category === categoryId);
+
+        let filtered;
+        if (categoryId === 'all') {
+            filtered = [...this.articlesData];
+        } else {
+            filtered = this.articlesData.filter(article => article.category === categoryId);
+        }
+
+        // 日付順（新しい順）にソート
+        return filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
     }
 
     /**
@@ -202,7 +210,7 @@ class BlogLoader {
         }
 
         // カテゴリーグリッドを生成
-        const categoryGrid = document.querySelector('.category-list__grid');
+        const categoryGrid = document.querySelector('.category-cards__grid');
         if (categoryGrid && this.categories) {
             categoryGrid.innerHTML = this.categories.map(category =>
                 this.generateCategoryCard(category)

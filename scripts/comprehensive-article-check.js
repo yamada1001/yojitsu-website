@@ -34,12 +34,10 @@ files.forEach(file => {
         }
     }
 
-    // 3. フッター重複チェック
+    // 3. フッター重複チェック（JavaScriptで生成すべき）
     const footerCount = (content.match(/<footer class="footer">/g) || []).length;
-    if (footerCount > 1) {
-        fileIssues.push(`❌ Duplicate footers (${footerCount} found)`);
-    } else if (footerCount === 0) {
-        fileIssues.push('❌ Missing footer');
+    if (footerCount > 0) {
+        fileIssues.push(`❌ Footer found in HTML (should be JS-generated, found ${footerCount})`);
     }
 
     // 4. 関連記事セクション重複チェック
@@ -53,6 +51,16 @@ files.forEach(file => {
     // 5. 静的な関連記事HTMLチェック（JavaScriptで生成すべき）
     if (content.includes('<article class="blog-card">') && content.includes('related-posts__grid')) {
         fileIssues.push('⚠️  Static related posts HTML found (should be JS-generated)');
+    }
+
+    // 5a. article__relatedセクションチェック（不要）
+    if (content.includes('article__related')) {
+        fileIssues.push('❌ article__related section found (should be removed)');
+    }
+
+    // 5b. シェアボタンチェック（JavaScriptで生成すべき）
+    if (content.includes('article__share')) {
+        fileIssues.push('❌ Share buttons found in HTML (should be JS-generated)');
     }
 
     // 6. Sidebar TOCチェック

@@ -136,34 +136,57 @@
     }
 
     // ==========================================
-    // 関連記事セクションを挿入/更新
+    // SNSシェアボタンを挿入
     // ==========================================
-    function insertRelatedArticles() {
-        // すでに正しい形式の関連記事セクションが存在するかチェック
-        const existingRelated = document.querySelector('.article__related');
-        if (existingRelated) return; // すでにあればスキップ
+    function insertShareButtons() {
+        // すでに存在する場合はスキップ
+        if (document.querySelector('.article__share')) return;
 
-        // 古い形式の関連記事リンクを削除
-        const oldRelatedLinks = document.querySelector('.article__related-links');
-        if (oldRelatedLinks) {
-            oldRelatedLinks.remove();
-        }
+        // 関連記事セクションの前に挿入
+        const relatedPosts = document.querySelector('.related-posts');
+        if (!relatedPosts) return;
 
-        // article__contentの最後に関連記事セクションを挿入
-        const articleContent = document.querySelector('.article__content');
-        if (!articleContent) return;
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(document.title);
 
-        const relatedHTML = `
-            <!-- Related Articles -->
-            <aside class="article__related">
-                <h2 class="article__related-title"><i class="fas fa-link" style="margin-right: 0.5rem;"></i>関連記事</h2>
-                <div class="article__related-grid" id="relatedArticles">
-                    <!-- JavaScriptで自動生成されます -->
+        const shareHTML = `
+            <!-- Share Buttons -->
+            <div class="article__share">
+                <h3 class="article__share-title">この記事をシェア</h3>
+                <div class="article__share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=${url}&text=${title}"
+                       class="share-btn" target="_blank" rel="noopener" aria-label="Twitterでシェア">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=${url}"
+                       class="share-btn" target="_blank" rel="noopener" aria-label="Facebookでシェア">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                        </svg>
+                        Facebook
+                    </a>
+                    <a href="https://social-plugins.line.me/lineit/share?url=${url}"
+                       class="share-btn" target="_blank" rel="noopener" aria-label="LINEでシェア">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                        LINE
+                    </a>
+                    <button class="share-btn" onclick="navigator.clipboard.writeText('${decodeURIComponent(url)}')" aria-label="URLをコピー">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+                            <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+                        </svg>
+                        URLをコピー
+                    </button>
                 </div>
-            </aside>
+            </div>
         `;
 
-        articleContent.insertAdjacentHTML('afterend', relatedHTML);
+        relatedPosts.insertAdjacentHTML('beforebegin', shareHTML);
     }
 
     // ==========================================
@@ -348,7 +371,7 @@
             document.addEventListener('DOMContentLoaded', function() {
                 insertSidebarTOC();
                 insertMobileTOC();
-                insertRelatedArticles();
+                insertShareButtons();
                 insertFooter();
                 loadRelatedArticles();
 
@@ -358,7 +381,7 @@
         } else {
             insertSidebarTOC();
             insertMobileTOC();
-            insertRelatedArticles();
+            insertShareButtons();
             insertFooter();
             loadRelatedArticles();
 
