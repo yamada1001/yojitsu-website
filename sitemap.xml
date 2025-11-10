@@ -64,6 +64,18 @@
 
     <!-- Blog Articles -->
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/account-based-marketing.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/ad-fraud-prevention.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/ahrefs-seo-guide.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
@@ -82,13 +94,55 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/app-promotion-ads.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/backlink-building-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/brand-positioning-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/btob-content-marketing.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/btob-marketing-guide.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/btob-marketing-kpi.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/btob-marketing-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/btob-seo-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/btob-social-selling.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -106,13 +160,49 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/conversion-rate-optimization.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/customer-data-platform.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/customer-journey-mapping.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/display-ads-optimization.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/email-marketing-complete-guide-2025.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/facebook-ads-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/google-ads-tips.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/growth-hacking-basics.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -136,7 +226,19 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/international-seo-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/landing-page-cost-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/lead-nurturing-automation.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -148,7 +250,43 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/local-seo-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/marketing-automation-comparison.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/marketing-budget-allocation.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/media-mix-seven-hits.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/mobile-seo-optimization.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/native-advertising-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/omnichannel-marketing.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -160,7 +298,43 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/partner-marketing-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/pinterest-marketing-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/programmatic-advertising-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/retargeting-ads-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/seo-analytics-reporting.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/seo-basics.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/seo-content-optimization.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -178,13 +352,73 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/shopping-ads-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/sns-crisis-management.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/sns-strategy.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/social-listening-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/social-media-analytics.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/technical-seo-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/threads-marketing-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/tiktok-ads-guide-2025.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/twitter-engagement-tactics.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/ugc-marketing-strategy.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/video-ads-production.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/voice-search-seo.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -197,6 +431,12 @@
     </url>
     <url>
         <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/web-vitals-guide.html</loc>
+        <lastmod>2025-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yamada1001.github.io/yojitsu-website/blog/posts/webinar-marketing-guide.html</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

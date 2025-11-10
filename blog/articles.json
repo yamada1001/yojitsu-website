@@ -1,215 +1,13 @@
 {
   "articles": [
     {
-      "id": "sns-strategy",
-      "title": "SNSマーケティング成功の秘訣：エンゲージメントを高める投稿戦略",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-12-31",
-      "excerpt": "SNSでのエンゲージメント向上は、ブランド認知とファン獲得に直結します。効果的な投稿戦略のポイントをご紹介します。",
-      "path": "blog/posts/sns-strategy.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "type": "sns",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.5
-          }
-        ]
-      }
-    },
-    {
-      "id": "tiktok-ads-guide-2025",
-      "title": "TikTok広告完全ガイド2025｜始め方から成果を出す運用方法まで",
-      "category": "ads",
-      "categoryLabel": "広告運用",
-      "date": "2024-12-30",
-      "excerpt": "TikTok広告の始め方から成果を出す運用方法まで完全解説。アカウント開設、ターゲティング設定、クリエイティブ制作、入札戦略、効果測定など、実践的なノウハウを2025年最新版でお届けします。",
-      "path": "blog/posts/tiktok-ads-guide-2025.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "type": "ads",
-        "elements": [
-          {
-            "type": "rect",
-            "x": 100,
-            "y": 150,
-            "width": 40,
-            "height": 50,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "rect",
-            "x": 150,
-            "y": 120,
-            "width": 40,
-            "height": 80,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "rect",
-            "x": 200,
-            "y": 90,
-            "width": 40,
-            "height": 110,
-            "fill": "white",
-            "opacity": 0.7
-          }
-        ]
-      }
-    },
-    {
-      "id": "web-director-role",
-      "title": "Webディレクターの仕事内容とは？PMとの違いも解説",
-      "category": "web-production",
-      "categoryLabel": "Web制作",
-      "date": "2024-12-29",
-      "excerpt": "Webディレクターの仕事内容を徹底解説。PMとの違い、必要なスキル、キャリアパス、1日のスケジュールまで、これからWebディレクターを目指す人に向けて詳しく説明します。",
-      "path": "blog/posts/web-director-role.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "web-gradient",
-        "colors": [
-          "#6366F1",
-          "#4F46E5"
-        ]
-      },
-      "svgIcon": {
-        "type": "web-production",
-        "elements": [
-          {
-            "type": "rect",
-            "x": 120,
-            "y": 100,
-            "width": 160,
-            "height": 100,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.4
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 130,
-            "r": 15,
-            "fill": "white",
-            "opacity": 0.7
-          },
-          {
-            "type": "rect",
-            "x": 140,
-            "y": 160,
-            "width": 50,
-            "height": 8,
-            "rx": 2,
-            "fill": "white",
-            "opacity": 0.6
-          }
-        ]
-      }
-    },
-    {
-      "id": "web-vitals-guide",
-      "title": "Core Web Vitals完全ガイド：Webサイトのパフォーマンスを最適化する方法",
-      "category": "web-production",
-      "categoryLabel": "Web制作",
-      "date": "2024-12-28",
-      "excerpt": "GoogleのランキングシグナルとなったCore Web Vitals。各指標の意味と改善方法を具体的に解説します。",
-      "path": "blog/posts/web-vitals-guide.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "web-gradient",
-        "colors": [
-          "#6366F1",
-          "#4F46E5"
-        ]
-      },
-      "svgIcon": {
-        "type": "web-production",
-        "elements": [
-          {
-            "type": "rect",
-            "x": 120,
-            "y": 100,
-            "width": 160,
-            "height": 100,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.4
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 130,
-            "r": 15,
-            "fill": "white",
-            "opacity": 0.7
-          },
-          {
-            "type": "rect",
-            "x": 140,
-            "y": 160,
-            "width": 50,
-            "height": 8,
-            "rx": 2,
-            "fill": "white",
-            "opacity": 0.6
-          }
-        ]
-      }
-    },
-    {
-      "id": "website-lead-generation-methods",
-      "title": "Webサイト集客の完全ガイド：今すぐ実践できる10の効果的な方法",
+      "id": "account-based-marketing",
+      "title": "ABM（アカウントベースドマーケティング）実践ガイド｜大口顧客を獲得する戦略",
       "category": "misc",
       "categoryLabel": "雑記",
-      "date": "2024-12-27",
-      "excerpt": "Webサイトで効果的に集客する方法を完全解説。SEO、広告、SNS、コンテンツマーケティングなど、具体的な施策と成功事例を交えて、今すぐ実践できる集客方法を紹介します。",
-      "path": "blog/posts/website-lead-generation-methods.html",
+      "date": "2025-11-10",
+      "excerpt": "特定企業をターゲットにしたABM戦略の全て。ターゲットアカウント選定、パーソナライズド施策、営業連携の方法を解説します。",
+      "path": "blog/posts/account-based-marketing.html",
       "featured": true,
       "svgGradient": {
         "id": "misc-gradient",
@@ -243,222 +41,13 @@
       }
     },
     {
-      "id": "what-is-planner",
-      "title": "プランナーとは？提案活動の全貌をわかりやすく解説",
-      "category": "marketing",
-      "categoryLabel": "マーケティング",
-      "date": "2024-12-26",
-      "excerpt": "プランナーって何をする人？提案活動の内容や、代理店との関わり方まで、わかりやすく解説します。",
-      "path": "blog/posts/what-is-planner.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "marketing-gradient",
-        "colors": [
-          "#EC4899",
-          "#DB2777"
-        ]
-      },
-      "svgIcon": {
-        "type": "marketing",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 25,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 150,
-            "cy": 150,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "circle",
-            "cx": 250,
-            "cy": 150,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "path",
-            "d": "M200 125 L150 130 M200 125 L250 130",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.6
-          }
-        ]
-      }
-    },
-    {
-      "id": "what-is-pm",
-      "title": "PMって何してくれるの？プロジェクト管理の役割",
-      "category": "web-production",
-      "categoryLabel": "Web制作",
-      "date": "2024-12-25",
-      "excerpt": "PM（プロジェクトマネージャー）って何をする人？プロジェクトの進行管理や品質管理など、中学生でもわかるように解説します。",
-      "path": "blog/posts/what-is-pm.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "web-gradient",
-        "colors": [
-          "#6366F1",
-          "#4F46E5"
-        ]
-      },
-      "svgIcon": {
-        "type": "web-production",
-        "elements": [
-          {
-            "type": "rect",
-            "x": 120,
-            "y": 100,
-            "width": 160,
-            "height": 100,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.4
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 130,
-            "r": 15,
-            "fill": "white",
-            "opacity": 0.7
-          },
-          {
-            "type": "rect",
-            "x": 140,
-            "y": 160,
-            "width": 50,
-            "height": 8,
-            "rx": 2,
-            "fill": "white",
-            "opacity": 0.6
-          }
-        ]
-      }
-    },
-    {
-      "id": "what-is-web-marketer",
-      "title": "Webマーケターとは？仕事内容をわかりやすく解説",
-      "category": "marketing",
-      "categoryLabel": "マーケティング",
-      "date": "2024-12-24",
-      "excerpt": "Webマーケターって何をする人？仕事内容や必要なスキル、キャリアパスまで、中学生でもわかるように解説します。",
-      "path": "blog/posts/what-is-web-marketer.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "marketing-gradient",
-        "colors": [
-          "#EC4899",
-          "#DB2777"
-        ]
-      },
-      "svgIcon": {
-        "type": "marketing",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 25,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 150,
-            "cy": 150,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "circle",
-            "cx": 250,
-            "cy": 150,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "path",
-            "d": "M200 125 L150 130 M200 125 L250 130",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.6
-          }
-        ]
-      }
-    },
-    {
-      "id": "x-twitter-marketing-strategy-2025",
-      "title": "X（Twitter）マーケティング戦略｜フォロワー増加とエンゲージメント向上の実践テクニック",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-12-23",
-      "excerpt": "X（旧Twitter）マーケティングで成果を出すための完全ガイド。最新アルゴリズム対策、フォロワー増加テクニック、エンゲージメント向上施策、広告運用まで、データに基づく実践的な戦略を徹底解説します。",
-      "path": "blog/posts/x-twitter-marketing-strategy-2025.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "type": "sns",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.5
-          }
-        ]
-      }
-    },
-    {
-      "id": "youtube-seo-complete-guide-2025",
-      "title": "YouTube SEO完全ガイド｜検索上位表示とチャンネル登録者増加の秘訣",
+      "id": "ad-fraud-prevention",
+      "title": "広告不正対策ガイド｜アドフラウドから予算を守る方法",
       "category": "misc",
       "categoryLabel": "雑記",
-      "date": "2024-12-22",
-      "excerpt": "YouTube SEOの完全ガイド。検索上位表示とチャンネル登録者増加のための実践的な戦略を、キーワード選定、タイトル最適化、サムネイル制作、タグ設定、エンゲージメント向上まで徹底解説します。",
-      "path": "blog/posts/youtube-seo-complete-guide-2025.html",
+      "date": "2025-11-10",
+      "excerpt": "広告詐欺（アドフラウド）の種類と対策。ボットトラフィック検知、ブランドセーフティ確保、透明性の高い広告運用を実現する方法を解説します。",
+      "path": "blog/posts/ad-fraud-prevention.html",
       "featured": true,
       "svgGradient": {
         "id": "misc-gradient",
@@ -487,108 +76,6 @@
             "rx": 4,
             "fill": "white",
             "opacity": 0.6
-          }
-        ]
-      }
-    },
-    {
-      "id": "how-to-choose-advertising-agency",
-      "title": "Web広告代理店の選び方｜失敗しない見極めポイントと依頼時の注意点",
-      "category": "ads",
-      "categoryLabel": "広告運用",
-      "date": "2024-12-20",
-      "excerpt": "Web広告代理店の選び方を徹底解説。代理店の種類、選定基準、費用相場、契約前のチェックポイント、よくある失敗例まで、実践的なノウハウを紹介します。",
-      "path": "blog/posts/how-to-choose-advertising-agency.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "type": "ads",
-        "elements": [
-          {
-            "type": "rect",
-            "x": 100,
-            "y": 150,
-            "width": 40,
-            "height": 50,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "rect",
-            "x": 150,
-            "y": 120,
-            "width": 40,
-            "height": 80,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "rect",
-            "x": 200,
-            "y": 90,
-            "width": 40,
-            "height": 110,
-            "fill": "white",
-            "opacity": 0.7
-          }
-        ]
-      }
-    },
-    {
-      "id": "video-marketing-strategy-2025",
-      "title": "動画マーケティング戦略2025｜YouTube・TikTok・Instagram活用の全体像",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-12-19",
-      "excerpt": "2025年最新の動画マーケティング戦略を完全解説。YouTube、TikTok、Instagram Reels、YouTube Shortsの特徴比較から、コンテンツ戦略、制作ワークフロー、動画SEO、広告活用、効果測定まで実践的なノウハウを紹介します。",
-      "path": "blog/posts/video-marketing-strategy-2025.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "type": "sns",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.5
           }
         ]
       }
@@ -598,7 +85,7 @@
       "title": "Ahrefs完全ガイド：SEOプロが教える効果的な使い方",
       "category": "seo",
       "categoryLabel": "SEO",
-      "date": "2024-12-18",
+      "date": "2025-11-10",
       "excerpt": "SEOツールAhrefsの使い方を徹底解説。キーワード調査、競合分析、被リンクチェックなど、プロが実践する活用法を初心者向けにわかりやすく説明します。",
       "path": "blog/posts/ahrefs-seo-guide.html",
       "featured": true,
@@ -633,195 +120,11 @@
       }
     },
     {
-      "id": "ecommerce-seo-product-page-optimization",
-      "title": "ECサイトSEO対策｜商品ページを検索上位表示させる10の施策【2025年版】",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-12-17",
-      "excerpt": "ECサイトの商品ページを検索上位表示させるSEO対策を徹底解説。商品タイトル最適化、構造化データ実装、画像SEO、表示速度改善など、2025年最新のEコマースSEO施策を実践的に紹介します。",
-      "path": "blog/posts/ecommerce-seo-product-page-optimization.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "type": "seo",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
-          },
-          {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
-          }
-        ]
-      }
-    },
-    {
-      "id": "influencer-marketing-guide-2025",
-      "title": "インフルエンサーマーケティングの始め方｜費用相場から依頼方法まで徹底解説【2025年版】",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-12-16",
-      "excerpt": "インフルエンサーマーケティングの始め方を完全解説。ナノ・マイクロ・ミドル・メガインフルエンサー別の費用相場、依頼方法、契約のポイント、効果測定、PR表記とステマ規制まで2025年最新情報をお届けします。",
-      "path": "blog/posts/influencer-marketing-guide-2025.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "type": "sns",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.5
-          }
-        ]
-      }
-    },
-    {
-      "id": "structured-data-implementation",
-      "title": "構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-12-15",
-      "excerpt": "構造化データの実装方法を完全解説。Schema.org、JSON-LD、パンくずリスト、FAQ、記事、商品など、SEOに効く構造化データの種類と実装コードを実例付きで紹介します。",
-      "path": "blog/posts/structured-data-implementation.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "type": "seo",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
-          },
-          {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
-          }
-        ]
-      }
-    },
-    {
-      "id": "whitepaper-creation-guide",
-      "title": "ホワイトペーパーの作り方完全ガイド｜BtoBリード獲得に効果的な企画・制作・活用法",
-      "category": "marketing",
-      "categoryLabel": "マーケティング",
-      "date": "2024-12-14",
-      "excerpt": "BtoBマーケティングで効果的なホワイトペーパーの作り方を完全解説。企画立案から制作、デザイン、配布、効果測定まで、リード獲得につながる実践的なノウハウを紹介します。",
-      "path": "blog/posts/whitepaper-creation-guide.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "marketing-gradient",
-        "colors": [
-          "#EC4899",
-          "#DB2777"
-        ]
-      },
-      "svgIcon": {
-        "type": "marketing",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 25,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 150,
-            "cy": 150,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "circle",
-            "cx": 250,
-            "cy": 150,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "path",
-            "d": "M200 125 L150 130 M200 125 L250 130",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.6
-          }
-        ]
-      }
-    },
-    {
       "id": "ai-content-marketing-efficiency",
       "title": "AIで変わるコンテンツマーケティング：生産性を10倍にする実践ガイド",
       "category": "ai",
       "categoryLabel": "AI",
-      "date": "2024-12-13",
+      "date": "2025-11-10",
       "excerpt": "AIツールを活用してコンテンツマーケティングの生産性を劇的に向上させる方法を解説。画像生成AI、動画作成ツール、データ分析まで、実務で使える具体的なテクニックを紹介します。",
       "path": "blog/posts/ai-content-marketing-efficiency.html",
       "featured": true,
@@ -871,99 +174,11 @@
       }
     },
     {
-      "id": "meo-local-seo-guide",
-      "title": "MEO対策完全ガイド｜Googleマップで上位表示させるローカルSEOの全手法",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-12-12",
-      "excerpt": "MEO（ローカルSEO）対策の完全ガイド。Googleビジネスプロフィールの最適化、口コミ対策、NAP統一など、Googleマップで上位表示するための実践的な手法を徹底解説します。",
-      "path": "blog/posts/meo-local-seo-guide.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "type": "seo",
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 150,
-            "cy": 125,
-            "r": 40,
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.7
-          },
-          {
-            "type": "path",
-            "d": "M180 150 L220 190",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.7
-          }
-        ]
-      }
-    },
-    {
-      "id": "web-marketing-cost",
-      "title": "Webマーケティング費用の相場は？施策別の料金体系と予算配分を徹底解説",
-      "category": "ads",
-      "categoryLabel": "広告運用",
-      "date": "2024-12-11",
-      "excerpt": "Webマーケティングにかかる費用を施策別に詳しく解説。SEO、リスティング広告、SNS広告、コンテンツマーケティングなど、各施策の相場と効果的な予算配分をプロが徹底解説します。",
-      "path": "blog/posts/web-marketing-cost.html",
-      "featured": true,
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "type": "ads",
-        "elements": [
-          {
-            "type": "rect",
-            "x": 100,
-            "y": 150,
-            "width": 40,
-            "height": 50,
-            "fill": "white",
-            "opacity": 0.5
-          },
-          {
-            "type": "rect",
-            "x": 150,
-            "y": 120,
-            "width": 40,
-            "height": 80,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "rect",
-            "x": 200,
-            "y": 90,
-            "width": 40,
-            "height": 110,
-            "fill": "white",
-            "opacity": 0.7
-          }
-        ]
-      }
-    },
-    {
       "id": "ai-marketing-chatgpt-claude",
       "title": "ChatGPT・Claude活用術：Webマーケターのための生成AI実践ガイド",
       "category": "ai",
       "categoryLabel": "AI",
-      "date": "2024-12-10",
+      "date": "2025-11-10",
       "excerpt": "WebマーケターがChatGPTやClaudeなどの生成AIを実務で活用するための具体的な方法を解説。プロンプトの書き方からSEO対策、広告コピー作成まで実践的なテクニックを紹介します。",
       "path": "blog/posts/ai-marketing-chatgpt-claude.html",
       "featured": true,
@@ -1013,13 +228,13 @@
       }
     },
     {
-      "id": "ga4-setup-guide",
-      "title": "GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説",
+      "id": "app-promotion-ads",
+      "title": "アプリプロモーション広告｜インストール数を増やす広告戦略",
       "category": "misc",
       "categoryLabel": "雑記",
-      "date": "2024-12-09",
-      "excerpt": "GA4の初期設定から高度なイベント計測まで、実務で使える設定方法を完全網羅。UAとの違い、コンバージョン設定、カスタムディメンション、GTMとの連携など、マーケターが知るべき全てを解説します。",
-      "path": "blog/posts/ga4-setup-guide.html",
+      "date": "2025-11-10",
+      "excerpt": "モバイルアプリのダウンロードを促進する広告戦略。Apple Search Ads、Google App Campaigns、SNS広告の効果的な運用方法を解説します。",
+      "path": "blog/posts/app-promotion-ads.html",
       "featured": true,
       "svgGradient": {
         "id": "misc-gradient",
@@ -1053,50 +268,133 @@
       }
     },
     {
-      "id": "landing-page-cost",
-      "title": "LP（ランディングページ）制作費用の相場は？価格帯別の特徴と選び方を徹底解説",
-      "category": "web-production",
-      "categoryLabel": "Web制作",
-      "date": "2024-12-08",
-      "excerpt": "LP制作の費用相場を価格帯別に詳しく解説。10万円以下から100万円以上まで、それぞれの特徴や含まれる作業内容、依頼先の選び方をプロが徹底解説します。失敗しないLP制作のポイントも紹介。",
-      "path": "blog/posts/landing-page-cost.html",
+      "id": "backlink-building-strategy",
+      "title": "被リンク獲得戦略｜ホワイトハットSEOで権威性を高める方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "質の高い被リンクを自然に獲得するための戦略。ゲストポスト、リンカブルアセット、PR戦略など実践的な手法を紹介します。",
+      "path": "blog/posts/backlink-building-strategy.html",
       "featured": true,
       "svgGradient": {
-        "id": "web-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#6366F1",
-          "#4F46E5"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
-        "type": "web-production",
+        "type": "misc",
         "elements": [
           {
-            "type": "rect",
-            "x": 120,
-            "y": 100,
-            "width": 160,
-            "height": 100,
-            "rx": 8,
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
             "fill": "white",
             "opacity": 0.4
           },
           {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "brand-positioning-strategy",
+      "title": "ブランドポジショニング戦略｜市場で選ばれる存在になる方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "競合と差別化するブランドポジショニングの構築方法。市場分析、ターゲット設定、独自価値の言語化を詳しく解説します。",
+      "path": "blog/posts/brand-positioning-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
             "type": "circle",
             "cx": 200,
-            "cy": 130,
-            "r": 15,
+            "cy": 125,
+            "r": 40,
             "fill": "white",
-            "opacity": 0.7
+            "opacity": 0.4
           },
           {
             "type": "rect",
-            "x": 140,
-            "y": 160,
-            "width": 50,
-            "height": 8,
-            "rx": 2,
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
             "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "btob-content-marketing",
+      "title": "BtoB向けコンテンツマーケティング｜信頼を築く情報発信戦略",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-10",
+      "excerpt": "企業の意思決定者に響くコンテンツマーケティング。ホワイトペーパー、ウェビナー、事例記事の効果的な活用方法を解説します。",
+      "path": "blog/posts/btob-content-marketing.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "marketing-gradient",
+        "colors": [
+          "#EC4899",
+          "#DB2777"
+        ]
+      },
+      "svgIcon": {
+        "type": "marketing",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
             "opacity": 0.6
           }
         ]
@@ -1107,9 +405,62 @@
       "title": "BtoBマーケティング施策完全ガイド：リード獲得から商談化まで",
       "category": "marketing",
       "categoryLabel": "マーケティング",
-      "date": "2024-12-07",
+      "date": "2025-11-10",
       "excerpt": "BtoBマーケティングの全施策を網羅的に解説。リード獲得からナーチャリング、商談化まで、成果を出すための具体的な手法と実践ノウハウを体系的に紹介します。",
       "path": "blog/posts/btob-marketing-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "marketing-gradient",
+        "colors": [
+          "#EC4899",
+          "#DB2777"
+        ]
+      },
+      "svgIcon": {
+        "type": "marketing",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "btob-marketing-kpi",
+      "title": "BtoB マーケティングKPI設計｜成果を可視化する指標の選び方",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-10",
+      "excerpt": "BtoB企業が追うべきマーケティングKPIの設計方法。リード獲得数、MQL/SQL、商談化率、受注率までの指標設計を解説します。",
+      "path": "blog/posts/btob-marketing-kpi.html",
       "featured": true,
       "svgGradient": {
         "id": "marketing-gradient",
@@ -1160,7 +511,7 @@
       "title": "BtoBマーケティング施策の完全ガイド：リード獲得から商談化まで",
       "category": "marketing",
       "categoryLabel": "マーケティング",
-      "date": "2024-12-06",
+      "date": "2025-11-10",
       "excerpt": "BtoBマーケティングの成功施策を徹底解説。リード獲得からナーチャリング、商談化まで、実践的な手法と成功事例を紹介します。",
       "path": "blog/posts/btob-marketing-strategy.html",
       "featured": true,
@@ -1209,11 +560,91 @@
       }
     },
     {
+      "id": "btob-seo-strategy",
+      "title": "BtoB企業のSEO戦略｜検索から商談を生み出す方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "BtoB領域でSEOを成功させるための戦略。専門性の高いキーワード選定、意思決定者向けコンテンツ設計、リード獲得までの導線設計を解説します。",
+      "path": "blog/posts/btob-seo-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "btob-social-selling",
+      "title": "ソーシャルセリング入門｜SNSで信頼関係を築き商談を生む方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "LinkedInを中心としたソーシャルセリングの実践方法。プロフィール最適化、コンテンツ発信、関係構築のテクニックを解説します。",
+      "path": "blog/posts/btob-social-selling.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "claude-code-terminal-guide",
       "title": "次のステップへ！Claude Code・ターミナル活用ガイド",
       "category": "ai",
       "categoryLabel": "AI",
-      "date": "2024-12-05",
+      "date": "2025-11-10",
       "excerpt": "Claude/ChatGPTを使っている人におすすめ！次のステップとしてClaude Codeとターミナル（コマンドライン）の活用方法を、初心者でも分かりやすく解説します。",
       "path": "blog/posts/claude-code-terminal-guide.html",
       "featured": true,
@@ -1267,7 +698,7 @@
       "title": "2025年版：効果的なコンテンツマーケティング戦略の立て方",
       "category": "marketing",
       "categoryLabel": "マーケティング",
-      "date": "2024-12-04",
+      "date": "2025-11-10",
       "excerpt": "コンテンツマーケティングで成果を出すための戦略設計から実行まで、実践的なアプローチをステップバイステップで解説します。",
       "path": "blog/posts/content-marketing.html",
       "featured": true,
@@ -1316,11 +747,171 @@
       }
     },
     {
+      "id": "conversion-rate-optimization",
+      "title": "CRO（コンバージョン率最適化）実践ガイド｜CVRを改善する方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "サイトのコンバージョン率を改善するCROの実践方法。A/Bテスト、ヒートマップ分析、ユーザーテストの活用法を解説します。",
+      "path": "blog/posts/conversion-rate-optimization.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "customer-data-platform",
+      "title": "CDP（顧客データプラットフォーム）入門｜統合データで顧客体験を向上",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "顧客データを統合管理するCDPの基本。CRM・MAとの違い、導入メリット、主要CDPツールの比較を解説します。",
+      "path": "blog/posts/customer-data-platform.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "customer-journey-mapping",
+      "title": "カスタマージャーニーマップ作成ガイド｜顧客理解を深める方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "顧客の行動と心理を可視化するカスタマージャーニーマップの作り方。ペルソナ設計、タッチポイント分析、施策立案まで解説します。",
+      "path": "blog/posts/customer-journey-mapping.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "display-ads-optimization",
+      "title": "ディスプレイ広告最適化ガイド｜バナー広告で成果を出す方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "ディスプレイ広告の効果を最大化するクリエイティブ制作とターゲティング戦略。GDN、YDAの運用テクニックを詳しく解説します。",
+      "path": "blog/posts/display-ads-optimization.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "email-marketing-complete-guide-2025",
       "title": "メールマーケティング完全ガイド｜開封率・クリック率を上げる実践テクニック",
       "category": "misc",
       "categoryLabel": "雑記",
-      "date": "2024-12-03",
+      "date": "2025-11-10",
       "excerpt": "メールマーケティングの開封率・クリック率を劇的に向上させる実践テクニックを徹底解説。A/Bテスト、セグメンテーション、自動化戦略から最新ツール比較まで、2025年の成功事例とともに紹介します。",
       "path": "blog/posts/email-marketing-complete-guide-2025.html",
       "featured": true,
@@ -1356,11 +947,60 @@
       }
     },
     {
+      "id": "facebook-ads-strategy",
+      "title": "Facebook広告完全ガイド｜効果的なターゲティングと広告運用のコツ",
+      "category": "ads",
+      "categoryLabel": "広告運用",
+      "date": "2025-11-10",
+      "excerpt": "Facebook広告で成果を出すための実践的な戦略。オーディエンス設定、クリエイティブ制作、予算配分まで詳しく解説します。",
+      "path": "blog/posts/facebook-ads-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "ads-gradient",
+        "colors": [
+          "#F59E0B",
+          "#D97706"
+        ]
+      },
+      "svgIcon": {
+        "type": "ads",
+        "elements": [
+          {
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
+            "opacity": 0.7
+          }
+        ]
+      }
+    },
+    {
       "id": "google-ads-tips",
       "title": "Google広告の費用対効果を最大化する運用テクニック",
       "category": "ads",
       "categoryLabel": "広告運用",
-      "date": "2024-12-02",
+      "date": "2025-11-10",
       "excerpt": "限られた予算で最大の効果を出すために、Google広告の運用で押さえるべきポイントを実践的に解説します。",
       "path": "blog/posts/google-ads-tips.html",
       "featured": true,
@@ -1405,11 +1045,51 @@
       }
     },
     {
+      "id": "growth-hacking-basics",
+      "title": "グロースハック入門｜スタートアップが急成長する仕組み",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "データドリブンで成長を加速させるグロースハックの手法。AARRR指標、バイラルループ、プロダクト主導成長を解説します。",
+      "path": "blog/posts/growth-hacking-basics.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "hubspot-crm-guide",
       "title": "HubSpot CRM導入ガイド：効果的な顧客管理で営業を10倍効率化",
       "category": "marketing",
       "categoryLabel": "マーケティング",
-      "date": "2024-12-01",
+      "date": "2025-11-10",
       "excerpt": "HubSpot CRMの導入を検討している企業向けに、必要性の判断基準から導入効果、具体的な導入手順まで徹底解説。営業効率化とマーケティング自動化を実現します。",
       "path": "blog/posts/hubspot-crm-guide.html",
       "featured": true,
@@ -1462,7 +1142,7 @@
       "title": "Instagram最新アルゴリズム攻略＆Meta広告活用ガイド",
       "category": "ads",
       "categoryLabel": "広告運用",
-      "date": "2024-11-30",
+      "date": "2025-11-10",
       "excerpt": "Instagram最新アルゴリズムの攻略法とMeta広告の優位性を解説。エンゲージメント向上テクニック、情報収集方法、広告運用のコツを実践的に紹介します。",
       "path": "blog/posts/instagram-algorithm-meta-ads.html",
       "featured": true,
@@ -1511,7 +1191,7 @@
       "title": "Instagramリール活用法｜再生数を10倍にする投稿戦略【2025年完全版】",
       "category": "sns",
       "categoryLabel": "SNS",
-      "date": "2024-11-29",
+      "date": "2025-11-10",
       "excerpt": "Instagramリール活用で再生数を10倍にする完全ガイド。アルゴリズムの仕組み、バズる動画編集テクニック、トレンドオーディオの選び方、最適なハッシュタグ戦略、分析ツールの使い方まで、データに基づく実践的な投稿戦略を徹底解説します。",
       "path": "blog/posts/instagram-reels-strategy-2025.html",
       "featured": true,
@@ -1560,11 +1240,51 @@
       }
     },
     {
+      "id": "international-seo-guide",
+      "title": "多言語SEO実践ガイド｜海外展開で成功するための最適化戦略",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "グローバル展開を目指す企業のための多言語SEO戦略。hreflang設定、地域ターゲティング、文化に応じたコンテンツ最適化を解説します。",
+      "path": "blog/posts/international-seo-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "landing-page-cost-guide",
       "title": "ランディングページ制作費用の相場と選び方：失敗しない制作会社の見極め方",
       "category": "web-production",
       "categoryLabel": "Web制作",
-      "date": "2024-11-28",
+      "date": "2025-11-10",
       "excerpt": "ランディングページ制作の費用相場を徹底解説。格安から高品質まで、価格帯別の特徴と選び方、失敗しない制作会社の見極め方を詳しく紹介します。",
       "path": "blog/posts/landing-page-cost-guide.html",
       "featured": true,
@@ -1610,11 +1330,51 @@
       }
     },
     {
+      "id": "lead-nurturing-automation",
+      "title": "リードナーチャリング完全ガイド｜見込み客を育成する自動化戦略",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "MAツールを活用したリードナーチャリングの実践方法。スコアリング設計、シナリオ設計、コンテンツ戦略を詳しく解説します。",
+      "path": "blog/posts/lead-nurturing-automation.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "linkedin-btob-marketing-lead-generation",
       "title": "LinkedIn BtoBマーケティング｜リード獲得に効果的な7つの施策",
       "category": "marketing",
       "categoryLabel": "マーケティング",
-      "date": "2024-11-27",
+      "date": "2025-11-10",
       "excerpt": "LinkedInを活用したBtoBマーケティングの完全ガイド。リード獲得から商談化まで、効果的な7つの施策を詳しく解説。LinkedInの特徴を活かした戦略とROIデータで、成果を最大化する方法をご紹介します。",
       "path": "blog/posts/linkedin-btob-marketing-lead-generation.html",
       "featured": true,
@@ -1663,13 +1423,279 @@
       }
     },
     {
+      "id": "local-seo-strategy",
+      "title": "ローカルSEO完全マニュアル｜地域ビジネスで検索上位を獲得する方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "地域密着型ビジネスにおけるSEO戦略の全て。Googleマイビジネスの最適化から、ローカルキーワードの選定方法まで詳しく解説します。",
+      "path": "blog/posts/local-seo-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "marketing-automation-comparison",
+      "title": "MAツール徹底比較2024｜HubSpot・Marketo・Pardot機能と料金",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-10",
+      "excerpt": "主要なマーケティングオートメーションツールを徹底比較。機能、料金、導入難易度、サポート体制まで詳しく解説します。",
+      "path": "blog/posts/marketing-automation-comparison.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "marketing-gradient",
+        "colors": [
+          "#EC4899",
+          "#DB2777"
+        ]
+      },
+      "svgIcon": {
+        "type": "marketing",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "marketing-budget-allocation",
+      "title": "マーケティング予算配分の最適化｜ROIを最大化する投資戦略",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "限られた予算で最大の成果を出すための配分戦略。チャネル別のROI分析、テスト予算の確保、予算見直しのタイミングを解説します。",
+      "path": "blog/posts/marketing-budget-allocation.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "media-mix-seven-hits",
       "title": "メディアミックス×エンティティ×セブンヒッツ理論で実現する統合マーケティング戦略",
       "category": "marketing",
       "categoryLabel": "マーケティング",
-      "date": "2024-11-26",
+      "date": "2025-11-10",
       "excerpt": "メディアミックス、エンティティ、セブンヒッツ理論の基本から、これらを統合した効果的なマーケティング戦略まで、初心者にもわかりやすく解説します。",
       "path": "blog/posts/media-mix-seven-hits.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "marketing-gradient",
+        "colors": [
+          "#EC4899",
+          "#DB2777"
+        ]
+      },
+      "svgIcon": {
+        "type": "marketing",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "mobile-seo-optimization",
+      "title": "モバイルSEO最適化ガイド｜スマホ検索で優位に立つ方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "モバイルファーストインデックス時代のSEO戦略。レスポンシブデザイン、ページ速度、モバイルUXの最適化方法を解説します。",
+      "path": "blog/posts/mobile-seo-optimization.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-advertising-strategy",
+      "title": "ネイティブ広告活用術｜自然な形で訴求する広告戦略",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "コンテンツに溶け込むネイティブ広告の効果的な活用法。記事広告、インフィード広告、レコメンドウィジェットの使い分けを解説します。",
+      "path": "blog/posts/native-advertising-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "omnichannel-marketing",
+      "title": "オムニチャネルマーケティング戦略｜顧客体験を統合する方法",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-10",
+      "excerpt": "オンライン・オフラインを統合したオムニチャネル戦略。顧客データ統合、チャネル横断の施策設計、効果測定方法を解説します。",
+      "path": "blog/posts/omnichannel-marketing.html",
       "featured": true,
       "svgGradient": {
         "id": "marketing-gradient",
@@ -1720,7 +1746,7 @@
       "title": "オウンドメディア運用代行の完全ガイド：費用対効果を最大化する選び方",
       "category": "marketing",
       "categoryLabel": "マーケティング",
-      "date": "2024-11-25",
+      "date": "2025-11-10",
       "excerpt": "オウンドメディア運用代行サービスの選び方から費用相場、成功事例まで徹底解説。社内リソース不足でお悩みの企業様に最適な運用代行の活用方法をご紹介します。",
       "path": "blog/posts/owned-media-operation-service.html",
       "featured": true,
@@ -1769,11 +1795,224 @@
       }
     },
     {
+      "id": "partner-marketing-strategy",
+      "title": "パートナーマーケティング戦略｜協業で市場を拡大する方法",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-10",
+      "excerpt": "他社との協業を活用したマーケティング戦略。パートナー選定、共同施策の企画、Win-Winの関係構築方法を解説します。",
+      "path": "blog/posts/partner-marketing-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "marketing-gradient",
+        "colors": [
+          "#EC4899",
+          "#DB2777"
+        ]
+      },
+      "svgIcon": {
+        "type": "marketing",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "pinterest-marketing-guide",
+      "title": "Pinterestマーケティング入門｜ビジュアル検索で集客する方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "ビジュアルコンテンツで集客を実現するPinterest活用法。ピン作成、ボード運営、Pinterest SEOの基本を解説します。",
+      "path": "blog/posts/pinterest-marketing-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "programmatic-advertising-guide",
+      "title": "プログラマティック広告入門｜自動化で効率的に配信する方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "DSP、SSPを活用したプログラマティック広告の基本。リアルタイム入札の仕組み、データ活用、効果的な運用方法を解説します。",
+      "path": "blog/posts/programmatic-advertising-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "retargeting-ads-strategy",
+      "title": "リターゲティング広告完全ガイド｜CVRを劇的に改善する追跡型広告",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "サイト訪問者を再度アプローチするリターゲティング広告の戦略。セグメント設計、クリエイティブ戦略、フリークエンシーキャップの設定方法を解説します。",
+      "path": "blog/posts/retargeting-ads-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "seo-analytics-reporting",
+      "title": "SEO分析と効果測定｜データドリブンで成果を最大化する方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "SEOの成果を正確に測定し、改善につなげる分析手法。GA4、Search Console、順位トラッキングツールの活用方法を解説します。",
+      "path": "blog/posts/seo-analytics-reporting.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "seo-basics",
       "title": "SEO対策の基本：検索順位を上げるための5つのポイント",
       "category": "seo",
       "categoryLabel": "SEO",
-      "date": "2024-11-24",
+      "date": "2025-11-10",
       "excerpt": "SEO対策の基本的な考え方から、検索順位を上げるための具体的な施策まで、初心者でも実践できる5つのポイントを解説します。",
       "path": "blog/posts/seo-basics.html",
       "featured": true,
@@ -1808,11 +2047,51 @@
       }
     },
     {
+      "id": "seo-content-optimization",
+      "title": "SEOライティング完全ガイド｜検索上位を獲得するコンテンツの書き方",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "検索意図を満たす高品質なコンテンツの作り方。キーワードリサーチから記事構成、内部リンク戦略まで実践的に解説します。",
+      "path": "blog/posts/seo-content-optimization.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
       "id": "seo-future-2025",
       "title": "SEOは終わった？AI時代の検索市場の真実とメディアミックス戦略",
       "category": "ai",
       "categoryLabel": "AI",
-      "date": "2024-11-23",
+      "date": "2025-11-10",
       "excerpt": "「SEOはオワコン？」そんな疑問にデータで答えます。AI検索時代でも検索市場はシュリンクしていない理由と、これからのメディアミックス戦略を解説します。",
       "path": "blog/posts/seo-future-2025.html",
       "featured": true,
@@ -1866,7 +2145,7 @@
       "title": "SEOツール比較2025｜Ahrefs vs SEMrush vs Moz Pro徹底解説",
       "category": "seo",
       "categoryLabel": "SEO",
-      "date": "2024-11-22",
+      "date": "2025-11-10",
       "excerpt": "2025年最新版：Ahrefs・SEMrush・Moz Proを徹底比較。機能・料金・使いやすさを詳細に分析し、ビジネス規模別におすすめのSEOツールを紹介します。",
       "path": "blog/posts/seo-tools-comparison-ahrefs-semrush-moz.html",
       "featured": true,
@@ -1901,301 +2180,94 @@
       }
     },
     {
-      "id": "local-seo-strategy",
-      "title": "ローカルSEO完全マニュアル｜地域ビジネスで検索上位を獲得する方法",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-21",
-      "excerpt": "地域密着型ビジネスにおけるSEO戦略の全て。Googleマイビジネスの最適化から、ローカルキーワードの選定方法まで詳しく解説します。",
-      "path": "blog/posts/local-seo-strategy.html",
+      "id": "shopping-ads-guide",
+      "title": "Googleショッピング広告完全ガイド｜EC売上を最大化する運用方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "ECサイト向けのショッピング広告戦略。商品フィード最適化、入札戦略、季節要因を考慮した運用テクニックを詳しく解説します。",
+      "path": "blog/posts/shopping-ads-guide.html",
+      "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
+        "type": "misc",
         "elements": [
           {
             "type": "circle",
             "cx": 200,
-            "cy": 100,
-            "r": 30,
+            "cy": 125,
+            "r": 40,
             "fill": "white",
-            "opacity": 0.3
+            "opacity": 0.4
           },
           {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
     },
     {
-      "id": "technical-seo-guide",
-      "title": "テクニカルSEO入門｜検索エンジンに評価されるサイト構造の作り方",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-20",
-      "excerpt": "サイトの内部構造を最適化し、検索エンジンのクローラビリティを向上させる方法を解説。XML sitemap、robots.txt、構造化データの実装方法まで。",
-      "path": "blog/posts/technical-seo-guide.html",
+      "id": "sns-crisis-management",
+      "title": "SNS炎上対策とクライシスマネジメント｜リスク回避の実践ガイド",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "SNS運用における炎上リスクとその対策。予防策、炎上発生時の対処法、レピュテーション回復の手順を解説します。",
+      "path": "blog/posts/sns-crisis-management.html",
+      "featured": true,
       "svgGradient": {
-        "id": "seo-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#10B981",
-          "#059669"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
+        "type": "misc",
         "elements": [
           {
             "type": "circle",
             "cx": 200,
-            "cy": 100,
-            "r": 30,
+            "cy": 125,
+            "r": 40,
             "fill": "white",
-            "opacity": 0.3
+            "opacity": 0.4
           },
           {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
     },
     {
-      "id": "seo-content-optimization",
-      "title": "SEOライティング完全ガイド｜検索上位を獲得するコンテンツの書き方",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-19",
-      "excerpt": "検索意図を満たす高品質なコンテンツの作り方。キーワードリサーチから記事構成、内部リンク戦略まで実践的に解説します。",
-      "path": "blog/posts/seo-content-optimization.html",
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 30,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "backlink-building-strategy",
-      "title": "被リンク獲得戦略｜ホワイトハットSEOで権威性を高める方法",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-18",
-      "excerpt": "質の高い被リンクを自然に獲得するための戦略。ゲストポスト、リンカブルアセット、PR戦略など実践的な手法を紹介します。",
-      "path": "blog/posts/backlink-building-strategy.html",
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 30,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "mobile-seo-optimization",
-      "title": "モバイルSEO最適化ガイド｜スマホ検索で優位に立つ方法",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-17",
-      "excerpt": "モバイルファーストインデックス時代のSEO戦略。レスポンシブデザイン、ページ速度、モバイルUXの最適化方法を解説します。",
-      "path": "blog/posts/mobile-seo-optimization.html",
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 30,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "international-seo-guide",
-      "title": "多言語SEO実践ガイド｜海外展開で成功するための最適化戦略",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-16",
-      "excerpt": "グローバル展開を目指す企業のための多言語SEO戦略。hreflang設定、地域ターゲティング、文化に応じたコンテンツ最適化を解説します。",
-      "path": "blog/posts/international-seo-guide.html",
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 30,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "voice-search-seo",
-      "title": "音声検索SEO対策｜スマートスピーカー時代の最適化戦略",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-15",
-      "excerpt": "Alexa、Google Assistant時代の検索最適化。会話型クエリへの対応、Featured Snippets獲得戦略を詳しく解説します。",
-      "path": "blog/posts/voice-search-seo.html",
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 30,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "seo-analytics-reporting",
-      "title": "SEO分析と効果測定｜データドリブンで成果を最大化する方法",
-      "category": "seo",
-      "categoryLabel": "SEO",
-      "date": "2024-11-14",
-      "excerpt": "SEOの成果を正確に測定し、改善につなげる分析手法。GA4、Search Console、順位トラッキングツールの活用方法を解説します。",
-      "path": "blog/posts/seo-analytics-reporting.html",
-      "svgGradient": {
-        "id": "seo-gradient",
-        "colors": [
-          "#10B981",
-          "#059669"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 100,
-            "r": 30,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M180 125 L200 145 L240 105",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "facebook-ads-strategy",
-      "title": "Facebook広告完全ガイド｜効果的なターゲティングと広告運用のコツ",
+      "id": "sns-strategy",
+      "title": "SNSマーケティング成功の秘訣：エンゲージメントを高める投稿戦略",
       "category": "sns",
       "categoryLabel": "SNS",
-      "date": "2024-11-13",
-      "excerpt": "Facebook広告で成果を出すための実践的な戦略。オーディエンス設定、クリエイティブ制作、予算配分まで詳しく解説します。",
-      "path": "blog/posts/facebook-ads-strategy.html",
+      "date": "2025-11-10",
+      "excerpt": "SNSでのエンゲージメント向上は、ブランド認知とファン獲得に直結します。効果的な投稿戦略のポイントをご紹介します。",
+      "path": "blog/posts/sns-strategy.html",
+      "featured": true,
       "svgGradient": {
         "id": "sns-gradient",
         "colors": [
@@ -2204,6 +2276,7 @@
         ]
       },
       "svgIcon": {
+        "type": "sns",
         "elements": [
           {
             "type": "circle",
@@ -2234,7 +2307,216 @@
             "d": "M140 125 L180 125 M220 125 L260 125",
             "stroke": "white",
             "strokeWidth": 3,
-            "opacity": 0.8
+            "opacity": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "social-listening-guide",
+      "title": "ソーシャルリスニング実践ガイド｜SNSから顧客インサイトを得る方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "SNS上の会話を分析し、マーケティングに活かすソーシャルリスニング。ツール選定、分析手法、アクション例を紹介します。",
+      "path": "blog/posts/social-listening-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "social-media-analytics",
+      "title": "SNS分析ツール比較｜データで改善するソーシャルメディア運用",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "SNS運用を数値で改善するための分析ツール比較。無料ツールから高機能な有料ツールまで、目的別の選び方を解説します。",
+      "path": "blog/posts/social-media-analytics.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "technical-seo-guide",
+      "title": "テクニカルSEO入門｜検索エンジンに評価されるサイト構造の作り方",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "サイトの内部構造を最適化し、検索エンジンのクローラビリティを向上させる方法を解説。XML sitemap、robots.txt、構造化データの実装方法まで。",
+      "path": "blog/posts/technical-seo-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "threads-marketing-strategy",
+      "title": "Threads活用戦略｜新SNSで先行者利益を得る方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "Meta社の新SNS「Threads」でブランディングと集客を実現する戦略。初期フォロワー獲得、投稿戦略、Instagram連携を解説します。",
+      "path": "blog/posts/threads-marketing-strategy.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "tiktok-ads-guide-2025",
+      "title": "TikTok広告完全ガイド2025｜始め方から成果を出す運用方法まで",
+      "category": "ads",
+      "categoryLabel": "広告運用",
+      "date": "2025-11-10",
+      "excerpt": "TikTok広告の始め方から成果を出す運用方法まで完全解説。アカウント開設、ターゲティング設定、クリエイティブ制作、入札戦略、効果測定など、実践的なノウハウを2025年最新版でお届けします。",
+      "path": "blog/posts/tiktok-ads-guide-2025.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "ads-gradient",
+        "colors": [
+          "#F59E0B",
+          "#D97706"
+        ]
+      },
+      "svgIcon": {
+        "type": "ads",
+        "elements": [
+          {
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
+            "opacity": 0.7
           }
         ]
       }
@@ -2244,9 +2526,10 @@
       "title": "X（Twitter）エンゲージメント向上術｜バズる投稿の作り方",
       "category": "sns",
       "categoryLabel": "SNS",
-      "date": "2024-11-12",
+      "date": "2025-11-10",
       "excerpt": "Xでエンゲージメントを最大化する投稿テクニック。タイミング、ハッシュタグ戦略、リツイートされやすいコンテンツの作り方を解説します。",
       "path": "blog/posts/twitter-engagement-tactics.html",
+      "featured": true,
       "svgGradient": {
         "id": "sns-gradient",
         "colors": [
@@ -2255,6 +2538,7 @@
         ]
       },
       "svgIcon": {
+        "type": "sns",
         "elements": [
           {
             "type": "circle",
@@ -2285,160 +2569,7 @@
             "d": "M140 125 L180 125 M220 125 L260 125",
             "stroke": "white",
             "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "pinterest-marketing-guide",
-      "title": "Pinterestマーケティング入門｜ビジュアル検索で集客する方法",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-11-11",
-      "excerpt": "ビジュアルコンテンツで集客を実現するPinterest活用法。ピン作成、ボード運営、Pinterest SEOの基本を解説します。",
-      "path": "blog/posts/pinterest-marketing-guide.html",
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "threads-marketing-strategy",
-      "title": "Threads活用戦略｜新SNSで先行者利益を得る方法",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-11-10",
-      "excerpt": "Meta社の新SNS「Threads」でブランディングと集客を実現する戦略。初期フォロワー獲得、投稿戦略、Instagram連携を解説します。",
-      "path": "blog/posts/threads-marketing-strategy.html",
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "social-media-analytics",
-      "title": "SNS分析ツール比較｜データで改善するソーシャルメディア運用",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-11-09",
-      "excerpt": "SNS運用を数値で改善するための分析ツール比較。無料ツールから高機能な有料ツールまで、目的別の選び方を解説します。",
-      "path": "blog/posts/social-media-analytics.html",
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
+            "opacity": 0.5
           }
         ]
       }
@@ -2446,226 +2577,39 @@
     {
       "id": "ugc-marketing-strategy",
       "title": "UGC活用マーケティング｜ユーザー投稿で信頼性を高める方法",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-11-08",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
       "excerpt": "ユーザー生成コンテンツ（UGC）を活用したマーケティング戦略。投稿促進施策、権利処理、効果的な活用方法を詳しく解説します。",
       "path": "blog/posts/ugc-marketing-strategy.html",
+      "featured": true,
       "svgGradient": {
-        "id": "sns-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#06B6D4",
-          "#0891B2"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
+        "type": "misc",
         "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
           {
             "type": "circle",
             "cx": 200,
             "cy": 125,
-            "r": 20,
+            "r": 40,
             "fill": "white",
-            "opacity": 0.6
+            "opacity": 0.4
           },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "social-listening-guide",
-      "title": "ソーシャルリスニング実践ガイド｜SNSから顧客インサイトを得る方法",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-11-07",
-      "excerpt": "SNS上の会話を分析し、マーケティングに活かすソーシャルリスニング。ツール選定、分析手法、アクション例を紹介します。",
-      "path": "blog/posts/social-listening-guide.html",
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "sns-crisis-management",
-      "title": "SNS炎上対策とクライシスマネジメント｜リスク回避の実践ガイド",
-      "category": "sns",
-      "categoryLabel": "SNS",
-      "date": "2024-11-06",
-      "excerpt": "SNS運用における炎上リスクとその対策。予防策、炎上発生時の対処法、レピュテーション回復の手順を解説します。",
-      "path": "blog/posts/sns-crisis-management.html",
-      "svgGradient": {
-        "id": "sns-gradient",
-        "colors": [
-          "#06B6D4",
-          "#0891B2"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "circle",
-            "cx": 120,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "circle",
-            "cx": 280,
-            "cy": 125,
-            "r": 20,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M140 125 L180 125 M220 125 L260 125",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "display-ads-optimization",
-      "title": "ディスプレイ広告最適化ガイド｜バナー広告で成果を出す方法",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-11-05",
-      "excerpt": "ディスプレイ広告の効果を最大化するクリエイティブ制作とターゲティング戦略。GDN、YDAの運用テクニックを詳しく解説します。",
-      "path": "blog/posts/display-ads-optimization.html",
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
           {
             "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
-            "rx": 8,
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
             "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "retargeting-ads-strategy",
-      "title": "リターゲティング広告完全ガイド｜CVRを劇的に改善する追跡型広告",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-11-04",
-      "excerpt": "サイト訪問者を再度アプローチするリターゲティング広告の戦略。セグメント設計、クリエイティブ戦略、フリークエンシーキャップの設定方法を解説します。",
-      "path": "blog/posts/retargeting-ads-strategy.html",
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.8
+            "opacity": 0.6
           }
         ]
       }
@@ -2673,401 +2617,178 @@
     {
       "id": "video-ads-production",
       "title": "動画広告制作ガイド｜視聴完了率を高める動画の作り方",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-11-03",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
       "excerpt": "YouTube、SNSで効果を出す動画広告の制作ノウハウ。最初の3秒で惹きつける方法、ストーリーテリング、CTA設計を解説します。",
       "path": "blog/posts/video-ads-production.html",
+      "featured": true,
       "svgGradient": {
-        "id": "ads-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#F59E0B",
-          "#D97706"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
+        "type": "misc",
         "elements": [
           {
-            "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
-            "rx": 8,
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
             "fill": "white",
-            "opacity": 0.3
+            "opacity": 0.4
           },
           {
-            "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.8
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
     },
     {
-      "id": "programmatic-advertising-guide",
-      "title": "プログラマティック広告入門｜自動化で効率的に配信する方法",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-11-02",
-      "excerpt": "DSP、SSPを活用したプログラマティック広告の基本。リアルタイム入札の仕組み、データ活用、効果的な運用方法を解説します。",
-      "path": "blog/posts/programmatic-advertising-guide.html",
+      "id": "voice-search-seo",
+      "title": "音声検索SEO対策｜スマートスピーカー時代の最適化戦略",
+      "category": "seo",
+      "categoryLabel": "SEO",
+      "date": "2025-11-10",
+      "excerpt": "Alexa、Google Assistant時代の検索最適化。会話型クエリへの対応、Featured Snippets獲得戦略を詳しく解説します。",
+      "path": "blog/posts/voice-search-seo.html",
+      "featured": true,
       "svgGradient": {
-        "id": "ads-gradient",
+        "id": "seo-gradient",
         "colors": [
-          "#F59E0B",
-          "#D97706"
+          "#10B981",
+          "#059669"
         ]
       },
       "svgIcon": {
+        "type": "seo",
         "elements": [
           {
-            "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.3
+            "type": "circle",
+            "cx": 150,
+            "cy": 125,
+            "r": 40,
+            "stroke": "white",
+            "strokeWidth": 4,
+            "fill": "none",
+            "opacity": 0.7
           },
           {
             "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
+            "d": "M180 150 L220 190",
             "stroke": "white",
             "strokeWidth": 4,
-            "opacity": 0.8
+            "opacity": 0.7
           }
         ]
       }
     },
     {
-      "id": "native-advertising-strategy",
-      "title": "ネイティブ広告活用術｜自然な形で訴求する広告戦略",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-11-01",
-      "excerpt": "コンテンツに溶け込むネイティブ広告の効果的な活用法。記事広告、インフィード広告、レコメンドウィジェットの使い分けを解説します。",
-      "path": "blog/posts/native-advertising-strategy.html",
+      "id": "web-director-role",
+      "title": "Webディレクターの仕事内容とは？PMとの違いも解説",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
+      "date": "2025-11-10",
+      "excerpt": "Webディレクターの仕事内容を徹底解説。PMとの違い、必要なスキル、キャリアパス、1日のスケジュールまで、これからWebディレクターを目指す人に向けて詳しく説明します。",
+      "path": "blog/posts/web-director-role.html",
+      "featured": true,
       "svgGradient": {
-        "id": "ads-gradient",
+        "id": "web-gradient",
         "colors": [
-          "#F59E0B",
-          "#D97706"
+          "#6366F1",
+          "#4F46E5"
         ]
       },
       "svgIcon": {
+        "type": "web-production",
         "elements": [
           {
             "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
             "rx": 8,
             "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "shopping-ads-guide",
-      "title": "Googleショッピング広告完全ガイド｜EC売上を最大化する運用方法",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-10-31",
-      "excerpt": "ECサイト向けのショッピング広告戦略。商品フィード最適化、入札戦略、季節要因を考慮した運用テクニックを詳しく解説します。",
-      "path": "blog/posts/shopping-ads-guide.html",
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "app-promotion-ads",
-      "title": "アプリプロモーション広告｜インストール数を増やす広告戦略",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-10-30",
-      "excerpt": "モバイルアプリのダウンロードを促進する広告戦略。Apple Search Ads、Google App Campaigns、SNS広告の効果的な運用方法を解説します。",
-      "path": "blog/posts/app-promotion-ads.html",
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "ad-fraud-prevention",
-      "title": "広告不正対策ガイド｜アドフラウドから予算を守る方法",
-      "category": "ads",
-      "categoryLabel": "ADS",
-      "date": "2024-10-29",
-      "excerpt": "広告詐欺（アドフラウド）の種類と対策。ボットトラフィック検知、ブランドセーフティ確保、透明性の高い広告運用を実現する方法を解説します。",
-      "path": "blog/posts/ad-fraud-prevention.html",
-      "svgGradient": {
-        "id": "ads-gradient",
-        "colors": [
-          "#F59E0B",
-          "#D97706"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 150,
-            "y": 90,
-            "width": 100,
-            "height": 70,
-            "rx": 8,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "path",
-            "d": "M170 110 L230 150 M230 110 L170 150",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "account-based-marketing",
-      "title": "ABM（アカウントベースドマーケティング）実践ガイド｜大口顧客を獲得する戦略",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-28",
-      "excerpt": "特定企業をターゲットにしたABM戦略の全て。ターゲットアカウント選定、パーソナライズド施策、営業連携の方法を解説します。",
-      "path": "blog/posts/account-based-marketing.html",
-      "svgGradient": {
-        "id": "btob-gradient",
-        "colors": [
-          "#8B5CF6",
-          "#7C3AED"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
-            "fill": "white",
-            "opacity": 0.3
+            "opacity": 0.4
           },
           {
             "type": "circle",
             "cx": 200,
-            "cy": 115,
-            "r": 12,
+            "cy": 130,
+            "r": 15,
             "fill": "white",
-            "opacity": 0.6
+            "opacity": 0.7
           },
           {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
+            "type": "rect",
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
     },
     {
-      "id": "btob-content-marketing",
-      "title": "BtoB向けコンテンツマーケティング｜信頼を築く情報発信戦略",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-27",
-      "excerpt": "企業の意思決定者に響くコンテンツマーケティング。ホワイトペーパー、ウェビナー、事例記事の効果的な活用方法を解説します。",
-      "path": "blog/posts/btob-content-marketing.html",
+      "id": "web-vitals-guide",
+      "title": "Core Web Vitals完全ガイド：Webサイトのパフォーマンスを最適化する方法",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
+      "date": "2025-11-10",
+      "excerpt": "GoogleのランキングシグナルとなったCore Web Vitals。各指標の意味と改善方法を具体的に解説します。",
+      "path": "blog/posts/web-vitals-guide.html",
+      "featured": true,
       "svgGradient": {
-        "id": "btob-gradient",
+        "id": "web-gradient",
         "colors": [
-          "#8B5CF6",
-          "#7C3AED"
+          "#6366F1",
+          "#4F46E5"
         ]
       },
       "svgIcon": {
+        "type": "web-production",
         "elements": [
           {
             "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
             "fill": "white",
-            "opacity": 0.3
+            "opacity": 0.4
           },
           {
             "type": "circle",
             "cx": 200,
-            "cy": 115,
-            "r": 12,
+            "cy": 130,
+            "r": 15,
             "fill": "white",
-            "opacity": 0.6
+            "opacity": 0.7
           },
-          {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "lead-nurturing-automation",
-      "title": "リードナーチャリング完全ガイド｜見込み客を育成する自動化戦略",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-26",
-      "excerpt": "MAツールを活用したリードナーチャリングの実践方法。スコアリング設計、シナリオ設計、コンテンツ戦略を詳しく解説します。",
-      "path": "blog/posts/lead-nurturing-automation.html",
-      "svgGradient": {
-        "id": "btob-gradient",
-        "colors": [
-          "#8B5CF6",
-          "#7C3AED"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
           {
             "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 115,
-            "r": 12,
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
             "fill": "white",
             "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "btob-seo-strategy",
-      "title": "BtoB企業のSEO戦略｜検索から商談を生み出す方法",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-25",
-      "excerpt": "BtoB領域でSEOを成功させるための戦略。専門性の高いキーワード選定、意思決定者向けコンテンツ設計、リード獲得までの導線設計を解説します。",
-      "path": "blog/posts/btob-seo-strategy.html",
-      "svgGradient": {
-        "id": "btob-gradient",
-        "colors": [
-          "#8B5CF6",
-          "#7C3AED"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 115,
-            "r": 12,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
           }
         ]
       }
@@ -3075,224 +2796,179 @@
     {
       "id": "webinar-marketing-guide",
       "title": "ウェビナーマーケティング実践ガイド｜オンラインセミナーでリード獲得",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-24",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
       "excerpt": "ウェビナーを活用したBtoBマーケティング。企画立案、集客施策、当日運営、フォローアップまで一連の流れを解説します。",
       "path": "blog/posts/webinar-marketing-guide.html",
+      "featured": true,
       "svgGradient": {
-        "id": "btob-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#8B5CF6",
-          "#7C3AED"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
+        "type": "misc",
         "elements": [
-          {
-            "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
-            "fill": "white",
-            "opacity": 0.3
-          },
           {
             "type": "circle",
             "cx": 200,
-            "cy": 115,
-            "r": 12,
+            "cy": 125,
+            "r": 40,
             "fill": "white",
-            "opacity": 0.6
+            "opacity": 0.4
           },
           {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
     },
     {
-      "id": "btob-social-selling",
-      "title": "ソーシャルセリング入門｜SNSで信頼関係を築き商談を生む方法",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-23",
-      "excerpt": "LinkedInを中心としたソーシャルセリングの実践方法。プロフィール最適化、コンテンツ発信、関係構築のテクニックを解説します。",
-      "path": "blog/posts/btob-social-selling.html",
+      "id": "website-lead-generation-methods",
+      "title": "Webサイト集客の完全ガイド：今すぐ実践できる10の効果的な方法",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "Webサイトで効果的に集客する方法を完全解説。SEO、広告、SNS、コンテンツマーケティングなど、具体的な施策と成功事例を交えて、今すぐ実践できる集客方法を紹介します。",
+      "path": "blog/posts/website-lead-generation-methods.html",
+      "featured": true,
       "svgGradient": {
-        "id": "btob-gradient",
+        "id": "misc-gradient",
         "colors": [
-          "#8B5CF6",
-          "#7C3AED"
+          "#8B7355",
+          "#6B5844"
         ]
       },
       "svgIcon": {
+        "type": "misc",
         "elements": [
-          {
-            "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
-            "fill": "white",
-            "opacity": 0.3
-          },
           {
             "type": "circle",
             "cx": 200,
-            "cy": 115,
-            "r": 12,
+            "cy": 125,
+            "r": 40,
             "fill": "white",
-            "opacity": 0.6
+            "opacity": 0.4
           },
           {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
     },
     {
-      "id": "partner-marketing-strategy",
-      "title": "パートナーマーケティング戦略｜協業で市場を拡大する方法",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-22",
-      "excerpt": "他社との協業を活用したマーケティング戦略。パートナー選定、共同施策の企画、Win-Winの関係構築方法を解説します。",
-      "path": "blog/posts/partner-marketing-strategy.html",
+      "id": "what-is-planner",
+      "title": "プランナーとは？提案活動の全貌をわかりやすく解説",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-10",
+      "excerpt": "プランナーって何をする人？提案活動の内容や、代理店との関わり方まで、わかりやすく解説します。",
+      "path": "blog/posts/what-is-planner.html",
+      "featured": true,
       "svgGradient": {
-        "id": "btob-gradient",
-        "colors": [
-          "#8B5CF6",
-          "#7C3AED"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 115,
-            "r": 12,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "btob-marketing-kpi",
-      "title": "BtoB マーケティングKPI設計｜成果を可視化する指標の選び方",
-      "category": "btob",
-      "categoryLabel": "BTOB",
-      "date": "2024-10-21",
-      "excerpt": "BtoB企業が追うべきマーケティングKPIの設計方法。リード獲得数、MQL/SQL、商談化率、受注率までの指標設計を解説します。",
-      "path": "blog/posts/btob-marketing-kpi.html",
-      "svgGradient": {
-        "id": "btob-gradient",
-        "colors": [
-          "#8B5CF6",
-          "#7C3AED"
-        ]
-      },
-      "svgIcon": {
-        "elements": [
-          {
-            "type": "rect",
-            "x": 160,
-            "y": 95,
-            "width": 80,
-            "height": 60,
-            "rx": 5,
-            "fill": "white",
-            "opacity": 0.3
-          },
-          {
-            "type": "circle",
-            "cx": 200,
-            "cy": 115,
-            "r": 12,
-            "fill": "white",
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M185 135 L215 135",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.8
-          }
-        ]
-      }
-    },
-    {
-      "id": "marketing-automation-comparison",
-      "title": "MAツール徹底比較2024｜HubSpot・Marketo・Pardot機能と料金",
-      "category": "tools",
-      "categoryLabel": "TOOLS",
-      "date": "2024-10-20",
-      "excerpt": "主要なマーケティングオートメーションツールを徹底比較。機能、料金、導入難易度、サポート体制まで詳しく解説します。",
-      "path": "blog/posts/marketing-automation-comparison.html",
-      "svgGradient": {
-        "id": "tools-gradient",
+        "id": "marketing-gradient",
         "colors": [
           "#EC4899",
           "#DB2777"
         ]
       },
       "svgIcon": {
+        "type": "marketing",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "what-is-pm",
+      "title": "PMって何してくれるの？プロジェクト管理の役割",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
+      "date": "2025-11-10",
+      "excerpt": "PM（プロジェクトマネージャー）って何をする人？プロジェクトの進行管理や品質管理など、中学生でもわかるように解説します。",
+      "path": "blog/posts/what-is-pm.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "web-gradient",
+        "colors": [
+          "#6366F1",
+          "#4F46E5"
+        ]
+      },
+      "svgIcon": {
+        "type": "web-production",
         "elements": [
           {
             "type": "rect",
-            "x": 170,
+            "x": 120,
             "y": 100,
-            "width": 60,
-            "height": 50,
-            "rx": 5,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
             "fill": "white",
-            "opacity": 0.3
+            "opacity": 0.4
           },
           {
             "type": "circle",
             "cx": 200,
-            "cy": 115,
-            "r": 8,
+            "cy": 130,
+            "r": 15,
             "fill": "white",
-            "opacity": 0.8
+            "opacity": 0.7
           },
           {
             "type": "rect",
-            "x": 180,
-            "y": 135,
-            "width": 40,
-            "height": 4,
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
             "rx": 2,
             "fill": "white",
             "opacity": 0.6
@@ -3301,47 +2977,145 @@
       }
     },
     {
-      "id": "customer-data-platform",
-      "title": "CDP（顧客データプラットフォーム）入門｜統合データで顧客体験を向上",
-      "category": "tools",
-      "categoryLabel": "TOOLS",
-      "date": "2024-10-19",
-      "excerpt": "顧客データを統合管理するCDPの基本。CRM・MAとの違い、導入メリット、主要CDPツールの比較を解説します。",
-      "path": "blog/posts/customer-data-platform.html",
+      "id": "what-is-web-marketer",
+      "title": "Webマーケターとは？仕事内容をわかりやすく解説",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-11-10",
+      "excerpt": "Webマーケターって何をする人？仕事内容や必要なスキル、キャリアパスまで、中学生でもわかるように解説します。",
+      "path": "blog/posts/what-is-web-marketer.html",
+      "featured": true,
       "svgGradient": {
-        "id": "tools-gradient",
+        "id": "marketing-gradient",
         "colors": [
           "#EC4899",
           "#DB2777"
         ]
       },
       "svgIcon": {
+        "type": "marketing",
         "elements": [
           {
-            "type": "rect",
-            "x": 170,
-            "y": 100,
-            "width": 60,
-            "height": 50,
-            "rx": 5,
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
             "fill": "white",
-            "opacity": 0.3
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "x-twitter-marketing-strategy-2025",
+      "title": "X（Twitter）マーケティング戦略｜フォロワー増加とエンゲージメント向上の実践テクニック",
+      "category": "sns",
+      "categoryLabel": "SNS",
+      "date": "2025-11-10",
+      "excerpt": "X（旧Twitter）マーケティングで成果を出すための完全ガイド。最新アルゴリズム対策、フォロワー増加テクニック、エンゲージメント向上施策、広告運用まで、データに基づく実践的な戦略を徹底解説します。",
+      "path": "blog/posts/x-twitter-marketing-strategy-2025.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "sns-gradient",
+        "colors": [
+          "#06B6D4",
+          "#0891B2"
+        ]
+      },
+      "svgIcon": {
+        "type": "sns",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 120,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
           },
           {
             "type": "circle",
             "cx": 200,
-            "cy": 115,
-            "r": 8,
+            "cy": 125,
+            "r": 20,
             "fill": "white",
-            "opacity": 0.8
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 280,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "path",
+            "d": "M140 125 L180 125 M220 125 L260 125",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "youtube-seo-complete-guide-2025",
+      "title": "YouTube SEO完全ガイド｜検索上位表示とチャンネル登録者増加の秘訣",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-11-10",
+      "excerpt": "YouTube SEOの完全ガイド。検索上位表示とチャンネル登録者増加のための実践的な戦略を、キーワード選定、タイトル最適化、サムネイル制作、タグ設定、エンゲージメント向上まで徹底解説します。",
+      "path": "blog/posts/youtube-seo-complete-guide-2025.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
           },
           {
             "type": "rect",
             "x": 180,
-            "y": 135,
+            "y": 110,
             "width": 40,
-            "height": 4,
-            "rx": 2,
+            "height": 30,
+            "rx": 4,
             "fill": "white",
             "opacity": 0.6
           }
@@ -3349,229 +3123,465 @@
       }
     },
     {
-      "id": "conversion-rate-optimization",
-      "title": "CRO（コンバージョン率最適化）実践ガイド｜CVRを改善する方法",
-      "category": "strategy",
-      "categoryLabel": "STRATEGY",
-      "date": "2024-10-18",
-      "excerpt": "サイトのコンバージョン率を改善するCROの実践方法。A/Bテスト、ヒートマップ分析、ユーザーテストの活用法を解説します。",
-      "path": "blog/posts/conversion-rate-optimization.html",
+      "id": "how-to-choose-advertising-agency",
+      "title": "Web広告代理店の選び方｜失敗しない見極めポイントと依頼時の注意点",
+      "category": "ads",
+      "categoryLabel": "広告運用",
+      "date": "2025-01-20",
+      "excerpt": "Web広告代理店の選び方を徹底解説。代理店の種類、選定基準、費用相場、契約前のチェックポイント、よくある失敗例まで、実践的なノウハウを紹介します。",
+      "path": "blog/posts/how-to-choose-advertising-agency.html",
+      "featured": true,
       "svgGradient": {
-        "id": "strategy-gradient",
+        "id": "ads-gradient",
         "colors": [
-          "#6366F1",
-          "#4F46E5"
+          "#F59E0B",
+          "#D97706"
         ]
       },
       "svgIcon": {
+        "type": "ads",
         "elements": [
           {
-            "type": "circle",
-            "cx": 200,
-            "cy": 125,
-            "r": 35,
-            "fill": "none",
-            "stroke": "white",
-            "strokeWidth": 3,
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
             "opacity": 0.6
           },
           {
-            "type": "path",
-            "d": "M200 95 L200 125 L220 145",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
+            "opacity": 0.7
           }
         ]
       }
     },
     {
-      "id": "growth-hacking-basics",
-      "title": "グロースハック入門｜スタートアップが急成長する仕組み",
-      "category": "strategy",
-      "categoryLabel": "STRATEGY",
-      "date": "2024-10-17",
-      "excerpt": "データドリブンで成長を加速させるグロースハックの手法。AARRR指標、バイラルループ、プロダクト主導成長を解説します。",
-      "path": "blog/posts/growth-hacking-basics.html",
+      "id": "video-marketing-strategy-2025",
+      "title": "動画マーケティング戦略2025｜YouTube・TikTok・Instagram活用の全体像",
+      "category": "sns",
+      "categoryLabel": "SNS",
+      "date": "2025-01-20",
+      "excerpt": "2025年最新の動画マーケティング戦略を完全解説。YouTube、TikTok、Instagram Reels、YouTube Shortsの特徴比較から、コンテンツ戦略、制作ワークフロー、動画SEO、広告活用、効果測定まで実践的なノウハウを紹介します。",
+      "path": "blog/posts/video-marketing-strategy-2025.html",
+      "featured": true,
       "svgGradient": {
-        "id": "strategy-gradient",
+        "id": "sns-gradient",
         "colors": [
-          "#6366F1",
-          "#4F46E5"
+          "#06B6D4",
+          "#0891B2"
         ]
       },
       "svgIcon": {
+        "type": "sns",
         "elements": [
+          {
+            "type": "circle",
+            "cx": 120,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
           {
             "type": "circle",
             "cx": 200,
             "cy": 125,
-            "r": 35,
-            "fill": "none",
-            "stroke": "white",
-            "strokeWidth": 3,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 280,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
             "opacity": 0.6
           },
           {
             "type": "path",
-            "d": "M200 95 L200 125 L220 145",
+            "d": "M140 125 L180 125 M220 125 L260 125",
             "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
+            "strokeWidth": 3,
+            "opacity": 0.5
           }
         ]
       }
     },
     {
-      "id": "omnichannel-marketing",
-      "title": "オムニチャネルマーケティング戦略｜顧客体験を統合する方法",
-      "category": "strategy",
-      "categoryLabel": "STRATEGY",
-      "date": "2024-10-16",
-      "excerpt": "オンライン・オフラインを統合したオムニチャネル戦略。顧客データ統合、チャネル横断の施策設計、効果測定方法を解説します。",
-      "path": "blog/posts/omnichannel-marketing.html",
+      "id": "ecommerce-seo-product-page-optimization",
+      "title": "ECサイトSEO対策｜商品ページを検索上位表示させる10の施策【2025年版】",
+      "category": "seo",
+      "categoryLabel": "SEO",
+      "date": "2025-01-19",
+      "excerpt": "ECサイトの商品ページを検索上位表示させるSEO対策を徹底解説。商品タイトル最適化、構造化データ実装、画像SEO、表示速度改善など、2025年最新のEコマースSEO施策を実践的に紹介します。",
+      "path": "blog/posts/ecommerce-seo-product-page-optimization.html",
+      "featured": true,
       "svgGradient": {
-        "id": "strategy-gradient",
+        "id": "seo-gradient",
         "colors": [
-          "#6366F1",
-          "#4F46E5"
+          "#10B981",
+          "#059669"
         ]
       },
       "svgIcon": {
+        "type": "seo",
         "elements": [
           {
             "type": "circle",
-            "cx": 200,
+            "cx": 150,
             "cy": 125,
-            "r": 35,
-            "fill": "none",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M200 95 L200 125 L220 145",
+            "r": 40,
             "stroke": "white",
             "strokeWidth": 4,
             "fill": "none",
-            "opacity": 0.8
+            "opacity": 0.7
+          },
+          {
+            "type": "path",
+            "d": "M180 150 L220 190",
+            "stroke": "white",
+            "strokeWidth": 4,
+            "opacity": 0.7
           }
         ]
       }
     },
     {
-      "id": "brand-positioning-strategy",
-      "title": "ブランドポジショニング戦略｜市場で選ばれる存在になる方法",
-      "category": "strategy",
-      "categoryLabel": "STRATEGY",
-      "date": "2024-10-15",
-      "excerpt": "競合と差別化するブランドポジショニングの構築方法。市場分析、ターゲット設定、独自価値の言語化を詳しく解説します。",
-      "path": "blog/posts/brand-positioning-strategy.html",
+      "id": "influencer-marketing-guide-2025",
+      "title": "インフルエンサーマーケティングの始め方｜費用相場から依頼方法まで徹底解説【2025年版】",
+      "category": "sns",
+      "categoryLabel": "SNS",
+      "date": "2025-01-19",
+      "excerpt": "インフルエンサーマーケティングの始め方を完全解説。ナノ・マイクロ・ミドル・メガインフルエンサー別の費用相場、依頼方法、契約のポイント、効果測定、PR表記とステマ規制まで2025年最新情報をお届けします。",
+      "path": "blog/posts/influencer-marketing-guide-2025.html",
+      "featured": true,
       "svgGradient": {
-        "id": "strategy-gradient",
+        "id": "sns-gradient",
         "colors": [
-          "#6366F1",
-          "#4F46E5"
+          "#06B6D4",
+          "#0891B2"
         ]
       },
       "svgIcon": {
+        "type": "sns",
         "elements": [
+          {
+            "type": "circle",
+            "cx": 120,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
           {
             "type": "circle",
             "cx": 200,
             "cy": 125,
-            "r": 35,
-            "fill": "none",
-            "stroke": "white",
-            "strokeWidth": 3,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 280,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
             "opacity": 0.6
           },
           {
             "type": "path",
-            "d": "M200 95 L200 125 L220 145",
+            "d": "M140 125 L180 125 M220 125 L260 125",
             "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
+            "strokeWidth": 3,
+            "opacity": 0.5
           }
         ]
       }
     },
     {
-      "id": "customer-journey-mapping",
-      "title": "カスタマージャーニーマップ作成ガイド｜顧客理解を深める方法",
-      "category": "strategy",
-      "categoryLabel": "STRATEGY",
-      "date": "2024-10-14",
-      "excerpt": "顧客の行動と心理を可視化するカスタマージャーニーマップの作り方。ペルソナ設計、タッチポイント分析、施策立案まで解説します。",
-      "path": "blog/posts/customer-journey-mapping.html",
+      "id": "structured-data-implementation",
+      "title": "構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説",
+      "category": "seo",
+      "categoryLabel": "SEO",
+      "date": "2025-01-19",
+      "excerpt": "構造化データの実装方法を完全解説。Schema.org、JSON-LD、パンくずリスト、FAQ、記事、商品など、SEOに効く構造化データの種類と実装コードを実例付きで紹介します。",
+      "path": "blog/posts/structured-data-implementation.html",
+      "featured": true,
       "svgGradient": {
-        "id": "strategy-gradient",
+        "id": "seo-gradient",
         "colors": [
-          "#6366F1",
-          "#4F46E5"
+          "#10B981",
+          "#059669"
         ]
       },
       "svgIcon": {
+        "type": "seo",
         "elements": [
           {
             "type": "circle",
-            "cx": 200,
+            "cx": 150,
             "cy": 125,
-            "r": 35,
-            "fill": "none",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.6
-          },
-          {
-            "type": "path",
-            "d": "M200 95 L200 125 L220 145",
+            "r": 40,
             "stroke": "white",
             "strokeWidth": 4,
             "fill": "none",
-            "opacity": 0.8
+            "opacity": 0.7
+          },
+          {
+            "type": "path",
+            "d": "M180 150 L220 190",
+            "stroke": "white",
+            "strokeWidth": 4,
+            "opacity": 0.7
           }
         ]
       }
     },
     {
-      "id": "marketing-budget-allocation",
-      "title": "マーケティング予算配分の最適化｜ROIを最大化する投資戦略",
-      "category": "strategy",
-      "categoryLabel": "STRATEGY",
-      "date": "2024-10-13",
-      "excerpt": "限られた予算で最大の成果を出すための配分戦略。チャネル別のROI分析、テスト予算の確保、予算見直しのタイミングを解説します。",
-      "path": "blog/posts/marketing-budget-allocation.html",
+      "id": "whitepaper-creation-guide",
+      "title": "ホワイトペーパーの作り方完全ガイド｜BtoBリード獲得に効果的な企画・制作・活用法",
+      "category": "marketing",
+      "categoryLabel": "マーケティング",
+      "date": "2025-01-19",
+      "excerpt": "BtoBマーケティングで効果的なホワイトペーパーの作り方を完全解説。企画立案から制作、デザイン、配布、効果測定まで、リード獲得につながる実践的なノウハウを紹介します。",
+      "path": "blog/posts/whitepaper-creation-guide.html",
+      "featured": true,
       "svgGradient": {
-        "id": "strategy-gradient",
+        "id": "marketing-gradient",
+        "colors": [
+          "#EC4899",
+          "#DB2777"
+        ]
+      },
+      "svgIcon": {
+        "type": "marketing",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 100,
+            "r": 25,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "circle",
+            "cx": 250,
+            "cy": 150,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "path",
+            "d": "M200 125 L150 130 M200 125 L250 130",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "meo-local-seo-guide",
+      "title": "MEO対策完全ガイド｜Googleマップで上位表示させるローカルSEOの全手法",
+      "category": "seo",
+      "categoryLabel": "SEO",
+      "date": "2025-01-18",
+      "excerpt": "MEO（ローカルSEO）対策の完全ガイド。Googleビジネスプロフィールの最適化、口コミ対策、NAP統一など、Googleマップで上位表示するための実践的な手法を徹底解説します。",
+      "path": "blog/posts/meo-local-seo-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "seo-gradient",
+        "colors": [
+          "#10B981",
+          "#059669"
+        ]
+      },
+      "svgIcon": {
+        "type": "seo",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 150,
+            "cy": 125,
+            "r": 40,
+            "stroke": "white",
+            "strokeWidth": 4,
+            "fill": "none",
+            "opacity": 0.7
+          },
+          {
+            "type": "path",
+            "d": "M180 150 L220 190",
+            "stroke": "white",
+            "strokeWidth": 4,
+            "opacity": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "id": "web-marketing-cost",
+      "title": "Webマーケティング費用の相場は？施策別の料金体系と予算配分を徹底解説",
+      "category": "ads",
+      "categoryLabel": "広告運用",
+      "date": "2025-01-18",
+      "excerpt": "Webマーケティングにかかる費用を施策別に詳しく解説。SEO、リスティング広告、SNS広告、コンテンツマーケティングなど、各施策の相場と効果的な予算配分をプロが徹底解説します。",
+      "path": "blog/posts/web-marketing-cost.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "ads-gradient",
+        "colors": [
+          "#F59E0B",
+          "#D97706"
+        ]
+      },
+      "svgIcon": {
+        "type": "ads",
+        "elements": [
+          {
+            "type": "rect",
+            "x": 100,
+            "y": 150,
+            "width": 40,
+            "height": 50,
+            "fill": "white",
+            "opacity": 0.5
+          },
+          {
+            "type": "rect",
+            "x": 150,
+            "y": 120,
+            "width": 40,
+            "height": 80,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "rect",
+            "x": 200,
+            "y": 90,
+            "width": 40,
+            "height": 110,
+            "fill": "white",
+            "opacity": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "id": "ga4-setup-guide",
+      "title": "GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説",
+      "category": "misc",
+      "categoryLabel": "雑記",
+      "date": "2025-01-17",
+      "excerpt": "GA4の初期設定から高度なイベント計測まで、実務で使える設定方法を完全網羅。UAとの違い、コンバージョン設定、カスタムディメンション、GTMとの連携など、マーケターが知るべき全てを解説します。",
+      "path": "blog/posts/ga4-setup-guide.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "misc-gradient",
+        "colors": [
+          "#8B7355",
+          "#6B5844"
+        ]
+      },
+      "svgIcon": {
+        "type": "misc",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 40,
+            "fill": "white",
+            "opacity": 0.4
+          },
+          {
+            "type": "rect",
+            "x": 180,
+            "y": 110,
+            "width": 40,
+            "height": 30,
+            "rx": 4,
+            "fill": "white",
+            "opacity": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "landing-page-cost",
+      "title": "LP（ランディングページ）制作費用の相場は？価格帯別の特徴と選び方を徹底解説",
+      "category": "web-production",
+      "categoryLabel": "Web制作",
+      "date": "2025-01-17",
+      "excerpt": "LP制作の費用相場を価格帯別に詳しく解説。10万円以下から100万円以上まで、それぞれの特徴や含まれる作業内容、依頼先の選び方をプロが徹底解説します。失敗しないLP制作のポイントも紹介。",
+      "path": "blog/posts/landing-page-cost.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "web-gradient",
         "colors": [
           "#6366F1",
           "#4F46E5"
         ]
       },
       "svgIcon": {
+        "type": "web-production",
         "elements": [
+          {
+            "type": "rect",
+            "x": 120,
+            "y": 100,
+            "width": 160,
+            "height": 100,
+            "rx": 8,
+            "fill": "white",
+            "opacity": 0.4
+          },
           {
             "type": "circle",
             "cx": 200,
-            "cy": 125,
-            "r": 35,
-            "fill": "none",
-            "stroke": "white",
-            "strokeWidth": 3,
-            "opacity": 0.6
+            "cy": 130,
+            "r": 15,
+            "fill": "white",
+            "opacity": 0.7
           },
           {
-            "type": "path",
-            "d": "M200 95 L200 125 L220 145",
-            "stroke": "white",
-            "strokeWidth": 4,
-            "fill": "none",
-            "opacity": 0.8
+            "type": "rect",
+            "x": 140,
+            "y": 160,
+            "width": 50,
+            "height": 8,
+            "rx": 2,
+            "fill": "white",
+            "opacity": 0.6
           }
         ]
       }
