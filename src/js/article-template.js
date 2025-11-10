@@ -413,4 +413,9 @@
     }
 
     init();
+
+    // Dispatch custom event after all elements are inserted
+    setTimeout(() => {
+        window.dispatchEvent(new CustomEvent('mobileTOCReady'));
+    }, 100);
 })();

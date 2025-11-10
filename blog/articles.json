@@ -1427,6 +1427,59 @@
           }
         ]
       }
+    },
+    {
+      "id": "x-twitter-marketing-strategy-2025",
+      "title": "X（Twitter）マーケティング戦略｜フォロワー増加とエンゲージメント向上の実践テクニック",
+      "category": "sns",
+      "categoryLabel": "SNS",
+      "date": "2025-01-26",
+      "excerpt": "X（旧Twitter）マーケティングで成果を出すための完全ガイド。最新アルゴリズム対策、フォロワー増加テクニック、エンゲージメント向上施策、広告運用まで、データに基づく実践的な戦略を徹底解説します。",
+      "path": "blog/posts/x-twitter-marketing-strategy-2025.html",
+      "featured": true,
+      "svgGradient": {
+        "id": "sns-gradient",
+        "colors": [
+          "#06B6D4",
+          "#0891B2"
+        ]
+      },
+      "svgIcon": {
+        "type": "sns",
+        "elements": [
+          {
+            "type": "circle",
+            "cx": 120,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 200,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "circle",
+            "cx": 280,
+            "cy": 125,
+            "r": 20,
+            "fill": "white",
+            "opacity": 0.6
+          },
+          {
+            "type": "path",
+            "d": "M140 125 L180 125 M220 125 L260 125",
+            "stroke": "white",
+            "strokeWidth": 3,
+            "opacity": 0.5
+          }
+        ]
+      }
     }
   ],
   "categories": [

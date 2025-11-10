@@ -295,12 +295,13 @@
         // ==========================================
         // Mobile TOC (Floating Button & Modal)
         // ==========================================
-        const floatingTocBtn = document.getElementById('floatingTocBtn');
-        const mobileTocModal = document.getElementById('mobileTocModal');
-        const closeMobileToc = document.getElementById('closeMobileToc');
-        const mobileTocList = document.getElementById('mobileTocList');
+        function initMobileTOC() {
+            const floatingTocBtn = document.getElementById('floatingTocBtn');
+            const mobileTocModal = document.getElementById('mobileTocModal');
+            const closeMobileToc = document.getElementById('closeMobileToc');
+            const mobileTocList = document.getElementById('mobileTocList');
 
-        if (floatingTocBtn && mobileTocModal && headings.length > 0) {
+            if (floatingTocBtn && mobileTocModal && headings.length > 0) {
             // モバイル目次リストを生成
             headings.forEach((heading, index) => {
                 if (!heading.id) {
@@ -381,7 +382,11 @@
                     mobileTocModal.classList.remove('visible');
                 }
             });
+            }
         }
+
+        // Wait for article-template.js to insert mobile TOC elements
+        window.addEventListener('mobileTOCReady', initMobileTOC);
 
         // ==========================================
         // Reading Progress Bar

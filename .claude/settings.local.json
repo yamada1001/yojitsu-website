@@ -27,7 +27,8 @@
       "Bash(node scripts/final-comprehensive-check.js:*)",
       "Bash(do if grep -q 'article__toc-link' \"$file\")",
       "Bash(node -e:*)",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
