@@ -203,7 +203,7 @@ class BlogLoader {
         // 記事グリッドを生成
         const gridContainer = document.querySelector('.blog-list__grid');
         if (gridContainer) {
-            const articles = this.getLatestArticles();
+            const articles = this.getArticlesByCategory('all');
             gridContainer.innerHTML = articles.map(article =>
                 this.generateBlogCard(article, true)
             ).join('');

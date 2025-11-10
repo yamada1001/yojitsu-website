@@ -254,13 +254,29 @@
                 clearInterval(checkBlogLoader);
 
                 window.blogLoader.loadArticles().then(() => {
-                    const relatedArticles = window.blogLoader.getRelatedArticles(articleId, category, 3);
+                    let relatedArticles = window.blogLoader.getRelatedArticles(articleId, category, 3);
+
+                    // 関連記事が3件未満の場合、他のカテゴリからランダムに取得して補完
+                    if (relatedArticles.length < 3) {
+                        const allArticles = window.blogLoader.articlesData.filter(
+                            article => article.id !== articleId && !relatedArticles.find(r => r.id === article.id)
+                        );
+
+                        // ランダムにシャッフル
+                        const shuffled = allArticles.sort(() => 0.5 - Math.random());
+                        const needed = 3 - relatedArticles.length;
+                        const additional = shuffled.slice(0, needed);
+
+                        relatedArticles = [...relatedArticles, ...additional];
+                    }
+
+                    // 最低3記事を表示（記事が存在する場合）
                     if (relatedArticles && relatedArticles.length > 0) {
                         relatedContainer.innerHTML = relatedArticles.map(article =>
                             window.blogLoader.generateBlogCard(article, false)
                         ).join('');
                     } else {
-                        // 関連記事がない場合は非表示
+                        // 記事が全く存在しない場合（ありえないが念のため）
                         const relatedSection = document.querySelector('.related-posts');
                         if (relatedSection) {
                             relatedSection.style.display = 'none';

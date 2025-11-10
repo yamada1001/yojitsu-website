@@ -473,7 +473,10 @@
         const links = articleContent.querySelectorAll('a[href^="http"]');
 
         links.forEach(link => {
-            if (!link.href.includes(window.location.hostname)) {
+            // yamada1001.github.io/yojitsu-website 以外のドメインを外部リンクとして扱う
+            const isExternal = !link.href.includes('yamada1001.github.io/yojitsu-website');
+
+            if (isExternal) {
                 link.setAttribute('target', '_blank');
                 link.setAttribute('rel', 'noopener noreferrer');
 
@@ -484,6 +487,46 @@
             }
         });
     }
+
+    // ==========================================
+    // 全体の外部リンク制御（記事ページ以外でも機能）
+    // ==========================================
+    function setupExternalLinks() {
+        // すべての記事コンテンツ内のリンクを対象にする
+        const contentSelectors = ['.article__content', '.blog-card__excerpt', '.article__excerpt'];
+
+        contentSelectors.forEach(selector => {
+            const containers = document.querySelectorAll(selector);
+
+            containers.forEach(container => {
+                const links = container.querySelectorAll('a[href^="http"]');
+
+                links.forEach(link => {
+                    // yamada1001.github.io/yojitsu-website 以外のドメインを外部リンクとして扱う
+                    const isExternal = !link.href.includes('yamada1001.github.io/yojitsu-website');
+
+                    if (isExternal && !link.hasAttribute('data-external-processed')) {
+                        link.setAttribute('target', '_blank');
+                        link.setAttribute('rel', 'noopener noreferrer');
+                        link.setAttribute('data-external-processed', 'true');
+                    }
+                });
+            });
+        });
+    }
+
+    // 初回実行
+    setupExternalLinks();
+
+    // DOMの変更を監視して新しく追加されたリンクにも適用
+    const observer = new MutationObserver(() => {
+        setupExternalLinks();
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
 
     // ==========================================
     // Lazy Load Images with Fade-in Effect
