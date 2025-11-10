@@ -17,7 +17,7 @@ const path = require('path');
 
 // 設定
 const CONFIG = {
-    baseUrl: 'https://yojitsu.com',
+    baseUrl: 'https://yamada1001.github.io/yojitsu-website',
     articlesJsonPath: path.join(__dirname, '../blog/articles.json'),
     sitemapPath: path.join(__dirname, '../sitemap.xml'),
     staticPages: [

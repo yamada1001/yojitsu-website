@@ -1,0 +1,57 @@
+{
+  "missingBaseTags": [],
+  "wrongBaseTagPosition": [
+    "blog/posts-backup/how-to-choose-advertising-agency.html",
+    "blog/posts-backup/landing-page-cost.html",
+    "blog/posts-backup/meo-local-seo-guide.html",
+    "blog/posts-backup/structured-data-implementation.html",
+    "blog/posts-backup/web-marketing-cost.html",
+    "blog/posts-backup/whitepaper-creation-guide.html"
+  ],
+  "missingFavicon": [
+    "blog/posts-backup/how-to-choose-advertising-agency.html",
+    "blog/posts-backup/landing-page-cost.html",
+    "blog/posts-backup/meo-local-seo-guide.html",
+    "blog/posts-backup/structured-data-implementation.html",
+    "blog/posts-backup/web-marketing-cost.html",
+    "blog/posts-backup/whitepaper-creation-guide.html"
+  ],
+  "missingFontAwesome": [],
+  "missingGoogleFonts": [
+    "blog/posts-backup/ahrefs-seo-guide.html",
+    "blog/posts-backup/ai-content-marketing-efficiency.html",
+    "blog/posts-backup/ai-marketing-chatgpt-claude.html",
+    "blog/posts-backup/btob-marketing-guide.html",
+    "blog/posts-backup/btob-marketing-strategy.html",
+    "blog/posts-backup/claude-code-terminal-guide.html",
+    "blog/posts-backup/content-marketing.html",
+    "blog/posts-backup/ga4-setup-guide.html",
+    "blog/posts-backup/google-ads-tips.html",
+    "blog/posts-backup/hubspot-crm-guide.html",
+    "blog/posts-backup/instagram-algorithm-meta-ads.html",
+    "blog/posts-backup/landing-page-cost-guide.html",
+    "blog/posts-backup/media-mix-seven-hits.html",
+    "blog/posts-backup/owned-media-operation-service.html",
+    "blog/posts-backup/seo-basics.html",
+    "blog/posts-backup/seo-future-2025.html",
+    "blog/posts-backup/web-director-role.html",
+    "blog/posts-backup/web-vitals-guide.html",
+    "blog/posts-backup/website-lead-generation-methods.html",
+    "blog/posts-backup/what-is-planner.html",
+    "blog/posts-backup/what-is-pm.html",
+    "blog/posts-backup/what-is-web-marketer.html"
+  ],
+  "incorrectCompanyName": [
+    "blog/posts-backup/ga4-setup-guide.html",
+    "blog/posts-backup/how-to-choose-advertising-agency.html",
+    "blog/posts-backup/landing-page-cost.html",
+    "blog/posts-backup/meo-local-seo-guide.html",
+    "blog/posts-backup/structured-data-implementation.html",
+    "blog/posts-backup/web-marketing-cost.html",
+    "blog/posts-backup/whitepaper-creation-guide.html"
+  ],
+  "staticRelatedPosts": [],
+  "missingRelatedArticlesId": [],
+  "wrongUrls": [],
+  "brokenLinks": []
+}

@@ -30,7 +30,15 @@
       "Bash(xargs:*)",
       "WebSearch",
       "Bash(node scripts/update-articles-json.js:*)",
-      "Bash(node scripts/fix-article-dates.js:*)"
+      "Bash(node scripts/fix-article-dates.js:*)",
+      "Bash(node scripts/generate-sitemap.js:*)",
+      "Bash(node scripts/comprehensive-check.js:*)",
+      "Bash(for file in blog/posts/instagram-reels-strategy-2025.html blog/posts/sns-strategy.html blog/posts/x-twitter-marketing-strategy-2025.html)",
+      "Bash(do)",
+      "Bash(if ! grep -q \"favicon.svg\" \"$file\")",
+      "Bash(then)",
+      "Bash(else)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
