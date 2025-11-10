@@ -28,7 +28,9 @@
       "Bash(do if grep -q 'article__toc-link' \"$file\")",
       "Bash(node -e:*)",
       "Bash(xargs:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(node scripts/update-articles-json.js:*)",
+      "Bash(node scripts/fix-article-dates.js:*)"
     ],
     "deny": [],
     "ask": []
