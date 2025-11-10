@@ -4,7 +4,10 @@
 2025-11-10
 
 ## 概要
-blog/posts/ フォルダ内の全29ファイルについて、インラインコード（スタイル・スクリプト）を外部ファイル化し、保守性と可読性を大幅に向上させました。
+blog/posts/ フォルダ内の全29ファイルについて、インラインコード（スタイル・スクリプト）を外部ファイル化し、重複コンポーネントを削除して、保守性と可読性を大幅に向上させました。
+
+## ⚠️ 重要な修正
+初回リファクタリングで、フッター・シェアボタン・関連記事が2回表示される問題が発生していましたが、**すべて修正済み**です。既存の `article-template.js` がこれらのコンポーネントを動的生成するため、HTMLから削除しました。
 
 ## 実施内容
 
@@ -30,10 +33,7 @@ blog/posts/ フォルダ内の全29ファイルについて、インラインコ
   - メタタグから構造化データを自動生成
   - JSON-LDの動的生成
 
-- **src/js/common-components.js** (7.4KB)
-  - フッターの動的生成
-  - シェアボタンの動的生成
-  - モバイルTOCモーダルの動的生成
+**注意**: `common-components.js`は削除しました。既存の`article-template.js`が同じ機能を提供しているため、重複を避けるためです。
 
 #### スクリプト
 - **scripts/refactor-blog-posts.js** (13KB)
@@ -43,13 +43,15 @@ blog/posts/ フォルダ内の全29ファイルについて、インラインコ
 ### 2. 削除・外部化されたコード
 
 各HTMLファイルから以下を削除：
-- ✅ Google Tag Managerスクリプト（head内）
-- ✅ Google Tag Manager noscript（body内）
-- ✅ 構造化データ（JSON-LD）
-- ✅ インラインスタイル（数百箇所）
-- ✅ フッターHTML
-- ✅ シェアボタンHTML
-- ✅ モバイルTOCモーダルHTML
+- ✅ Google Tag Managerスクリプト（head内）→ `gtm-loader.js`に外部化
+- ✅ Google Tag Manager noscript（body内）→ `gtm-loader.js`に外部化
+- ✅ 構造化データ（JSON-LD）→ `structured-data.js`で動的生成
+- ✅ インラインスタイル（数百箇所）→ `blog-common.css`に集約
+- ✅ フッターHTML → `article-template.js`で動的生成（既存機能を活用）
+- ✅ シェアボタンHTML → `article-template.js`で動的生成
+- ✅ モバイルTOCモーダルHTML → `article-template.js`で動的生成
+
+**関連記事セクション（`.related-posts`）はHTMLに残しています**（`blog-loader.js`が内容を動的生成）
 
 ### 3. 処理結果
 
