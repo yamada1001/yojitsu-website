@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T7NGQDC2');</script>
+    <!-- End Google Tag Manager -->
+    <base href="/yojitsu-website/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説 | 株式会社Yojitsu</title>
+    <meta name="description" content="GA4の初期設定から高度なイベント計測まで、実務で使える設定方法を完全網羅。UAとの違い、コンバージョン設定、カスタムディメンション、GTMとの連携など、マーケターが知るべき全てを解説します。">
+    <meta name="keywords" content="GA4,Googleアナリティクス,設定,イベント,コンバージョン,GTM,タグマネージャー,アクセス解析,Webマーケティング">
+
+    <!-- OGP設定 -->
+    <meta property="og:title" content="GA4完全設定マニュアル｜初期設定から高度な計測まで徹底解説">
+    <meta property="og:description" content="GA4の初期設定から高度なイベント計測まで、実務で使える設定方法を完全網羅。UAとの違い、コンバージョン設定、カスタムディメンション、GTMとの連携など解説します。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yojitsu.co.jp/blog/posts/ga4-setup-guide.html">
+    <meta property="og:site_name" content="株式会社Yojitsu">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GA4完全設定マニュアル｜初期設定から高度な計測まで徹底解説">
+    <meta name="twitter:description" content="GA4の初期設定から高度なイベント計測まで、実務で使える設定方法を完全網羅。">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yojitsu.co.jp/blog/posts/ga4-setup-guide.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/blog.css">
+
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説",
+        "description": "GA4の初期設定から高度なイベント計測まで、実務で使える設定方法を完全網羅。UAとの違い、コンバージョン設定、カスタムディメンション、GTMとの連携など解説します。",
+        "image": "https://yojitsu.co.jp/assets/images/og-image.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "株式会社Yojitsu"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "株式会社Yojitsu",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yojitsu.co.jp/assets/images/logo.png"
+            }
+        },
+        "datePublished": "2025-01-17",
+        "dateModified": "2025-01-17"
+    }
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7NGQDC2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">ホーム</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="blog/index.html" class="breadcrumb__link">ブログ</a>
+            </li>
+            <li class="breadcrumb__item">
+                <span class="breadcrumb__current">GA4設定マニュアル</span>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Article -->
+    <article class="article">
+        <div class="article__container">
+            <div class="article__main">
+                <!-- Article Header -->
+                <header class="article__header">
+                    <div class="article__meta">
+                        <span class="article__category">テクニカル</span>
+                        <time class="article__date" datetime="2025-01-17"></time>
+                    </div>
+                    <h1 class="article__title">GA4（Googleアナリティクス4）完全設定マニュアル｜初期設定から高度な計測まで徹底解説</h1>
+                    <p class="article__excerpt">
+                        2023年7月にユニバーサルアナリティクス（UA）が計測終了し、GA4（Googleアナリティクス4）への移行が必須となりました。本記事では、GA4の初期設定から高度なイベント計測、GTMとの連携まで、実務で必要な全ての設定を完全網羅して解説します。
+                    </p>
+                </header>
+
+                <!-- Featured Image -->
+                <div class="article__featured-image">
+                    <svg viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="450" fill="#F5F5F5"/>
+                        <circle cx="400" cy="225" r="80" stroke="#EC4899" stroke-width="4" fill="none"/>
+                        <path d="M340 225 L460 225 M400 165 L400 285" stroke="#EC4899" stroke-width="4"/>
+                        <circle cx="280" cy="225" r="40" fill="#EC4899" opacity="0.3"/>
+                        <circle cx="520" cy="225" r="40" fill="#EC4899" opacity="0.3"/>
+                        <text x="400" y="350" text-anchor="middle" fill="#EC4899" font-size="32" font-weight="bold">GA4</text>
+                    </svg>
+                </div>
+
+                <!-- Table of Contents -->
+                <nav class="article__toc">
+                    <h2 class="article__toc-title">目次</h2>
+                    <ul class="article__toc-list">
+                        <li><a href="#section1">1. GA4とは？UAとの違い</a></li>
+                        <li><a href="#section2">2. GA4の初期設定手順</a></li>
+                        <li><a href="#section3">3. データストリームの設定</a></li>
+                        <li><a href="#section4">4. イベント計測の設定</a></li>
+                        <li><a href="#section5">5. コンバージョン設定</a></li>
+                        <li><a href="#section6">6. カスタムディメンション・指標</a></li>
+                        <li><a href="#section7">7. GTMとの連携設定</a></li>
+                        <li><a href="#section8">8. BigQueryエクスポート設定</a></li>
+                        <li><a href="#section9">9. よくあるトラブルと解決方法</a></li>
+                        <li><a href="#section10">まとめ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Article Content -->
+                <div class="article__content">
+
+                    <section id="section1" class="article__section">
+                        <h2 class="article__heading">GA4とは？UAとの違い</h2>
+                        <p>
+                            GA4（Googleアナリティクス4）は、Googleが提供する最新のアクセス解析ツールです。従来のユニバーサルアナリティクス（UA）とは根本的に設計思想が異なります。
+                        </p>
+
+                        <h3 class="article__subheading">GA4の主な特徴</h3>
+                        <ul class="article__list">
+                            <li><strong>イベントベースの計測：</strong>全てのユーザー行動を「イベント」として計測</li>
+                            <li><strong>クロスプラットフォーム対応：</strong>Web・アプリを統合して計測可能</li>
+                            <li><strong>機械学習の活用：</strong>予測指標やインサイト機能</li>
+                            <li><strong>プライバシー重視：</strong>Cookie規制に対応した設計</li>
+                            <li><strong>BigQuery連携：</strong>無料で生データをエクスポート可能</li>
+                        </ul>
+
+                        <h3 class="article__subheading">UAとGA4の主な違い</h3>
+
+                        <div class="article__table-wrapper">
+                            <table class="article__table">
+                                <thead>
+                                    <tr>
+                                        <th>項目</th>
+                                        <th>UA（ユニバーサルアナリティクス）</th>
+                                        <th>GA4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>計測モデル</td>
+                                        <td>セッションベース</td>
+                                        <td>イベントベース</td>
+                                    </tr>
+                                    <tr>
+                                        <td>データ構造</td>
+                                        <td>ページビュー中心</td>
+                                        <td>全てイベント</td>
+                                    </tr>
+                                    <tr>
+                                        <td>レポート</td>
+                                        <td>定型レポート中心</td>
+                                        <td>カスタマイズ性が高い</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ユーザー識別</td>
+                                        <td>主にCookie</td>
+                                        <td>複数の識別方法（Cookie + User ID等）</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BigQuery連携</td>
+                                        <td>有料（360のみ）</td>
+                                        <td>無料で利用可能</td>
+                                    </tr>
+                                    <tr>
+                                        <td>データ保持期間</td>
+                                        <td>無期限（一部制限あり）</td>
+                                        <td>最大14ヶ月（設定で変更可）</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            <a href="btob-marketing-strategy.html">BtoBマーケティング</a>でGA4を活用する場合、特にイベント計測とコンバージョン設定が重要になります。従来のUAとは考え方が異なるため、しっかりと理解して設定しましょう。
+                        </p>
+
+                        <div class="article__box article__box--point">
+                            <h4 class="article__box-title"><i class="fas fa-lightbulb"></i> GA4移行の必要性</h4>
+                            <p>
+                                UAは2023年7月1日で計測を終了しました。既にGA4への移行は「検討事項」ではなく「必須事項」です。まだ移行していない場合は、本記事の手順に従って早急に設定を完了させましょう。
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="section2" class="article__section">
+                        <h2 class="article__heading">GA4の初期設定手順</h2>
+                        <p>
+                            GA4の初期設定は、大きく分けて4つのステップで完了します。順を追って見ていきましょう。
+                        </p>
+
+                        <h3 class="article__subheading">ステップ1：GA4プロパティの作成</h3>
+
+                        <h4 class="article__sub-subheading">1. Googleアナリティクスにログイン</h4>
+                        <p>
+                            <a href="https://analytics.google.com/" target="_blank" rel="noopener">Googleアナリティクス</a>にアクセスし、Googleアカウントでログインします。
+                        </p>
+
+                        <h4 class="article__sub-subheading">2. 新しいプロパティを作成</h4>
+                        <ol class="article__list">
+                            <li>左下の「管理」（歯車アイコン）をクリック</li>
+                            <li>「プロパティ」列の「プロパティを作成」をクリック</li>
+                            <li>プロパティ名を入力（例：「会社名 - GA4」）</li>
+                            <li>レポートのタイムゾーンを「日本」に設定</li>
+                            <li>通貨を「日本円（JPY）」に設定</li>
+                            <li>「次へ」をクリック</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">3. ビジネス情報の入力</h4>
+                        <ol class="article__list">
+                            <li>業種を選択</li>
+                            <li>ビジネスの規模を選択</li>
+                            <li>Googleアナリティクスの利用目的を選択</li>
+                            <li>「作成」をクリック</li>
+                            <li>利用規約に同意</li>
+                        </ol>
+
+                        <h3 class="article__subheading">ステップ2：データストリームの設定</h3>
+
+                        <h4 class="article__sub-subheading">1. プラットフォームを選択</h4>
+                        <p>
+                            Webサイトの場合は「ウェブ」を選択します。
+                        </p>
+
+                        <h4 class="article__sub-subheading">2. ストリームの詳細を設定</h4>
+                        <ol class="article__list">
+                            <li>ウェブサイトのURLを入力（例：https://example.com）</li>
+                            <li>ストリーム名を入力（例：「メインサイト」）</li>
+                            <li>「ストリームを作成」をクリック</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">3. 測定IDを確認</h4>
+                        <p>
+                            作成されたストリーム画面に「G-XXXXXXXXXX」形式の測定IDが表示されます。このIDを使ってタグを設置します。
+                        </p>
+
+                        <h3 class="article__subheading">ステップ3：タグの設置</h3>
+
+                        <p>
+                            GA4のタグを設置する方法は主に2つあります：
+                        </p>
+
+                        <h4 class="article__sub-subheading">方法1：Googleタグを直接HTMLに設置</h4>
+                        <p>
+                            ストリーム画面の「タグ設定手順」から「新しいページ上のタグを追加する」→「手動でインストール」を選択すると、以下のようなコードが表示されます：
+                        </p>
+
+                        <div class="article__code">
+<pre><code>&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXXXXXXXXX');
+&lt;/script&gt;</code></pre>
+                        </div>
+
+                        <p>
+                            このコードを全ページの<code>&lt;head&gt;</code>タグ内に設置します。
+                        </p>
+
+                        <h4 class="article__sub-subheading">方法2：Googleタグマネージャー（GTM）を使用【推奨】</h4>
+                        <p>
+                            GTMを使用すると、タグ管理が格段に楽になります。詳しくは後述の「<a href="#section7">GTMとの連携設定</a>」セクションで解説します。
+                        </p>
+
+                        <div class="article__box article__box--success">
+                            <h4 class="article__box-title"><i class="fas fa-check-circle"></i> 推奨：GTMでの管理</h4>
+                            <p>
+                                実務では、GTM（Googleタグマネージャー）での管理を強く推奨します。タグの追加・変更・削除が簡単になり、エンジニアに依頼せずマーケターだけで対応できるようになります。<a href="website-lead-generation-methods.html">リード獲得施策</a>のPDCAを高速で回すためにも必須のツールです。
+                            </p>
+                        </div>
+
+                        <h3 class="article__subheading">ステップ4：動作確認</h3>
+
+                        <h4 class="article__sub-subheading">1. リアルタイムレポートで確認</h4>
+                        <ol class="article__list">
+                            <li>GA4管理画面の左メニューから「リアルタイム」を選択</li>
+                            <li>自分のサイトにアクセス</li>
+                            <li>リアルタイムレポートに訪問が表示されるか確認</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">2. DebugViewで詳細確認</h4>
+                        <p>
+                            より詳細に確認するには、GA4の「DebugView」機能が便利です：
+                        </p>
+                        <ol class="article__list">
+                            <li>Chrome拡張機能「Google Analytics Debugger」をインストール</li>
+                            <li>拡張機能を有効化してサイトにアクセス</li>
+                            <li>GA4管理画面の「DebugView」でイベントの発火を確認</li>
+                        </ol>
+                    </section>
+
+                    <section id="section3" class="article__section">
+                        <h2 class="article__heading">データストリームの詳細設定</h2>
+                        <p>
+                            データストリームには、重要な拡張設定がいくつかあります。必ず設定しておきたい項目を解説します。
+                        </p>
+
+                        <h3 class="article__subheading">拡張計測機能の有効化</h3>
+                        <p>
+                            データストリーム画面の「拡張計測機能」をONにすることで、以下のイベントが自動的に計測されます：
+                        </p>
+
+                        <ul class="article__list">
+                            <li><strong>ページビュー：</strong>ページの閲覧（page_view）</li>
+                            <li><strong>スクロール：</strong>ページの90%までスクロール（scroll）</li>
+                            <li><strong>離脱クリック：</strong>外部リンクのクリック（click）</li>
+                            <li><strong>サイト内検索：</strong>検索機能の使用（view_search_results）</li>
+                            <li><strong>動画エンゲージメント：</strong>埋め込み動画の再生（video_start, video_progressなど）</li>
+                            <li><strong>ファイルのダウンロード：</strong>PDFなどのダウンロード（file_download）</li>
+                        </ul>
+
+                        <p>
+                            これらは基本的に全て有効にしておくことを推奨します。特に<a href="website-lead-generation-methods.html">リード獲得施策</a>では、ホワイトペーパーのダウンロードなどを自動で計測できるため非常に便利です。
+                        </p>
+
+                        <h3 class="article__subheading">Googleシグナルの有効化</h3>
+                        <p>
+                            Googleシグナルを有効にすると、以下の機能が利用できます：
+                        </p>
+                        <ul class="article__list">
+                            <li>クロスデバイスのユーザー追跡</li>
+                            <li>リマーケティング機能</li>
+                            <li>広告レポート機能</li>
+                            <li>ユーザー属性レポート（年齢・性別など）</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">設定方法</h4>
+                        <ol class="article__list">
+                            <li>管理画面から「データ設定」→「データ収集」を選択</li>
+                            <li>「Googleシグナルのデータ収集」で「開始する」をクリック</li>
+                            <li>内容を確認して「続行」→「有効にする」をクリック</li>
+                        </ol>
+
+                        <div class="article__box article__box--warning">
+                            <h4 class="article__box-title"><i class="fas fa-exclamation-triangle"></i> プライバシーポリシーの更新を忘れずに</h4>
+                            <p>
+                                Googleシグナルを有効にする場合、サイトのプライバシーポリシーに「Googleアナリティクスによる広告機能を使用している」旨を記載する必要があります。
+                            </p>
+                        </div>
+
+                        <h3 class="article__subheading">データ保持期間の設定</h3>
+                        <p>
+                            GA4のデフォルトのデータ保持期間は2ヶ月です。これを14ヶ月に変更しておきましょう：
+                        </p>
+
+                        <ol class="article__list">
+                            <li>管理画面から「データ設定」→「データ保持」を選択</li>
+                            <li>「イベントデータの保持」を「14か月」に変更</li>
+                            <li>「保存」をクリック</li>
+                        </ol>
+
+                        <p>
+                            ただし、これは探索レポートなどで使えるユーザー単位のデータ保持期間です。標準レポートは無期限で保持されますので安心してください。
+                        </p>
+                    </section>
+
+                    <section id="section4" class="article__section">
+                        <h2 class="article__heading">イベント計測の設定</h2>
+                        <p>
+                            GA4の真髄はイベント計測にあります。ビジネスに重要なユーザー行動を全てイベントとして計測しましょう。
+                        </p>
+
+                        <h3 class="article__subheading">イベントの種類</h3>
+                        <p>
+                            GA4のイベントは4つのタイプに分類されます：
+                        </p>
+
+                        <h4 class="article__sub-subheading">1. 自動収集イベント</h4>
+                        <p>
+                            GA4タグを設置するだけで自動的に計測されるイベント：
+                        </p>
+                        <ul class="article__list">
+                            <li><code>first_visit</code>：初回訪問</li>
+                            <li><code>session_start</code>：セッション開始</li>
+                            <li><code>user_engagement</code>：ユーザーエンゲージメント</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">2. 拡張計測機能イベント</h4>
+                        <p>
+                            前述の拡張計測機能で自動計測されるイベント（page_view, scroll, clickなど）
+                        </p>
+
+                        <h4 class="article__sub-subheading">3. 推奨イベント</h4>
+                        <p>
+                            Googleが推奨する標準イベント名：
+                        </p>
+                        <ul class="article__list">
+                            <li><code>login</code>：ログイン</li>
+                            <li><code>sign_up</code>：会員登録</li>
+                            <li><code>purchase</code>：購入</li>
+                            <li><code>add_to_cart</code>：カート追加</li>
+                            <li><code>generate_lead</code>：リード獲得</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">4. カスタムイベント</h4>
+                        <p>
+                            ビジネス独自のイベント（自由に命名可能）
+                        </p>
+
+                        <div class="article__box article__box--point">
+                            <h4 class="article__box-title"><i class="fas fa-lightbulb"></i> 推奨イベントを使うメリット</h4>
+                            <p>
+                                推奨イベント名を使用すると、GA4の標準レポートに自動的に反映されます。例えば<code>generate_lead</code>イベントを使えば、リード獲得数が標準レポートで可視化されます。<a href="btob-marketing-strategy.html">BtoBマーケティング</a>では特に重要です。
+                            </p>
+                        </div>
+
+                        <h3 class="article__subheading">カスタムイベントの作成方法</h3>
+
+                        <h4 class="article__sub-subheading">方法1：GA4管理画面から作成</h4>
+                        <p>
+                            既存のイベントを条件に応じて変換できます：
+                        </p>
+
+                        <ol class="article__list">
+                            <li>管理画面から「イベント」を選択</li>
+                            <li>「イベントを作成」をクリック</li>
+                            <li>イベント名と条件を設定</li>
+                        </ol>
+
+                        <p><strong>例：特定のページ閲覧をイベント化</strong></p>
+                        <ul class="article__list">
+                            <li>イベント名：<code>contact_page_view</code></li>
+                            <li>条件：<code>page_location</code> 含む <code>/contact/</code></li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">方法2：GTMから送信【推奨】</h4>
+                        <p>
+                            より柔軟なイベント計測にはGTMの使用を推奨します。詳細は「<a href="#section7">GTMとの連携設定</a>」で解説します。
+                        </p>
+
+                        <h3 class="article__subheading">BtoB向け推奨イベント設定例</h3>
+
+                        <p>
+                            <a href="btob-marketing-strategy.html">BtoBマーケティング</a>で計測すべき主要なイベントをご紹介します：
+                        </p>
+
+                        <div class="article__table-wrapper">
+                            <table class="article__table">
+                                <thead>
+                                    <tr>
+                                        <th>イベント名</th>
+                                        <th>計測対象</th>
+                                        <th>重要度</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>generate_lead</code></td>
+                                        <td>お問い合わせフォーム送信</td>
+                                        <td>★★★</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>file_download</code></td>
+                                        <td>資料・ホワイトペーパーDL</td>
+                                        <td>★★★</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>sign_up</code></td>
+                                        <td>無料トライアル申込</td>
+                                        <td>★★★</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>view_item</code></td>
+                                        <td>サービス詳細ページ閲覧</td>
+                                        <td>★★☆</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>video_complete</code></td>
+                                        <td>紹介動画の視聴完了</td>
+                                        <td>★★☆</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>phone_click</code></td>
+                                        <td>電話番号のクリック</td>
+                                        <td>★☆☆</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            これらのイベントを適切に設定することで、<a href="website-lead-generation-methods.html">リード獲得</a>のボトルネックを可視化し、改善につなげられます。
+                        </p>
+                    </section>
+
+                    <section id="section5" class="article__section">
+                        <h2 class="article__heading">コンバージョン設定</h2>
+                        <p>
+                            イベントを設定したら、次はコンバージョン（CV）として登録します。これにより、目標達成の計測とレポート作成が可能になります。
+                        </p>
+
+                        <h3 class="article__subheading">コンバージョンの設定手順</h3>
+
+                        <h4 class="article__sub-subheading">1. コンバージョンとして登録</h4>
+                        <ol class="article__list">
+                            <li>管理画面から「イベント」を選択</li>
+                            <li>コンバージョンにしたいイベントの「コンバージョンとしてマークを付ける」をONに</li>
+                        </ol>
+
+                        <p>
+                            または、「管理」→「コンバージョン」→「新しいコンバージョンイベント」から直接設定することも可能です。
+                        </p>
+
+                        <h4 class="article__sub-subheading">2. コンバージョンの確認</h4>
+                        <p>
+                            設定後、以下のレポートでコンバージョンを確認できます：
+                        </p>
+                        <ul class="article__list">
+                            <li>「レポート」→「収益化」→「コンバージョン」</li>
+                            <li>「探索」レポートでカスタム分析</li>
+                        </ul>
+
+                        <h3 class="article__subheading">BtoB企業の推奨コンバージョン設定</h3>
+
+                        <p>
+                            <a href="btob-marketing-strategy.html">BtoBマーケティング</a>では、以下のコンバージョンを設定することを推奨します：
+                        </p>
+
+                        <h4 class="article__sub-subheading">マイクロコンバージョン</h4>
+                        <ul class="article__list">
+                            <li>資料ダウンロード</li>
+                            <li>メルマガ登録</li>
+                            <li>無料トライアル申込</li>
+                            <li>セミナー申込</li>
+                            <li>料金ページ閲覧</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">マクロコンバージョン</h4>
+                        <ul class="article__list">
+                            <li>お問い合わせ送信</li>
+                            <li>デモ申込</li>
+                            <li>見積もり依頼</li>
+                        </ul>
+
+                        <p>
+                            マイクロコンバージョンとマクロコンバージョンを両方設定することで、カスタマージャーニー全体を可視化できます。
+                        </p>
+
+                        <h3 class="article__subheading">コンバージョン値の設定</h3>
+
+                        <p>
+                            各コンバージョンに金額的な価値を設定することも可能です：
+                        </p>
+
+                        <ol class="article__list">
+                            <li>GTMでイベント送信時に<code>value</code>パラメータを追加</li>
+                            <li>または、GA4の「イベントの変更」機能でvalueを設定</li>
+                        </ol>
+
+                        <p>
+                            例えば、お問い合わせ1件あたりの平均受注額が100万円で、成約率が10%なら、お問い合わせのコンバージョン値は10万円（100万円 × 10%）と設定できます。
+                        </p>
+
+                        <div class="article__box article__box--success">
+                            <h4 class="article__box-title"><i class="fas fa-check-circle"></i> コンバージョン値設定のメリット</h4>
+                            <p>
+                                コンバージョン値を設定すると、<a href="landing-page-cost.html">LP制作</a>や広告運用のROI（投資対効果）が数値で可視化されます。どの施策が最も収益に貢献しているかが一目瞭然になります。
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="section6" class="article__section">
+                        <h2 class="article__heading">カスタムディメンション・指標の設定</h2>
+                        <p>
+                            GA4では、標準で用意されていないデータを「カスタムディメンション」や「カスタム指標」として追加できます。
+                        </p>
+
+                        <h3 class="article__subheading">カスタムディメンションとは</h3>
+                        <p>
+                            ユーザーやイベントに紐づく属性情報です。例：
+                        </p>
+                        <ul class="article__list">
+                            <li>会員ステータス（無料会員/有料会員）</li>
+                            <li>ログイン状態（ログイン済み/未ログイン）</li>
+                            <li>記事カテゴリ</li>
+                            <li>フォーム種類（資料請求/お問い合わせ）</li>
+                        </ul>
+
+                        <h3 class="article__subheading">カスタムディメンションの設定手順</h3>
+
+                        <h4 class="article__sub-subheading">ステップ1：イベントパラメータを送信</h4>
+                        <p>
+                            まず、GTMやgtagでイベント送信時にパラメータを追加します：
+                        </p>
+
+                        <div class="article__code">
+<pre><code>gtag('event', 'generate_lead', {
+  'form_type': '資料請求',
+  'value': 100000
+});</code></pre>
+                        </div>
+
+                        <h4 class="article__sub-subheading">ステップ2：GA4でカスタムディメンションとして登録</h4>
+                        <ol class="article__list">
+                            <li>管理画面から「カスタム定義」→「カスタムディメンションを作成」をクリック</li>
+                            <li>ディメンション名：「フォーム種類」（レポートに表示される名前）</li>
+                            <li>範囲：「イベント」を選択</li>
+                            <li>イベントパラメータ：<code>form_type</code>（送信したパラメータ名）</li>
+                            <li>「保存」をクリック</li>
+                        </ol>
+
+                        <p>
+                            設定後24時間程度でレポートに反映されます。
+                        </p>
+
+                        <h3 class="article__subheading">BtoB向け推奨カスタムディメンション</h3>
+
+                        <div class="article__table-wrapper">
+                            <table class="article__table">
+                                <thead>
+                                    <tr>
+                                        <th>ディメンション名</th>
+                                        <th>パラメータ名</th>
+                                        <th>用途</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>フォーム種類</td>
+                                        <td>form_type</td>
+                                        <td>どのフォームから問い合わせがあったか</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ログイン状態</td>
+                                        <td>login_status</td>
+                                        <td>ログインユーザーの行動分析</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ダウンロード資料名</td>
+                                        <td>document_name</td>
+                                        <td>どの資料が人気か</td>
+                                    </tr>
+                                    <tr>
+                                        <td>業種</td>
+                                        <td>industry</td>
+                                        <td>業種別の分析</td>
+                                    </tr>
+                                    <tr>
+                                        <td>企業規模</td>
+                                        <td>company_size</td>
+                                        <td>企業規模別の分析</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            これらのディメンションを設定することで、<a href="btob-marketing-strategy.html">BtoBマーケティング施策</a>の効果をより詳細に分析できます。
+                        </p>
+
+                        <h3 class="article__subheading">カスタム指標の設定</h3>
+
+                        <p>
+                            カスタム指標は数値データです。例：
+                        </p>
+                        <ul class="article__list">
+                            <li>動画視聴率</li>
+                            <li>スクロール深度</li>
+                            <li>フォーム入力時間</li>
+                        </ul>
+
+                        <p>
+                            設定方法はカスタムディメンションと同様ですが、「範囲」で「イベント」または「ユーザー」を選び、数値型のパラメータを指定します。
+                        </p>
+
+                        <div class="article__box article__box--warning">
+                            <h4 class="article__box-title"><i class="fas fa-exclamation-triangle"></i> 上限に注意</h4>
+                            <p>
+                                カスタムディメンションは最大50個、カスタム指標は最大50個まで設定可能です（無料版GA4の場合）。本当に必要なものだけを厳選して設定しましょう。
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="section7" class="article__section">
+                        <h2 class="article__heading">GTM（Googleタグマネージャー）との連携設定</h2>
+                        <p>
+                            GTMを使うと、GA4の計測設定が格段に効率化されます。実務では必須のツールです。
+                        </p>
+
+                        <h3 class="article__subheading">GTMとは</h3>
+                        <p>
+                            Googleタグマネージャー（GTM）は、Webサイトのタグを一元管理できる無料ツールです。メリット：
+                        </p>
+                        <ul class="article__list">
+                            <li>エンジニアに依頼せずタグを追加・変更できる</li>
+                            <li>複数のタグを一括管理</li>
+                            <li>条件に応じたタグ発火が可能</li>
+                            <li>プレビューモードでテスト可能</li>
+                            <li>バージョン管理で過去に戻せる</li>
+                        </ul>
+
+                        <h3 class="article__subheading">GTMの初期設定</h3>
+
+                        <h4 class="article__sub-subheading">1. GTMアカウントの作成</h4>
+                        <ol class="article__list">
+                            <li><a href="https://tagmanager.google.com/" target="_blank" rel="noopener">Googleタグマネージャー</a>にアクセス</li>
+                            <li>「アカウントを作成」をクリック</li>
+                            <li>アカウント名と国を設定</li>
+                            <li>コンテナ名とターゲットプラットフォーム（ウェブ）を設定</li>
+                            <li>利用規約に同意</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">2. GTMコードの設置</h4>
+                        <p>
+                            表示されるGTMコードを、全ページに設置します：
+                        </p>
+
+                        <ul class="article__list">
+                            <li><code>&lt;head&gt;</code>内に1つ目のコード</li>
+                            <li><code>&lt;body&gt;</code>直後に2つ目のコード</li>
+                        </ul>
+
+                        <p>
+                            この作業は一度だけ。以降、タグの追加・変更はGTM管理画面から行えます。
+                        </p>
+
+                        <h3 class="article__subheading">GTMでGA4タグを設定する手順</h3>
+
+                        <h4 class="article__sub-subheading">ステップ1：GA4設定タグの作成</h4>
+                        <ol class="article__list">
+                            <li>GTM管理画面で「タグ」→「新規」をクリック</li>
+                            <li>タグ名：「GA4 - 設定」</li>
+                            <li>タグタイプ：「Googleタグ」を選択</li>
+                            <li>タグID：GA4の測定ID（G-XXXXXXXXXX）を入力</li>
+                            <li>トリガー：「All Pages」（すべてのページ）を選択</li>
+                            <li>「保存」をクリック</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">ステップ2：イベントタグの作成例</h4>
+                        <p>
+                            例として、お問い合わせフォーム送信を計測するイベントタグを作成します：
+                        </p>
+
+                        <ol class="article__list">
+                            <li>「タグ」→「新規」をクリック</li>
+                            <li>タグ名：「GA4 - イベント - フォーム送信」</li>
+                            <li>タグタイプ：「Googleアナリティクス：GA4イベント」</li>
+                            <li>設定タグ：先ほど作成した「GA4 - 設定」を選択</li>
+                            <li>イベント名：<code>generate_lead</code></li>
+                            <li>イベントパラメータ（オプション）：
+                                <ul>
+                                    <li>パラメータ名：<code>form_type</code></li>
+                                    <li>値：<code>お問い合わせ</code></li>
+                                </ul>
+                            </li>
+                            <li>トリガー：フォーム送信完了ページの閲覧（後述）</li>
+                            <li>「保存」をクリック</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">ステップ3：トリガーの設定</h4>
+                        <p>
+                            「フォーム送信完了ページの閲覧」トリガーを作成：
+                        </p>
+
+                        <ol class="article__list">
+                            <li>「トリガー」→「新規」をクリック</li>
+                            <li>トリガー名：「ページビュー - サンクスページ」</li>
+                            <li>トリガータイプ：「ページビュー」</li>
+                            <li>条件：「Page URL」「含む」「/thanks/」</li>
+                            <li>「保存」をクリック</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">ステップ4：公開前のプレビュー</h4>
+                        <ol class="article__list">
+                            <li>GTM画面右上の「プレビュー」をクリック</li>
+                            <li>サイトのURLを入力して「Connect」</li>
+                            <li>実際にフォーム送信して、タグが発火するか確認</li>
+                            <li>GA4の「DebugView」でもイベントを確認</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">ステップ5：公開</h4>
+                        <ol class="article__list">
+                            <li>問題なければGTM画面右上の「公開」をクリック</li>
+                            <li>バージョン名と説明を入力</li>
+                            <li>「公開」をクリック</li>
+                        </ol>
+
+                        <div class="article__box article__box--success">
+                            <h4 class="article__box-title"><i class="fas fa-check-circle"></i> GTM活用の効果</h4>
+                            <p>
+                                GTMを導入することで、<a href="website-lead-generation-methods.html">リード獲得施策</a>の効果測定が驚くほど簡単になります。新しい<a href="landing-page-cost.html">LP</a>を公開した際も、エンジニアに依頼せずマーケター自身でタグを設定できるため、スピーディーにPDCAを回せます。
+                            </p>
+                        </div>
+
+                        <h3 class="article__subheading">便利な変数の設定</h3>
+
+                        <p>
+                            GTMには「変数」機能があり、動的な値を取得できます。便利な変数：
+                        </p>
+
+                        <h4 class="article__sub-subheading">組み込み変数</h4>
+                        <ul class="article__list">
+                            <li>Page URL：現在のページURL</li>
+                            <li>Page Path：URLのパス部分</li>
+                            <li>Referrer：参照元URL</li>
+                            <li>Click URL：クリックされたリンクのURL</li>
+                            <li>Click Text：クリックされた要素のテキスト</li>
+                        </ul>
+
+                        <p>
+                            これらは「変数」→「設定」から有効化できます。
+                        </p>
+
+                        <h4 class="article__sub-subheading">カスタムJavaScript変数</h4>
+                        <p>
+                            JavaScriptで独自の変数を作成することも可能です。例えば、ログイン状態を取得する変数：
+                        </p>
+
+                        <div class="article__code">
+<pre><code>function() {
+  return window.isLoggedIn ? 'ログイン済み' : '未ログイン';
+}</code></pre>
+                        </div>
+
+                        <p>
+                            この変数をイベントパラメータとして送信すれば、ログイン状態別の分析が可能になります。
+                        </p>
+                    </section>
+
+                    <section id="section8" class="article__section">
+                        <h2 class="article__heading">BigQueryエクスポート設定（上級者向け）</h2>
+                        <p>
+                            GA4の大きな特徴の一つが、BigQueryへの無料エクスポートです。生データを取得できるため、高度な分析が可能になります。
+                        </p>
+
+                        <h3 class="article__subheading">BigQueryエクスポートのメリット</h3>
+                        <ul class="article__list">
+                            <li>GA4の制限（サンプリングなど）を受けない</li>
+                            <li>SQLで自由にデータ分析</li>
+                            <li>他のデータ（CRM、MAツールなど）と結合可能</li>
+                            <li>長期間のデータ保持</li>
+                            <li>BIツール（Looker Studio、Tableauなど）で可視化</li>
+                        </ul>
+
+                        <h3 class="article__subheading">BigQueryエクスポートの設定手順</h3>
+
+                        <h4 class="article__sub-subheading">ステップ1：Google Cloudプロジェクトの作成</h4>
+                        <ol class="article__list">
+                            <li><a href="https://console.cloud.google.com/" target="_blank" rel="noopener">Google Cloud Console</a>にアクセス</li>
+                            <li>新しいプロジェクトを作成</li>
+                            <li>プロジェクト名を入力（例：「GA4-BigQuery」）</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">ステップ2：BigQueryの有効化</h4>
+                        <ol class="article__list">
+                            <li>Google Cloud Consoleで「BigQuery」を検索</li>
+                            <li>BigQuery APIを有効化</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">ステップ3：GA4からエクスポート設定</h4>
+                        <ol class="article__list">
+                            <li>GA4管理画面の「BigQueryのリンク」を選択</li>
+                            <li>「リンク」をクリック</li>
+                            <li>Google Cloudプロジェクトを選択</li>
+                            <li>データの場所を選択（日本の場合：「asia-northeast1（東京）」または「asia-northeast2（大阪）」）</li>
+                            <li>エクスポート頻度を選択：
+                                <ul>
+                                    <li>日次：毎日1回エクスポート（推奨）</li>
+                                    <li>ストリーミング：リアルタイムでエクスポート（追加料金あり）</li>
+                                </ul>
+                            </li>
+                            <li>「送信」をクリック</li>
+                        </ol>
+
+                        <p>
+                            設定後、24時間以内にデータのエクスポートが開始されます。
+                        </p>
+
+                        <h3 class="article__subheading">BigQueryでのデータ確認</h3>
+
+                        <p>
+                            BigQueryにエクスポートされたデータは、以下の構造で保存されます：
+                        </p>
+
+                        <ul class="article__list">
+                            <li>プロジェクト名</li>
+                            <li>└ データセット名：<code>analytics_XXXXXXXXX</code></li>
+                            <li>　└ テーブル名：<code>events_YYYYMMDD</code>（日付ごとのテーブル）</li>
+                        </ul>
+
+                        <p>
+                            SQLで簡単にクエリを実行できます。例えば、昨日のページビュー数を取得：
+                        </p>
+
+                        <div class="article__code">
+<pre><code>SELECT
+  COUNT(*) AS pageviews
+FROM
+  `プロジェクトID.analytics_XXXXXXXXX.events_*`
+WHERE
+  event_name = 'page_view'
+  AND _TABLE_SUFFIX = FORMAT_DATE('%Y%m%d', DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY))</code></pre>
+                        </div>
+
+                        <div class="article__box article__box--warning">
+                            <h4 class="article__box-title"><i class="fas fa-exclamation-triangle"></i> BigQueryの料金に注意</h4>
+                            <p>
+                                BigQueryは基本無料ですが、以下の料金が発生する可能性があります：
+                            </p>
+                            <ul class="article__list">
+                                <li>ストレージ：月10GBまで無料、以降は$0.02/GB</li>
+                                <li>クエリ：月1TBまで無料、以降は$5/TB</li>
+                            </ul>
+                            <p>
+                                通常の中小企業サイトなら、無料枠内で十分収まります。
+                            </p>
+                        </div>
+
+                        <h3 class="article__subheading">BigQueryを活用した高度な分析例</h3>
+
+                        <p>
+                            BigQueryを使うことで、以下のような高度な分析が可能になります：
+                        </p>
+
+                        <ul class="article__list">
+                            <li>コンバージョンに至ったユーザーの行動パターン分析</li>
+                            <li>チャネルごとのLTV（顧客生涯価値）算出</li>
+                            <li>CRMデータと結合した受注分析</li>
+                            <li>セッション間隔の分析</li>
+                            <li>カスタムアトリビューションモデルの構築</li>
+                        </ul>
+
+                        <p>
+                            <a href="btob-marketing-strategy.html">BtoBマーケティング</a>の高度化には、BigQueryを活用したデータ分析が不可欠です。
+                        </p>
+                    </section>
+
+                    <section id="section9" class="article__section">
+                        <h2 class="article__heading">よくあるトラブルと解決方法</h2>
+                        <p>
+                            GA4の設定でよくあるトラブルと、その解決方法をまとめました。
+                        </p>
+
+                        <h3 class="article__subheading">トラブル1：データが計測されない</h3>
+
+                        <h4 class="article__sub-subheading">確認ポイント</h4>
+                        <ul class="article__list">
+                            <li>タグが正しく設置されているか（ブラウザの開発者ツールで確認）</li>
+                            <li>測定IDが正しいか（G-XXXXXXXXXXの形式）</li>
+                            <li>GTMを使用している場合、公開されているか</li>
+                            <li>広告ブロッカーが有効になっていないか</li>
+                            <li>社内IPアドレスからのアクセスを除外していないか</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">解決方法</h4>
+                        <ol class="article__list">
+                            <li>DebugViewでリアルタイムのイベント発火を確認</li>
+                            <li>GTMのプレビューモードで動作確認</li>
+                            <li>ブラウザの拡張機能「Tag Assistant」で診断</li>
+                        </ol>
+
+                        <h3 class="article__subheading">トラブル2：イベントが重複して計測される</h3>
+
+                        <h4 class="article__sub-subheading">原因</h4>
+                        <ul class="article__list">
+                            <li>直接HTMLとGTMで両方タグを設置している</li>
+                            <li>GTMで同じイベントを複数のタグから送信している</li>
+                            <li>SPAでページ遷移時に複数回発火している</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">解決方法</h4>
+                        <ul class="article__list">
+                            <li>タグは1種類の方法（GTM推奨）で設置</li>
+                            <li>GTMのトリガー条件を見直す</li>
+                            <li>イベントの発火回数を制限する設定を追加</li>
+                        </ul>
+
+                        <h3 class="article__subheading">トラブル3：コンバージョンが正しくカウントされない</h3>
+
+                        <h4 class="article__sub-subheading">確認ポイント</h4>
+                        <ul class="article__list">
+                            <li>イベントが正しく発火しているか（DebugViewで確認）</li>
+                            <li>イベント名が正確か（スペルミスなど）</li>
+                            <li>コンバージョンとしてマークされているか</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">解決方法</h4>
+                        <ol class="article__list">
+                            <li>「イベント」レポートで該当イベントの発火を確認</li>
+                            <li>イベント名を確認し、コンバージョン設定と一致させる</li>
+                            <li>設定後24時間は反映に時間がかかることを考慮</li>
+                        </ol>
+
+                        <h3 class="article__subheading">トラブル4：レポートにデータが表示されない</h3>
+
+                        <h4 class="article__sub-subheading">原因</h4>
+                        <ul class="article__list">
+                            <li>カスタムディメンション・指標が反映されていない（24時間必要）</li>
+                            <li>データの閾値（しきい値）制限に引っかかっている</li>
+                            <li>フィルターで除外されている</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">解決方法</h4>
+                        <ul class="article__list">
+                            <li>カスタム定義は設定後24時間待つ</li>
+                            <li>データの閾値については、Googleシグナルを無効化すると表示されることも</li>
+                            <li>フィルター設定を確認</li>
+                        </ul>
+
+                        <h3 class="article__subheading">トラブル5：参照元が「direct / (none)」になる</h3>
+
+                        <h4 class="article__sub-subheading">原因</h4>
+                        <ul class="article__list">
+                            <li>HTTPSからHTTPへの遷移（リファラが送信されない）</li>
+                            <li>リダイレクトが挟まっている</li>
+                            <li>アプリからの遷移</li>
+                            <li>QRコードからのアクセス</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">解決方法</h4>
+                        <ul class="article__list">
+                            <li>URLにUTMパラメータを付与</li>
+                            <li>参照元除外リストを設定（自社ドメイン、決済サイトなど）</li>
+                            <li>全ページHTTPS化</li>
+                        </ul>
+
+                        <div class="article__box article__box--point">
+                            <h4 class="article__box-title"><i class="fas fa-lightbulb"></i> トラブル対処の基本</h4>
+                            <p>
+                                GA4のトラブル対処の基本は、「DebugView」と「リアルタイムレポート」での確認です。これらを活用すれば、ほとんどの問題は原因を特定できます。それでも解決しない場合は、プロに相談することをおすすめします。
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="section10" class="article__section">
+                        <h2 class="article__heading">まとめ</h2>
+                        <p>
+                            GA4の設定は、一見複雑に見えますが、本記事の手順に従えば必ず完了できます。重要なポイントをおさらいしましょう。
+                        </p>
+
+                        <div class="article__box article__box--summary">
+                            <h3 class="article__box-title"><i class="fas fa-check-circle"></i> GA4設定の重要ポイント</h3>
+
+                            <h4 class="article__sub-subheading">最低限必須の設定</h4>
+                            <ul class="article__list">
+                                <li>GA4プロパティの作成とタグ設置</li>
+                                <li>データストリームの設定</li>
+                                <li>拡張計測機能の有効化</li>
+                                <li>主要コンバージョンの設定</li>
+                            </ul>
+
+                            <h4 class="article__sub-subheading">推奨設定</h4>
+                            <ul class="article__list">
+                                <li>GTMでのタグ管理</li>
+                                <li>カスタムイベントの計測</li>
+                                <li>カスタムディメンション・指標の設定</li>
+                                <li>Googleシグナルの有効化</li>
+                                <li>データ保持期間の延長</li>
+                            </ul>
+
+                            <h4 class="article__sub-subheading">上級者向け</h4>
+                            <ul class="article__list">
+                                <li>BigQueryエクスポート</li>
+                                <li>クロスドメイントラッキング</li>
+                                <li>User IDの実装</li>
+                                <li>eコマース計測（該当する場合）</li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            GA4は、従来のUAと比べて設定の自由度が高く、より詳細なユーザー行動を計測できます。特に<a href="btob-marketing-strategy.html">BtoBマーケティング</a>では、リードの質や成約率の向上に直結するデータが取得できるため、適切な設定が不可欠です。
+                        </p>
+
+                        <p>
+                            本記事で解説した設定を実施すれば、<a href="website-lead-generation-methods.html">Webサイトからのリード獲得</a>や<a href="landing-page-cost.html">LP</a>の効果測定が正確に行えるようになります。まずは基本設定から始め、徐々に高度な計測を追加していきましょう。
+                        </p>
+
+                        <p>
+                            GA4の活用は、データドリブンなマーケティングの第一歩です。正しく設定し、データを活用することで、<a href="owned-media-operation-service.html">オウンドメディア運用</a>やマーケティング施策全体の効果を最大化できます。
+                        </p>
+
+                        <div class="article__box article__box--point">
+                            <h4 class="article__box-title"><i class="fas fa-lightbulb"></i> 設定後のアクション</h4>
+                            <p>
+                                GA4を設定したら、定期的にレポートを確認する習慣をつけましょう。週次・月次でのレポート確認、四半期ごとの詳細分析など、PDCAサイクルを回すことが成果につながります。
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Share Buttons -->
+                <div class="article__share">
+                    <h3 class="article__share-title">この記事をシェア</h3>
+                    <div class="article__share-buttons">
+                        <a href="https://twitter.com/intent/tweet?url=https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html&text=GA4完全設定マニュアル" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="https://social-plugins.line.me/lineit/share?url=https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                            LINE
+                        </a>
+                        <button class="share-btn" onclick="navigator.clipboard.writeText('https://yamada1001.github.io/yojitsu-website/blog/posts/ga4-setup-guide.html')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+                            </svg>
+                            URLをコピー
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Related Posts -->
+                <aside class="related-posts">
+                    <h2 class="related-posts__title">関連記事</h2>
+                    <div class="related-posts__grid" id="relatedArticles">
+                        <!-- JavaScriptで自動生成 -->
+                    </div>
+                </aside>
+            </div><!-- /.article__main -->
+
+            <!-- Sidebar TOC -->
+            <aside class="article__sidebar">
+                <nav class="sidebar-toc" id="sidebarToc">
+                    <!-- JavaScriptで自動生成 -->
+                </nav>
+            </aside>
+        </div><!-- /.article__container -->
+    </article>
+
+    <!-- Floating TOC Button (Mobile) -->
+    <button class="floating-toc-btn" id="floatingTocBtn" aria-label="目次を開く">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+
+    <!-- Mobile TOC Modal -->
+    <div class="mobile-toc-modal" id="mobileTocModal">
+        <div class="mobile-toc-modal__content">
+            <div class="mobile-toc-modal__header">
+                <h3 class="mobile-toc-modal__title">目次</h3>
+                <button class="mobile-toc-modal__close" id="closeMobileToc" aria-label="閉じる">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <ul class="mobile-toc-modal__list" id="mobileTocList">
+                <!-- JavaScriptで自動生成 -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">余日</a>
+                    <p class="footer__tagline">本質に向き合い、成長を加速させる</p>
+                </div>
+                <nav class="footer__nav">
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">サービス</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html#services">SEO対策</a></li>
+                            <li><a href="index.html#services">広告運用代行</a></li>
+                            <li><a href="index.html#services">プランニング</a></li>
+                            <li><a href="index.html#services">SNS運用代行</a></li>
+                            <li><a href="index.html#services">CRM導入支援</a></li>
+                            <li><a href="index.html#services">サイト制作/PM・ディレクション</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">ブログ</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="blog/categories/seo.html">SEO</a></li>
+                            <li><a href="blog/categories/ads.html">広告運用</a></li>
+                            <li><a href="blog/categories/sns.html">SNS</a></li>
+                            <li><a href="blog/categories/marketing.html">マーケティング</a></li>
+                            <li><a href="blog/categories/web-production.html">Web制作</a></li>
+                            <li><a href="blog/categories/misc.html">雑記</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">企業情報</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html#about">プロフィール</a></li>
+                            <li><a href="index.html#contact">お問い合わせ</a></li>
+                            <li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+                            <li><a href="/tokushoho.html">特定商取引法に基づく表記</a></li>
+                            <li><a href="/disclaimer.html">免責事項</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 余日（ヨジツ）All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/js/blog-loader.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/blog.js"></script>
+    <script src="src/js/article-template.js"></script>
+</body>
+</html>

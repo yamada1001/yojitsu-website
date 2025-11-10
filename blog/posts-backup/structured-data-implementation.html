@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T7NGQDC2');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説 | 株式会社Yojitsu</title>
+    <meta name="description" content="構造化データの実装方法を完全解説。Schema.org、JSON-LD、パンくずリスト、FAQ、記事、商品など、SEOに効く構造化データの種類と実装コードを実例付きで紹介します。">
+    <meta name="keywords" content="構造化データ,Schema.org,JSON-LD,SEO,リッチリザルト,Googlebot,技術SEO,マークアップ">
+
+    <!-- OGP設定 -->
+    <meta property="og:title" content="構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説">
+    <meta property="og:description" content="構造化データの実装方法を完全解説。Schema.org、JSON-LD、SEOに効く実装コードを実例付きで紹介します。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yojitsu.co.jp/blog/posts/structured-data-implementation.html">
+    <meta property="og:site_name" content="株式会社Yojitsu">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説">
+    <meta name="twitter:description" content="構造化データの実装方法を完全解説。SEOに効く実装コードを実例付きで紹介します。">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yojitsu.co.jp/blog/posts/structured-data-implementation.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/blog.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説",
+        "description": "構造化データの実装方法を完全解説。Schema.org、JSON-LD、SEOに効く実装コードを実例付きで紹介します。",
+        "image": "https://yojitsu.co.jp/assets/images/og-image.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "株式会社Yojitsu"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "株式会社Yojitsu",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yojitsu.co.jp/assets/images/logo.png"
+            }
+        },
+        "datePublished": "2025-01-19",
+        "dateModified": "2025-01-19"
+    }
+    </script>
+    <base href="/yojitsu-website/">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7NGQDC2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- ヘッダー -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">ホーム</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="blog/index.html" class="breadcrumb__link">ブログ</a>
+            </li>
+            <li class="breadcrumb__item">
+                <span class="breadcrumb__current">構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説</span>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Article -->
+    <article class="article">
+        <div class="article__container">
+            <div class="article__main">
+                <!-- Article Header -->
+                <header class="article__header">
+                    <div class="article__meta">
+                        <span class="article__category">テクニカル</span>
+                        <time class="article__date" datetime="2025-01-19"></time>
+                    </div>
+                    <h1 class="article__title">構造化データ実装ガイド｜SEOに効くSchema.orgとJSON-LDの完全解説</h1>
+                    <p class="article__excerpt">
+                        構造化データの実装方法を完全解説。Schema.org、JSON-LD、パンくずリスト、FAQ、記事、商品など、SEOに効く構造化データの種類と実装コードを実例付きで紹介します。
+                    </p>
+                </header>
+
+                <!-- Featured Image -->
+                <div class="article__featured-image">
+                    <svg viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="450" fill="#F5F5F5"/>
+                        <circle cx="400" cy="225" r="80" stroke="#EC4899" stroke-width="4" fill="none"/>
+                        <path d="M340 225 L460 225 M400 165 L400 285" stroke="#EC4899" stroke-width="4"/>
+                        <text x="400" y="350" text-anchor="middle" fill="#EC4899" font-size="24" font-weight="bold">Article</text>
+                    </svg>
+                </div>
+
+                <!-- Table of Contents -->
+                <nav class="article__toc">
+                    <h2 class="article__toc-title">目次</h2>
+                    
+                        <ul class="article__toc-list">
+                            <li class="article__toc-item">
+                                <a href="#section1" class="article__toc-link">構造化データとは</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section2" class="article__toc-link">実装方法の選択</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section3" class="article__toc-link">Article（記事）</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section4" class="article__toc-link">Breadcrumb（パンくずリスト）</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section5" class="article__toc-link">FAQPage</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section6" class="article__toc-link">その他の構造化データ</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section7" class="article__toc-link">テスト・検証</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section8" class="article__toc-link">まとめ</a>
+                            </li>
+                        </ul>
+                    
+                </nav>
+
+
+                <!-- Table of Contents -->
+                <nav class="article__toc-nav">
+                        <ul class="article__toc-list">
+                            <li class="article__toc-item">
+                                <a href="#section1" class="article__toc-link">構造化データとは</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section2" class="article__toc-link">実装方法の選択</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section3" class="article__toc-link">Article（記事）</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section4" class="article__toc-link">Breadcrumb（パンくずリスト）</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section5" class="article__toc-link">FAQPage</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section6" class="article__toc-link">その他の構造化データ</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section7" class="article__toc-link">テスト・検証</a>
+                            </li>
+                            <li class="article__toc-item">
+                                <a href="#section8" class="article__toc-link">まとめ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                <!-- Article Content -->
+                <div class="article__content">
+                    
+                    <p class="article__lead">
+                        構造化データは、Googleにページの内容を正確に伝え、検索結果でリッチリザルトとして表示されるための重要な技術です。しかし、「構造化データって何？」「どうやって実装するの？」と悩む方も多いはず。本記事では、構造化データの基礎から、Schema.org、JSON-LDを使った実装方法、実際のコード例まで、実務で使える知識を完全網羅して解説します。
+                    </p>
+
+                    <section id="section1" class="article__section">
+                        <h2 class="article__heading">構造化データとは</h2>
+
+                        <h3 class="article__subheading">構造化データの定義</h3>
+                        <p>
+                            構造化データとは、Webページの内容を機械（検索エンジン）が理解しやすい形式でマークアップしたデータのことです。
+                        </p>
+
+                        <p>
+                            例えば、「記事のタイトル」「著者」「公開日」といった情報を、人間が読むためのHTMLとは別に、検索エンジンが明確に理解できる形式で提供します。
+                        </p>
+
+                        <h3 class="article__subheading">構造化データのメリット</h3>
+
+                        <h4 class="article__sub-subheading">1. リッチリザルトで目立つ</h4>
+                        <p>
+                            構造化データを実装すると、検索結果にリッチリザルト（拡張表示）として表示されます：
+                        </p>
+                        <ul class="article__list">
+                            <li><strong>記事：</strong>画像・公開日・著者が表示</li>
+                            <li><strong>FAQ：</strong>質問と回答が折りたたみ表示</li>
+                            <li><strong>商品：</strong>価格・在庫状況・レビュー星評価</li>
+                            <li><strong>レシピ：</strong>調理時間・カロリー・画像</li>
+                            <li><strong>イベント：</strong>日時・場所・チケット価格</li>
+                        </ul>
+
+                        <p>
+                            リッチリザルトは通常の検索結果より目立つため、CTR（クリック率）が1.5〜3倍向上すると言われています。
+                        </p>
+
+                        <h4 class="article__sub-subheading">2. 検索エンジンの理解が深まる</h4>
+                        <p>
+                            構造化データにより、Googleはページの内容をより正確に理解できます。結果として：
+                        </p>
+                        <ul class="article__list">
+                            <li>適切な検索クエリでの表示</li>
+                            <li>音声検索での回答ソースになりやすい</li>
+                            <li>Googleアシスタント・スマートスピーカーでの活用</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">3. SEOランキングへの間接的効果</h4>
+                        <p>
+                            構造化データ自体はランキング要因ではありませんが、CTRの向上やユーザーエンゲージメントの改善を通じて、間接的にSEO効果をもたらします。
+                        </p>
+
+                        <h3 class="article__subheading">主要な構造化データの種類</h3>
+
+                        <div class="article__table-wrapper">
+                            <table class="article__table">
+                                <thead>
+                                    <tr>
+                                        <th>タイプ</th>
+                                        <th>用途</th>
+                                        <th>リッチリザルト</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Article</td>
+                                        <td>ニュース・ブログ記事</td>
+                                        <td>画像・公開日・著者</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BreadcrumbList</td>
+                                        <td>パンくずリスト</td>
+                                        <td>階層構造のリンク</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FAQPage</td>
+                                        <td>よくある質問</td>
+                                        <td>折りたたみQ&A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Product</td>
+                                        <td>商品ページ</td>
+                                        <td>価格・在庫・レビュー</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Organization</td>
+                                        <td>企業情報</td>
+                                        <td>ナレッジパネル</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LocalBusiness</td>
+                                        <td>店舗情報</td>
+                                        <td>営業時間・所在地</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            本記事では、<a href="btob-marketing-strategy.html">BtoBマーケティング</a>や<a href="owned-media-operation-service.html">オウンドメディア運用</a>で特に重要な、Article、BreadcrumbList、FAQPageを中心に解説します。
+                        </p>
+                    </section>
+
+                    <section id="section2" class="article__section">
+                        <h2 class="article__heading">実装方法の選択：JSON-LD、Microdata、RDFa</h2>
+                        <p>
+                            構造化データには3つの実装方法があります。
+                        </p>
+
+                        <h3 class="article__subheading">1. JSON-LD（推奨）</h3>
+                        <p><strong>おすすめ度：★★★★★</strong></p>
+
+                        <h4 class="article__sub-subheading">特徴</h4>
+                        <ul class="article__list">
+                            <li>JavaScriptオブジェクト形式</li>
+                            <li>HTMLとは別に<code>&lt;script&gt;</code>タグ内に記述</li>
+                            <li>Googleが公式に推奨</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">メリット</h4>
+                        <ul class="article__list">
+                            <li>HTMLとの分離で管理しやすい</li>
+                            <li>既存HTMLを変更不要</li>
+                            <li>可読性が高い</li>
+                            <li>動的生成が容易</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">デメリット</h4>
+                        <ul class="article__list">
+                            <li>特になし（ほぼ完璧）</li>
+                        </ul>
+
+                        <p><strong>結論：JSON-LDを使いましょう。</strong>以降、本記事ではJSON-LDでの実装を解説します。</p>
+
+                        <h3 class="article__subheading">2. Microdata</h3>
+                        <p><strong>おすすめ度：★★☆☆☆</strong></p>
+
+                        <h4 class="article__sub-subheading">特徴</h4>
+                        <ul class="article__list">
+                            <li>HTML要素に直接属性を追加</li>
+                            <li><code>itemscope</code>、<code>itemprop</code>などの属性を使用</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">メリット</h4>
+                        <ul class="article__list">
+                            <li>HTMLと密結合で同期がズレない</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">デメリット</h4>
+                        <ul class="article__list">
+                            <li>HTMLが煩雑になる</li>
+                            <li>保守性が低い</li>
+                            <li>動的生成が面倒</li>
+                        </ul>
+
+                        <h3 class="article__subheading">3. RDFa</h3>
+                        <p><strong>おすすめ度：★☆☆☆☆</strong></p>
+                        <p>
+                            Microdataに似た方式。Googleのサポートは限定的で、推奨されていません。
+                        </p>
+                    </section>
+
+                    <section id="section3" class="article__section">
+                        <h2 class="article__heading">Article（記事）の構造化データ</h2>
+                        <p>
+                            ブログ記事やニュース記事に実装する、最も一般的な構造化データです。
+                        </p>
+
+                        <h3 class="article__subheading">実装例</h3>
+
+                        <div class="article__code">
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "構造化データ実装ガイド",
+  "description": "構造化データの実装方法を完全解説",
+  "image": "https://example.com/images/article-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "株式会社Yojitsu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "株式会社Yojitsu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://example.com/logo.png"
+    }
+  },
+  "datePublished": "2025-01-19",
+  "dateModified": "2025-01-19"
+}
+&lt;/script&gt;</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">主要プロパティの解説</h3>
+
+                        <h4 class="article__sub-subheading">必須項目</h4>
+                        <ul class="article__list">
+                            <li><code>headline</code>：記事のタイトル（110文字以内推奨）</li>
+                            <li><code>image</code>：記事の画像URL（複数指定可能）</li>
+                            <li><code>datePublished</code>：公開日（ISO 8601形式）</li>
+                            <li><code>author</code>：著者情報（Person or Organization）</li>
+                            <li><code>publisher</code>：発行者情報</li>
+                        </ul>
+
+                        <h4 class="article__sub-subheading">推奨項目</h4>
+                        <ul class="article__list">
+                            <li><code>dateModified</code>：更新日</li>
+                            <li><code>description</code>：記事の要約</li>
+                            <li><code>mainEntityOfPage</code>：記事のURL</li>
+                        </ul>
+
+                        <h3 class="article__subheading">Articleの種類</h3>
+                        <p>
+                            用途に応じて<code>@type</code>を使い分けます：
+                        </p>
+
+                        <ul class="article__list">
+                            <li><code>Article</code>：一般的な記事</li>
+                            <li><code>NewsArticle</code>：ニュース記事</li>
+                            <li><code>BlogPosting</code>：ブログ投稿</li>
+                            <li><code>TechArticle</code>：技術記事</li>
+                        </ul>
+
+                        <p>
+                            通常は<code>Article</code>で問題ありません。<a href="owned-media-operation-service.html">オウンドメディア</a>のブログ記事には<code>BlogPosting</code>を使うこともあります。
+                        </p>
+
+                        <h3 class="article__subheading">画像の指定</h3>
+                        <p>
+                            画像は重要です。Googleは以下を推奨しています：
+                        </p>
+
+                        <ul class="article__list">
+                            <li><strong>解像度：</strong>1200px × 675px以上</li>
+                            <li><strong>アスペクト比：</strong>16:9、4:3、1:1のいずれか</li>
+                            <li><strong>フォーマット：</strong>JPG、PNG、WebP</li>
+                            <li><strong>複数指定：</strong>異なるアスペクト比の画像を複数指定可能</li>
+                        </ul>
+
+                        <div class="article__code">
+<pre><code>"image": [
+  "https://example.com/image-16x9.jpg",
+  "https://example.com/image-4x3.jpg",
+  "https://example.com/image-1x1.jpg"
+]</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">authorとpublisherの違い</h3>
+                        <ul class="article__list">
+                            <li><code>author</code>：記事を書いた人or組織</li>
+                            <li><code>publisher</code>：サイトを運営する組織（必須）</li>
+                        </ul>
+
+                        <p>
+                            企業サイトの場合、両方とも組織にすることが多いです。個人ブログなら<code>author</code>を<code>Person</code>型にします。
+                        </p>
+                    </section>
+
+                    <section id="section4" class="article__section">
+                        <h2 class="article__heading">BreadcrumbList（パンくずリスト）</h2>
+                        <p>
+                            パンくずリストは、サイト構造をGoogleに伝え、検索結果にも表示されます。
+                        </p>
+
+                        <h3 class="article__subheading">実装例</h3>
+
+                        <div class="article__code">
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://example.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ブログ",
+      "item": "https://example.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "構造化データ実装ガイド",
+      "item": "https://example.com/blog/structured-data.html"
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">プロパティの解説</h3>
+
+                        <ul class="article__list">
+                            <li><code>itemListElement</code>：パンくずの各項目の配列</li>
+                            <li><code>position</code>：階層の位置（1から始まる）</li>
+                            <li><code>name</code>：リンクテキスト</li>
+                            <li><code>item</code>：リンク先URL（最後の項目は現在ページなので省略可）</li>
+                        </ul>
+
+                        <h3 class="article__subheading">実装のポイント</h3>
+
+                        <ul class="article__list">
+                            <li>HTMLのパンくずリストと一致させる</li>
+                            <li>最後の項目（現在ページ）は<code>item</code>を省略するか、含める</li>
+                            <li>トップページは必ず含める</li>
+                            <li>各階層のURLは絶対URLで指定</li>
+                        </ul>
+
+                        <p>
+                            パンくずリストの構造化データは、<a href="landing-page-cost.html">LP</a>やブログ記事など、全ページに実装すべきです。
+                        </p>
+                    </section>
+
+                    <section id="section5" class="article__section">
+                        <h2 class="article__heading">FAQPage（よくある質問）</h2>
+                        <p>
+                            FAQ（よくある質問）を構造化データ化すると、検索結果に折りたたみ形式で表示され、CTRが大幅に向上します。
+                        </p>
+
+                        <h3 class="article__subheading">実装例</h3>
+
+                        <div class="article__code">
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "構造化データとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "構造化データとは、Webページの内容を検索エンジンが理解しやすい形式でマークアップしたデータのことです。Schema.orgの語彙を使ってJSON-LD形式で記述するのが一般的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JSON-LDはどこに記述しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JSON-LDは、HTMLの&lt;head&gt;タグ内または&lt;body&gt;タグ内の&lt;script type=\"application/ld+json\"&gt;タグの中に記述します。&lt;head&gt;内に記述するのが一般的です。"
+      }
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">プロパティの解説</h3>
+
+                        <ul class="article__list">
+                            <li><code>@type</code>：<code>FAQPage</code>（ページ全体がFAQの場合）</li>
+                            <li><code>mainEntity</code>：Questionオブジェクトの配列</li>
+                            <li><code>name</code>：質問文</li>
+                            <li><code>acceptedAnswer</code>：回答オブジェクト</li>
+                            <li><code>text</code>：回答文（HTMLタグも使用可能）</li>
+                        </ul>
+
+                        <h3 class="article__subheading">FAQPageとQAPageの違い</h3>
+
+                        <ul class="article__list">
+                            <li><code>FAQPage</code>：1つのページに複数のQ&A（公式FAQ）</li>
+                            <li><code>QAPage</code>：1つのQ&Aページ（質問サイトのような形式）</li>
+                        </ul>
+
+                        <p>
+                            企業サイトのFAQページには<code>FAQPage</code>を使います。
+                        </p>
+
+                        <h3 class="article__subheading">実装時の注意点</h3>
+
+                        <div class="article__box article__box--warning">
+                            <h4 class="article__box-title"><i class="fas fa-exclamation-triangle"></i> Googleのガイドライン</h4>
+                            <ul class="article__list">
+                                <li>FAQページ全体が1つのトピックに関するものであること</li>
+                                <li>広告目的のQ&Aは含めない</li>
+                                <li>質問と回答はHTMLにも表示する（構造化データだけではダメ）</li>
+                                <li>各質問には1つの回答のみ</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="article__subheading">HTMLに改行を含める方法</h3>
+                        <p>
+                            回答文に改行やHTMLタグを含めたい場合：
+                        </p>
+
+                        <div class="article__code">
+<pre><code>"text": "&lt;p&gt;構造化データとは、Webページの内容を検索エンジンが理解しやすい形式でマークアップしたデータのことです。&lt;/p&gt;&lt;p&gt;JSON-LD形式で記述するのが一般的です。&lt;/p&gt;"</code></pre>
+                        </div>
+
+                        <p>
+                            <code>&lt;p&gt;</code>、<code>&lt;br&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;ol&gt;</code>、<code>&lt;li&gt;</code>などの基本的なHTMLタグが使用できます。
+                        </p>
+                    </section>
+
+                    <section id="section6" class="article__section">
+                        <h2 class="article__heading">その他の重要な構造化データ</h2>
+                        <p>
+                            ビジネスの種類に応じて、以下の構造化データも活用しましょう。
+                        </p>
+
+                        <h3 class="article__subheading">1. Organization（組織情報）</h3>
+                        <p>
+                            企業情報をGoogleに伝えます。トップページに設置します。
+                        </p>
+
+                        <div class="article__code">
+<pre><code>{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "株式会社Yojitsu",
+  "url": "https://yojitsu.co.jp",
+  "logo": "https://yojitsu.co.jp/logo.png",
+  "sameAs": [
+    "https://twitter.com/yojitsu",
+    "https://www.facebook.com/yojitsu",
+    "https://www.linkedin.com/company/yojitsu"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+81-3-1234-5678",
+    "contactType": "customer service",
+    "areaServed": "JP",
+    "availableLanguage": "Japanese"
+  }
+}</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">2. LocalBusiness（地域ビジネス）</h3>
+                        <p>
+                            実店舗がある場合に使用します。<a href="meo-local-seo-guide.html">MEO対策</a>にも有効です。
+                        </p>
+
+                        <div class="article__code">
+<pre><code>{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "カフェ Example",
+  "image": "https://example.com/cafe.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "道玄坂1-2-3",
+    "addressLocality": "渋谷区",
+    "addressRegion": "東京都",
+    "postalCode": "150-0043",
+    "addressCountry": "JP"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.6595,
+    "longitude": 139.7007
+  },
+  "telephone": "+81-3-1234-5678",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ]
+}</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">3. Product（商品）</h3>
+                        <p>
+                            ECサイトの商品ページに実装します。
+                        </p>
+
+                        <div class="article__code">
+<pre><code>{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "商品名",
+  "image": "https://example.com/product.jpg",
+  "description": "商品の説明",
+  "sku": "12345",
+  "brand": {
+    "@type": "Brand",
+    "name": "ブランド名"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://example.com/product.html",
+    "priceCurrency": "JPY",
+    "price": "19800",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "24"
+  }
+}</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">4. HowTo（ハウツー）</h3>
+                        <p>
+                            手順を解説する記事に使用します。
+                        </p>
+
+                        <div class="article__code">
+<pre><code>{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "構造化データの実装方法",
+  "description": "JSON-LDで構造化データを実装する手順",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Schema.orgで適切な型を選ぶ",
+      "text": "まず、Schema.orgのドキュメントから適切な型を選びます。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "JSON-LDコードを作成",
+      "text": "選んだ型に基づいてJSON-LDコードを作成します。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "HTMLに埋め込む",
+      "text": "&lt;script type=\"application/ld+json\"&gt;タグでHTMLに埋め込みます。"
+    }
+  ]
+}</code></pre>
+                        </div>
+
+                        <h3 class="article__subheading">5. VideoObject（動画）</h3>
+                        <p>
+                            動画コンテンツがある場合に実装します。
+                        </p>
+
+                        <div class="article__code">
+<pre><code>{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "構造化データ実装チュートリアル",
+  "description": "構造化データの実装方法を動画で解説",
+  "thumbnailUrl": "https://example.com/thumbnail.jpg",
+  "uploadDate": "2025-01-19",
+  "duration": "PT10M30S",
+  "contentUrl": "https://example.com/video.mp4",
+  "embedUrl": "https://www.youtube.com/embed/xxxxx"
+}</code></pre>
+                        </div>
+                    </section>
+
+                    <section id="section7" class="article__section">
+                        <h2 class="article__heading">テスト・検証方法</h2>
+                        <p>
+                            構造化データを実装したら、必ずテストしましょう。
+                        </p>
+
+                        <h3 class="article__subheading">1. リッチリザルトテスト</h3>
+                        <p>
+                            Googleが提供する公式ツールです。
+                        </p>
+
+                        <p><strong>URL：</strong><a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">https://search.google.com/test/rich-results</a></p>
+
+                        <h4 class="article__sub-subheading">使い方</h4>
+                        <ol class="article__list">
+                            <li>URLまたはコードを入力</li>
+                            <li>「URLをテスト」をクリック</li>
+                            <li>結果を確認：エラーや警告がないかチェック</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">確認項目</h4>
+                        <ul class="article__list">
+                            <li>エラーがないか（赤色表示）</li>
+                            <li>警告がないか（黄色表示）</li>
+                            <li>検出された項目が正しいか</li>
+                            <li>リッチリザルトのプレビュー</li>
+                        </ul>
+
+                        <h3 class="article__subheading">2. Schema Markup Validator</h3>
+                        <p>
+                            Schema.org公式のバリデーター。
+                        </p>
+
+                        <p><strong>URL：</strong><a href="https://validator.schema.org/" target="_blank" rel="noopener">https://validator.schema.org/</a></p>
+
+                        <p>
+                            リッチリザルトテストよりも詳細な検証が可能です。JSONの構文エラーなども検出してくれます。
+                        </p>
+
+                        <h3 class="article__subheading">3. Google Search Console</h3>
+                        <p>
+                            <a href="ga4-setup-guide.html">GA4</a>と並んで重要な、Googleの公式ツールです。
+                        </p>
+
+                        <h4 class="article__sub-subheading">確認手順</h4>
+                        <ol class="article__list">
+                            <li>Search Consoleにログイン</li>
+                            <li>左メニューから「拡張」セクションを選択</li>
+                            <li>各項目（記事、FAQなど）のレポートを確認</li>
+                            <li>エラーや警告があれば修正</li>
+                        </ol>
+
+                        <h4 class="article__sub-subheading">レポートで確認できること</h4>
+                        <ul class="article__list">
+                            <li>有効なページ数</li>
+                            <li>エラーのあるページ</li>
+                            <li>警告のあるページ</li>
+                            <li>リッチリザルトとして認識されているか</li>
+                        </ul>
+
+                        <div class="article__box article__box--warning">
+                            <h4 class="article__box-title"><i class="fas fa-exclamation-triangle"></i> よくあるエラーと対処法</h4>
+
+                            <p><strong>エラー1：「datePublishedが無効です」</strong></p>
+                            <p>原因：日付形式が間違っている</p>
+                            <p>対処法：ISO 8601形式（YYYY-MM-DD）で記述</p>
+
+                            <p><strong>エラー2：「imageが必須です」</strong></p>
+                            <p>原因：image プロパティが欠落</p>
+                            <p>対処法：高解像度の画像URLを追加</p>
+
+                            <p><strong>エラー3：「publisherのlogoが必要です」</strong></p>
+                            <p>原因：publisher オブジェクトにlogoがない</p>
+                            <p>対処法：企業ロゴのURLを追加</p>
+                        </div>
+
+                        <h3 class="article__subheading">実装後の確認</h3>
+
+                        <h4 class="article__sub-subheading">1. クロール・インデックス</h4>
+                        <p>
+                            構造化データを実装したら、Search Consoleの「URL検査」でクロールをリクエストしましょう。
+                        </p>
+
+                        <h4 class="article__sub-subheading">2. リッチリザルトの表示確認</h4>
+                        <p>
+                            実際の検索結果でリッチリザルトとして表示されるまで、数日〜数週間かかります。気長に待ちましょう。
+                        </p>
+
+                        <h4 class="article__sub-subheading">3. 継続的なモニタリング</h4>
+                        <p>
+                            Search Consoleで定期的にエラーをチェックします。サイト更新時に構造化データが壊れていないか確認しましょう。
+                        </p>
+                    </section>
+
+                    <section id="section8" class="article__section">
+                        <h2 class="article__heading">まとめ</h2>
+                        <p>
+                            構造化データは、SEOにおいて無視できない重要な要素です。適切に実装することで、検索結果での視認性が大幅に向上します。
+                        </p>
+
+                        <div class="article__box article__box--summary">
+                            <h3 class="article__box-title"><i class="fas fa-check-circle"></i> 構造化データ実装のチェックリスト</h3>
+
+                            <h4 class="article__sub-subheading">基本</h4>
+                            <ul class="article__list">
+                                <li>JSON-LD形式で実装する</li>
+                                <li><code>&lt;script type="application/ld+json"&gt;</code>タグ内に記述</li>
+                                <li>Schema.orgの語彙を使用</li>
+                            </ul>
+
+                            <h4 class="article__sub-subheading">必須実装</h4>
+                            <ul class="article__list">
+                                <li><strong>全ページ：</strong>BreadcrumbList（パンくずリスト）</li>
+                                <li><strong>記事ページ：</strong>Article</li>
+                                <li><strong>FAQページ：</strong>FAQPage</li>
+                                <li><strong>トップページ：</strong>Organization</li>
+                            </ul>
+
+                            <h4 class="article__sub-subheading">業種別</h4>
+                            <ul class="article__list">
+                                <li><strong>実店舗：</strong>LocalBusiness</li>
+                                <li><strong>EC：</strong>Product</li>
+                                <li><strong>ハウツー記事：</strong>HowTo</li>
+                                <li><strong>動画コンテンツ：</strong>VideoObject</li>
+                            </ul>
+
+                            <h4 class="article__sub-subheading">テスト</h4>
+                            <ul class="article__list">
+                                <li>リッチリザルトテストでエラーチェック</li>
+                                <li>Search Consoleで継続モニタリング</li>
+                                <li>実際の検索結果で表示確認</li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            構造化データの実装は、一度設定すれば長期的に効果が持続します。<a href="website-lead-generation-methods.html">リード獲得</a>を強化するため、<a href="btob-marketing-strategy.html">BtoBマーケティング施策</a>の一環として、ぜひ実装しましょう。
+                        </p>
+
+                        <p>
+                            技術的な実装が難しい場合は、<a href="web-marketing-cost.html">Web制作会社</a>に依頼することも検討してください。初期投資は必要ですが、長期的なSEO効果を考えればROIの高い投資です。
+                        </p>
+
+                        <div class="article__box article__box--point">
+                            <h4 class="article__box-title"><i class="fas fa-lightbulb"></i> まず今日から始めること</h4>
+                            <ol class="article__list">
+                                <li>自社サイトに Article と BreadcrumbList を実装</li>
+                                <li>リッチリザルトテストで検証</li>
+                                <li>エラーがあれば修正</li>
+                                <li>Search Consoleで継続モニタリング</li>
+                            </ol>
+                            <p>
+                                これだけで、検索結果でのCTRが大きく改善します。今日から始めましょう！
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- シェアボタン -->
+                    <div class="article__share">
+                        <h3 class="article__share-title">この記事をシェア</h3>
+                        <div class="article__share-buttons">
+                            <a href="https://twitter.com/intent/tweet?url=https://yojitsu.co.jp/blog/posts/structured-data-implementation.html&text=構造化データ実装ガイド" target="_blank" rel="noopener" class="article__share-button article__share-button--twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://yojitsu.co.jp/blog/posts/structured-data-implementation.html" target="_blank" rel="noopener" class="article__share-button article__share-button--facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://social-plugins.line.me/lineit/share?url=https://yojitsu.co.jp/blog/posts/structured-data-implementation.html" target="_blank" rel="noopener" class="article__share-button article__share-button--line">
+                                <i class="fab fa-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- Share Buttons -->
+                <div class="article__share">
+                    <h3 class="article__share-title">この記事をシェア</h3>
+                    <div class="article__share-buttons">
+                        <a href="https://twitter.com/intent/tweet?url=https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html&text=%E6%A7%8B%E9%80%A0%E5%8C%96%E3%83%87%E3%83%BC%E3%82%BF%E5%AE%9F%E8%A3%85%E3%82%AC%E3%82%A4%E3%83%89%EF%BD%9CSEO%E3%81%AB%E5%8A%B9%E3%81%8FSchema.org%E3%81%A8JSON-LD%E3%81%AE%E5%AE%8C%E5%85%A8%E8%A7%A3%E8%AA%AC" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="https://social-plugins.line.me/lineit/share?url=https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html" class="share-btn" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                            LINE
+                        </a>
+                        <button class="share-btn" onclick="navigator.clipboard.writeText('https://yamada1001.github.io/yojitsu-website/blog/posts/structured-data-implementation.html')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+                            </svg>
+                            URLをコピー
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Related Posts -->
+                <aside class="related-posts">
+                    <h2 class="related-posts__title">関連記事</h2>
+                    <div class="related-posts__grid" id="relatedArticles">
+                        <!-- JavaScriptで自動生成 -->
+                    </div>
+                </aside>
+            </div><!-- /.article__main -->
+
+            <!-- Sidebar TOC -->
+            <aside class="article__sidebar">
+                <nav class="sidebar-toc" id="sidebarToc">
+                    <!-- JavaScriptで自動生成 -->
+                </nav>
+            </aside>
+        </div><!-- /.article__container -->
+    </article>
+
+    <!-- Floating TOC Button (Mobile) -->
+    <button class="floating-toc-btn" id="floatingTocBtn" aria-label="目次を開く">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+
+    <!-- Mobile TOC Modal -->
+    <div class="mobile-toc-modal" id="mobileTocModal">
+        <div class="mobile-toc-modal__content">
+            <div class="mobile-toc-modal__header">
+                <h3 class="mobile-toc-modal__title">目次</h3>
+                <button class="mobile-toc-modal__close" id="closeMobileToc" aria-label="閉じる">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <ul class="mobile-toc-modal__list" id="mobileTocList">
+                <!-- JavaScriptで自動生成 -->
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__company">
+                    <img src="../../assets/images/logo.png" alt="株式会社Yojitsu" class="footer__logo">
+                    <p class="footer__description">
+                        BtoBマーケティングとWeb制作で<br>企業の成長を支援します
+                    </p>
+                </div>
+                <nav class="footer__nav">
+                    <div class="footer__nav-column">
+                        <h3 class="footer__nav-title">サービス</h3>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a href="../../index.html#services">Web制作</a></li>
+                            <li class="footer__nav-item"><a href="../../index.html#services">SEO対策</a></li>
+                            <li class="footer__nav-item"><a href="../../index.html#services">マーケティング支援</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h3 class="footer__nav-title">会社情報</h3>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a href="../../index.html#about">会社概要</a></li>
+                            <li class="footer__nav-item"><a href="../index.html">ブログ</a></li>
+                            <li class="footer__nav-item"><a href="../../index.html#contact">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 株式会社Yojitsu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../src/js/main.js"></script>
+    <script src="../../src/js/blog-loader.js"></script>
+    <script>
+        // 関連記事の読み込み
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.blogLoader) {
+                window.blogLoader.renderRelatedArticles('structured-data-implementation', 'technical');
+            }
+        });
+    </script>
+
+    <!-- Scripts -->
+    <script src="src/js/blog-loader.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/blog.js"></script>
+    <script src="src/js/article-template.js"></script>
+</body>
+</html>

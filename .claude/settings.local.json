@@ -5,7 +5,13 @@
       "Bash(basename:*)",
       "Bash(node scripts/comprehensive-article-check.js:*)",
       "Bash(node /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/scripts/comprehensive-article-check.js:*)",
-      "Bash(node /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/scripts/remove-static-related-posts.js:*)"
+      "Bash(node /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/scripts/remove-static-related-posts.js:*)",
+      "Bash(node /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/scripts/export-to-wxr.js:*)",
+      "Bash(node /Users/yamadaren/Movies/claude-code-projects/yojitsu-website/scripts/export-to-note.js:*)",
+      "Bash(node scripts/refactor-blog-posts.js:*)",
+      "Bash(for file in blog/posts-backup/*.html)",
+      "Bash(done)",
+      "Bash(awk:*)"
     ],
     "deny": [],
     "ask": []

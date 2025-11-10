@@ -9,6 +9,9 @@
     "add-gtm": "node scripts/add-gtm.js",
     "check-articles": "node scripts/check-article-structure.js",
     "check-quality": "node scripts/comprehensive-article-check.js",
+    "export-wxr": "node scripts/export-to-wxr.js",
+    "export-note": "node scripts/export-to-note.js",
+    "export-all": "npm run export-wxr && npm run export-note",
     "serve": "python3 -m http.server 8000"
   },
   "repository": {

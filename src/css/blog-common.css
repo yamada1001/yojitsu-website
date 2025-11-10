@@ -1,0 +1,355 @@
+/* ========================================
+   Blog Common Styles - Inline Styles Extraction
+   ======================================== */
+
+/* Highlight Boxes */
+.highlight-box {
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.highlight-box--pink {
+    background: #fdf2f8;
+    border-left: 4px solid #EC4899;
+}
+
+.highlight-box--green {
+    background: #ecfdf5;
+    border-left: 4px solid #10B981;
+}
+
+.highlight-box--gray {
+    background: #f8f8f8;
+    border-left: 4px solid #8B7355;
+}
+
+.highlight-box--blue {
+    background: #f0f7ff;
+    border-left: 4px solid #2196F3;
+}
+
+.highlight-box--yellow {
+    background: #FFF3CD;
+    border-left: 4px solid #FFC107;
+}
+
+.highlight-box--light-blue {
+    background: #E3F2FD;
+    border-left: 4px solid #2196F3;
+}
+
+.highlight-box--purple {
+    background: #F3E5F5;
+    border-left: 4px solid #9C27B0;
+}
+
+.highlight-box--orange {
+    background: #FFF3E0;
+    border-left: 4px solid #FF9800;
+}
+
+.highlight-box--gradient-pink {
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.highlight-box--gradient-gray {
+    background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #EC4899;
+    margin: 1.5rem 0;
+}
+
+.highlight-box--gradient-green {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    margin: 1.5rem 0;
+}
+
+/* Icon Styles */
+/* Generic icon spacing */
+.article__content i.fas,
+.article__content i.fab {
+    margin-right: 0.5rem;
+}
+
+/* Keep icon colors as classes for future use */
+.icon {
+    margin-right: 0.5rem;
+}
+
+.icon--pink { color: #EC4899; }
+.icon--green { color: #10B981; }
+.icon--brown { color: #8B7355; }
+.icon--blue { color: #2196F3; }
+.icon--orange { color: #F59E0B; }
+.icon--cyan { color: #06B6D4; }
+.icon--gold { color: #FFD700; }
+.icon--red { color: #d32f2f; }
+.icon--dark-green { color: #2E7D32; }
+.icon--light-green { color: #4CAF50; }
+.icon--dark-blue { color: #1976D2; }
+.icon--purple { color: #8B5CF6; }
+.icon--dark-purple { color: #7B1FA2; }
+.icon--dark-orange { color: #E65100; }
+.icon--dark-red { color: #C62828; }
+.icon--dark-cyan { color: #00796B; }
+.icon--yellow { color: #F57F17; }
+.icon--amber { color: #FF9800; }
+.icon--magenta { color: #C2185B; }
+
+/* CTA Box */
+.cta-box {
+    background: #EC4899;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.cta-box--brown {
+    background: #8B7355;
+}
+
+.cta-box h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.cta-box p {
+    margin-bottom: 1.5rem;
+}
+
+.cta-box__button {
+    display: inline-block;
+    background: white;
+    color: #EC4899;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.cta-box--brown .cta-box__button {
+    color: #8B7355;
+}
+
+.cta-box__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Box */
+.info-box {
+    padding: 1.5rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.info-box h3,
+.info-box h4 {
+    margin-top: 0;
+}
+
+.info-box ul,
+.info-box ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.info-box li {
+    margin-bottom: 0.75rem;
+}
+
+.info-box li:last-child {
+    margin-bottom: 0;
+}
+
+/* Success/Tips Box */
+.success-box {
+    background: #E8F5E9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.success-box--with-border {
+    border-left: 4px solid #4CAF50;
+}
+
+.success-box h3,
+.success-box h4 {
+    margin-top: 0;
+    color: #2E7D32;
+}
+
+.success-box p {
+    color: #2E7D32;
+}
+
+/* Warning Box */
+.warning-box {
+    background: #FFF3CD;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #FFC107;
+    margin: 1.5rem 0;
+}
+
+.warning-box ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.warning-box li {
+    margin-bottom: 0.75rem;
+}
+
+/* Code Block */
+.code-block {
+    background: #1E1E1E;
+    color: #4EC9B0;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: monospace;
+    margin: 0.5rem 0;
+}
+
+.code-block--light {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.code-block--error {
+    background: #FFEBEE;
+    color: #C62828;
+}
+
+/* Inline Code */
+.code-inline {
+    background: #1E1E1E;
+    color: #4EC9B0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Comparison Box */
+.comparison {
+    margin: 2rem 0;
+}
+
+.comparison__item {
+    margin-bottom: 1rem;
+}
+
+.comparison__label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.comparison__label--good {
+    color: #4CAF50;
+}
+
+.comparison__label--bad {
+    color: #F44336;
+}
+
+/* Reference Box */
+.reference-box {
+    padding: 1.5rem;
+    background: #f0f7ff;
+    border-radius: 8px;
+    border-left: 4px solid #2196F3;
+    margin-top: 2rem;
+}
+
+.reference-box h4 {
+    margin-top: 0;
+    color: #1976D2;
+}
+
+.reference-box ul {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* Summary Box */
+.summary-box {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    margin: 1.5rem 0;
+}
+
+.summary-box h3 {
+    margin-top: 0;
+    color: #2E7D32;
+}
+
+.summary-box ol {
+    margin: 0;
+    padding-left: 1.5rem;
+    font-weight: 500;
+}
+
+.summary-box li {
+    margin-bottom: 0.75rem;
+}
+
+.summary-box li:last-child {
+    margin-bottom: 0;
+}
+
+/* Text Utilities */
+.text-gray {
+    color: #666;
+}
+
+.text-small {
+    font-size: 0.9rem;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-left-1 {
+    margin-left: 1.5rem;
+}
+
+/* List Utilities */
+.list-no-margin {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.list-no-margin li {
+    margin-bottom: 0.75rem;
+}
+
+.list-no-margin li:last-child {
+    margin-bottom: 0;
+}
+
+/* Font Weight */
+.font-weight-500 {
+    font-weight: 500;
+}
